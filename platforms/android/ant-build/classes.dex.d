@@ -6,4 +6,6 @@
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/ant-build/classes/com/phonegap/helloworld/R$string.class \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/ant-build/classes/com/phonegap/helloworld/R$xml.class \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/ant-build/classes/com/phonegap/helloworld/R.class \
+/Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/ant-build/classes/nl/xservices/plugins/SocialSharing$1.class \
+/Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/ant-build/classes/nl/xservices/plugins/SocialSharing.class \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/ant-build/dexedLibs/classes-c8a20f1122c85e50346a3dd2692319d7.jar \

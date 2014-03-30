@@ -56,7 +56,7 @@
               </ul>
             </div>
             <div id="drug" class="tab_body">
-                <img src="img/marihuana.jpg" alt="">
+                <img src="img/lsd.jpg" alt="">
                 <div class="aditional_info">
                     <div class="drug_label">Toxicidad: <span class="drug_statistic">6</span></div>
                     <div class="drug_label">Potencial de adicción:<span class="drug_statistic">10</ span></div>
@@ -97,76 +97,79 @@
             <div id="drug_chart" class="tab_body">
                 <script>
 
-//alert('hola');
+    //alert('hola');
 
-var elementID = 'chartCanvas'; // Unique ID
-    $('#drug_chart canvas').remove();
-    $('#legend').remove();
+    var elementID = 'chartCanvas'; // Unique ID
+        $('#drug_chart canvas').remove();
+        $('#legend').remove();
 
-    $('<canvas>').attr({
-        id: elementID,
-        //width: document.getElementById("selectMunGraphs").offsetWidth,
-        //height: document.getElementById("selectMunGraphs").offsetWidth*0.7
-    }).css({
-            background: "#FFFFFF"
-        }).appendTo('#drug_chart');
+        $('<canvas>').attr({
+            id: elementID,
+            //width: document.getElementById("selectMunGraphs").offsetWidth,
+            //height: document.getElementById("selectMunGraphs").offsetWidth*0.7
+        }).css({
+                background: "#FFFFFF"
+            }).appendTo('#drug_chart');
 
-    $('<div>').attr({
-        id: 'legend'
-    }).css({
-            background: "#FFFFFF"
-        }).appendTo('#drug_chart');
-
-
- var canvas = document.getElementById('chartCanvas'); // Use the created element
-    var ctx = canvas.getContext("2d");
+        $('<div>').attr({
+            id: 'legend'
+        }).css({
+                background: "#FFFFFF"
+            }).appendTo('#drug_chart');
 
 
-var data = [
-    {
-        title: 'Marihuana: 20%',
-        value: 20,
-        color:"#F38630"
-    },
-    {
-        title: 'Otras sustancias: 80%',
-        value : 80,
-        color : "#E0E4CC"
-    }       
-]
+     var canvas = document.getElementById('chartCanvas'); // Use the created element
+        var ctx = canvas.getContext("2d");
 
 
-    new Chart(ctx).Pie(data,{animation: false});
- legend(document.getElementById('legend'), data);
+    var data = [
+        {
+            title: 'Marihuana: 20%',
+            value: 20,
+            color:"#F38630"
+        },
+        {
+            title: 'Otras sustancias: 80%',
+            value : 80,
+            color : "#E0E4CC"
+        }       
+    ]
+
+
+        new Chart(ctx).Pie(data,{animation: false});
+     legend(document.getElementById('legend'), data);
 
 
 
-    
-function legend(parent, data) {
-    parent.className = 'legend';
-    var datas = data.hasOwnProperty('datasets') ? data.datasets : data;
+        
+    function legend(parent, data) {
+        parent.className = 'legend';
+        var datas = data.hasOwnProperty('datasets') ? data.datasets : data;
 
-    datas.forEach(function (d) {
-        var title = document.createElement('span');
-        title.className = 'title';
-        title.style.borderColor = d.hasOwnProperty('strokeColor') ? d.strokeColor : d.color;
-        title.style.borderStyle = 'solid';
-        parent.appendChild(title);
+        datas.forEach(function (d) {
+            var title = document.createElement('span');
+            title.className = 'title';
+            title.style.borderColor = d.hasOwnProperty('strokeColor') ? d.strokeColor : d.color;
+            title.style.borderStyle = 'solid';
+            parent.appendChild(title);
 
-        var text = document.createTextNode(d.title);
-        title.appendChild(text);
-    });
-}
+            var text = document.createTextNode(d.title);
+            title.appendChild(text);
+        });
+    }
 
-                </script>
-            </div>
-        </div>    
-    </div>                           
-</div>
-</div>
-<script type="text/javascript" src="phonegap.js"></script>
-<script type="text/javascript">
-app.initialize();
-</script>
+                    </script>
+                </div>
+            </div>    
+        </div>                           
+    </div>
+    </div>
+    <script type="text/javascript" src="phonegap.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="jquery-mobile/jquery.mobile-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
 </body>
 </html>

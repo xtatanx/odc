@@ -17,6 +17,7 @@
  * under the License.
  */
 var app = {
+    chart: false,
     // Application Constructor
     initialize: function() {
         this.bindEvents();
@@ -64,14 +65,14 @@ var app = {
                 }
             }
         });               
-
+        
         $menu_btn.on('touchstart', function(){
             $(this).addClass('menu_btn__tap');
         });
 
         $menu_btn.on('touchend', function(){
             $(this).removeClass('menu_btn__tap');
-        });
+        });        
 
         $(document).on('pageshow', '#drug_item', function(){
             $(this).height(theHeight);

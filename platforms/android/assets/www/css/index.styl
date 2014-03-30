@@ -33,6 +33,12 @@ body
 // my styles
 [data-role="page"]
   background url(../img/bg_home.jpg) center center no-repeat
+  -moz-background-size cover
+  background-size cover
+
+#chartCanvas
+  margin .5em auto
+  display block  
 #drug
   margin 1em 0 
   img
@@ -104,6 +110,12 @@ body
   text-align center 
   line-height 1.2 
 
+.drug_chart_title
+  color #fff
+  text-shadow 1px 1px 0 rgba(0,0,0, .2)
+  font-size 1em
+  text-align center
+  font-weight normal
 
 .home_title
   font-size 2em
@@ -119,6 +131,14 @@ body
   font-size 1em
   text-transform none
   text-align center 
+
+
+.legend
+  background #fafafa
+  & .title
+    text-transform none
+    text-shadow none
+    font-size 1em   
 
 // .marihuana_bg 
 //   background-image url(../img/marihuana.jpg) 
@@ -143,6 +163,22 @@ body
   &__tap
     background #fff
 
+.red_point
+  background url(../img/red-point.png) 0 0 no-repeat
+  height 30px
+  width 30px
+  position absolute
+  top 28%
+  left 56% 
+
+.red_point2
+  background url(../img/red-point.png) 0 0 no-repeat
+  height 30px
+  width 30px
+  position absolute
+  top 10%
+  left 46%     
+
 .tab_body
   box-sizing border-box
   -webkit-box-sizing border-box
@@ -158,12 +194,28 @@ body
   text-shadow none
   border-color #fff
 
+.silueta
+  width 100%
+  max-width 320px
+  margin 0 auto  
+  display block
+  position relative 
+  img
+    width 100% 
+
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5)
   body
     font-size 28px
 
+  #chartCanvas
+    width 400px !important
+    height 400px !important  
+
   .aditional_info
     margin .5em 0
+
+  .drug_chart_title
+    font-size .9em  
 
   .ui-btn-icon-notext.ui-btn-left    
     top 1.1em
@@ -179,6 +231,7 @@ body
     height 80px
     line-height 1.5  
     padding 0 
+
 
   // overrides ui css
   .ui-btn-icon-left:after, .ui-btn-icon-right:after, .ui-btn-icon-top:after, .ui-btn-icon-bottom:after, .ui-btn-icon-notext:after

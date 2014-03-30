@@ -9,3 +9,8 @@
     border-width: 0 0 0 1em;
     padding: 0 0.3em;
 }
+#drug_info p {
+	color: #FFF;
+	text-align: center;
+	
+}

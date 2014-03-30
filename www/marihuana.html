@@ -53,17 +53,22 @@
                 <ul>
                   <li><a class="tab ui-btn-active" href="#drug" data-ajax="false">Detalle</a></li>
                   <li><a class="tab" href="#drug_info" data-ajax="false">Información</a></li>
-                  <li><a class="tab" href="#drug_chart" data-ajax="false">Gráficos</a></li>
+                  <li><a class="tab" href="#drug_chart" data-ajax="false" data-chart="true">Gráficos</a></li>
               </ul>
             </div>
             <div id="drug" class="tab_body">
                 <img src="img/marihuana.jpg" alt="">
                 <div class="aditional_info">
-                    <div class="drug_label">Toxicidad: <span class="drug_statistic">6</span></div>
-                    <div class="drug_label">Potencial de adicción:<span class="drug_statistic">10</ span></div>
+                    <div class="drug_label">Toxicidad (%): <span class="drug_statistic">21</span></div>
+                    <div class="drug_label">Potencial de adicción (%):<span class="drug_statistic">21</ span></div>
                 </div>
             </div>
             <div id="drug_info" class="tab_body">
+                <div class="silueta">
+                    <img src="img/silueta.png" alt="silueta">
+                    <div class="red_point"></div>
+                    <div class="red_point2"></div>
+                </div>
                <p>
                 Qué busca el que la consume:<br>
                 * Sentimientos de relajación<br>
@@ -90,9 +95,12 @@
                 La persona no se puede intoxicar pero puede tener ataques de pánico, bajas de tensión, mareos y vómito.
                 
                </p>
+               <button class="share_btn" onclick="window.plugins.socialsharing.share('Message and image', null, 'https://lh6.googleusercontent.com/-QlemySq92Zw/UziBe6PwHSI/AAAAAAAAB0E/T8EGAtNGQ38/w200-h320-no/14+-+1', null)">compartir</button>
+
+
             </div>
             <div id="drug_chart" class="tab_body">
-                <h2>Grado de pureza</h2>
+                <h2 class="drug_chart_title">Prevalencia de consumo / región</h2>
                 <script>
 
 //alert('hola');
@@ -103,39 +111,55 @@ var elementID = 'chartCanvas'; // Unique ID
 
     $('<canvas>').attr({
         id: elementID,
-        //width: document.getElementById("selectMunGraphs").offsetWidth,
-        //height: document.getElementById("selectMunGraphs").offsetWidth*0.7
+        width: 200,
+        height: 200
     }).css({
-            background: "#FFFFFF"
+            /*background: "#FFFFFF"*/
         }).appendTo('#drug_chart');
 
     $('<div>').attr({
         id: 'legend'
     }).css({
-            background: "#FFFFFF"
+            /*background: "#FFFFFF"*/
         }).appendTo('#drug_chart');
 
 
- var canvas = document.getElementById('chartCanvas'); // Use the created element
+    var canvas = document.getElementById('chartCanvas'); // Use the created element
     var ctx = canvas.getContext("2d");
 
 
 var data = [
     {
-        title: 'Marihuana: 20%',
+        title: 'Caribe: 20%',
         value: 20,
         color:"#F38630"
     },
     {
-        title: 'Otras sustancias: 80%',
-        value : 80,
+        title: 'Pacifico: 10%',
+        value : 10,
         color : "#E0E4CC"
-    }       
+    },
+    {
+        title: 'Andina: 19%',
+        value : 19,
+        color : "#E034CC"
+    },
+    {
+        title: 'Orinoquia: 31%',
+        value : 31,
+        color : "#b034CC"
+    }   
+    ,
+    {
+        title: 'Amazonia: 20%',
+        value : 20,
+        color : "#3034CC"
+    }   
+
 ]
 
-
-    new Chart(ctx).Pie(data,{animation: false});
- legend(document.getElementById('legend'), data);
+    new Chart(ctx).Pie(data);
+    legend(document.getElementById('legend'), data);
 
 
 
@@ -155,6 +179,7 @@ function legend(parent, data) {
         title.appendChild(text);
     });
 }
+
 
                 </script>
             </div>

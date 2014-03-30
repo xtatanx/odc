@@ -1,5 +1,6 @@
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/ant-build/HelloWorld.ap_ \
  : /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/res/drawable/icon.png \
+/Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/res/drawable/screen.png \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/res/drawable-hdpi/icon.png \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/res/drawable-ldpi/icon.png \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/res/drawable-mdpi/icon.png \
@@ -7,6 +8,7 @@
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/res/values/strings.xml \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/res/xml/config.xml \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/ant-build/res/drawable/icon.png \
+/Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/ant-build/res/drawable/screen.png \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/ant-build/res/drawable-hdpi/icon.png \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/ant-build/res/drawable-ldpi/icon.png \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/ant-build/res/drawable-mdpi/icon.png \
@@ -31,6 +33,7 @@
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/marihuana \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/marihuana.html \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/phonegap.js \
+/Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/plugins \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/res \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/spec \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/spec.html \
@@ -52,8 +55,15 @@
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/fonts/quicksand-regular-webfont.svg \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/fonts/quicksand-regular-webfont.ttf \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/fonts/quicksand-regular-webfont.woff \
+/Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/img/alcohol.jpg \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/img/bg_home.jpg \
+/Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/img/cocaina.jpg \
+/Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/img/extasis.jpg \
+/Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/img/heroina.jpg \
+/Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/img/lsd.jpg \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/img/marihuana.jpg \
+/Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/img/red-point.png \
+/Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/img/silueta.png \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/jquery-mobile/images \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/jquery-mobile/jquery.mobile-1.4.2.min.css \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/jquery-mobile/jquery.mobile-1.4.2.min.js \
@@ -270,9 +280,13 @@
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/js/graphs.js \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/js/index.js \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/js/jquery.js \
+/Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/js/SocialSharing.js \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/js/thirdparty \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/js/thirdparty/chart.js \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/js/thirdparty/jquery-1.9.1.min.js \
+/Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/plugins/nl.x-services.plugins.socialsharing \
+/Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/plugins/nl.x-services.plugins.socialsharing/www \
+/Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/plugins/nl.x-services.plugins.socialsharing/www/SocialSharing.js \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/res/icon \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/res/screen \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/res/icon/android \
@@ -310,13 +324,13 @@
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/res/screen/webos \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/res/screen/windows-phone \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/res/screen/android/screen-hdpi-landscape.png \
-/Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/res/screen/android/screen-hdpi-portrait.png \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/res/screen/android/screen-ldpi-landscape.png \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/res/screen/android/screen-ldpi-portrait.png \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/res/screen/android/screen-mdpi-landscape.png \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/res/screen/android/screen-mdpi-portrait.png \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/res/screen/android/screen-xhdpi-landscape.png \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/res/screen/android/screen-xhdpi-portrait.png \
+/Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/res/screen/android/screen.png \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/res/screen/bada/screen-portrait.png \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/res/screen/bada-wac/screen-type3.png \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/res/screen/bada-wac/screen-type4.png \
