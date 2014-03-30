@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <link rel="stylesheet" href="jquery-mobile/jquery.mobile-1.4.2.min.css">
+    <!-- <link rel="stylesheet" href="jquery-mobile/jquery.mobile.theme-1.4.2.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/icons.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="jquery-mobile/jquery.mobile-1.4.2.min.js"></script>
+        <script src="js/thirdparty/jquery-1.9.1.min.js"></script>
+   
+
+     <script src="js/thirdparty/chart.js" type="text/javascript"></script>
+         <script type="text/javascript" src="js/graphs.js"></script>     
+    <title>ODC</title>
+
+   
+
+</head>
+<body>
+    <div data-role="page" id="drug_item">
+        <div data-role="header">
+            <a class="back_btn ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext" href="#back" data-rel="back">Atras</a>
+            <h1>Marihuana</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <div data-role="tabs" id="tabs">
+              <div data-role="navbar" class="tabs_navbar">
+                <ul>
+                  <li><a class="tab ui-btn-active" href="#drug" data-ajax="false">Detalle</a></li>
+                  <li><a class="tab" href="#drug_info" data-ajax="false">Información</a></li>
+                  <li><a class="tab" href="#drug_chart" data-ajax="false">Gráficos</a></li>
+              </ul>
+            </div>
+            <div id="drug" class="tab_body">
+                <img src="img/marihuana.jpg" alt="">
+                <div class="aditional_info">
+                    <div class="drug_label">Toxicidad: <span class="drug_statistic">6</span></div>
+                    <div class="drug_label">Potencial de adicción:<span class="drug_statistic">10</ span></div>
+                </div>
+            </div>
+            <div id="drug_info" class="tab_body">
+               <p>
+                Qué busca el que la consume:<br>
+                * Sentimientos de relajación<br>
+                * Mejor apreciación de la música<br>
+                * Reducción del dolor físico<br>
+                * Disminución de la fatiga muscular<br>
+                * Aumento de la creatividad<br><br>
+
+                Qué puede salir mal?<br>
+                * Sentir pánico y paranoia<br>
+                * Nerviosismo<br>
+                * Disminución de la capacidad de concentración<br><br>
+
+
+                Enfermedades:<br>
+                * Deteriora los pulmones<br>
+                * Disminuye las defensas<br>
+                * Faringitis: daño en la garganta<br>
+                * Disminuye la memoria y la voluntad<br>
+                * Dificultad para aprender y tomar decisiones<br>
+                * Ansiedad<br><br>
+
+                Intoxicacion:
+                La persona no se puede intoxicar pero puede tener ataques de pánico, bajas de tensión, mareos y vómito.
+                
+               </p>
+            </div>
+            <div id="drug_chart" class="tab_body">
+                <h2>Grado de pureza</h2>
+                <script>
+
+//alert('hola');
+
+var elementID = 'chartCanvas'; // Unique ID
+    $('#drug_chart canvas').remove();
+    $('#legend').remove();
+
+    $('<canvas>').attr({
+        id: elementID,
+        //width: document.getElementById("selectMunGraphs").offsetWidth,
+        //height: document.getElementById("selectMunGraphs").offsetWidth*0.7
+    }).css({
+            background: "#FFFFFF"
+        }).appendTo('#drug_chart');
+
+    $('<div>').attr({
+        id: 'legend'
+    }).css({
+            background: "#FFFFFF"
+        }).appendTo('#drug_chart');
+
+
+ var canvas = document.getElementById('chartCanvas'); // Use the created element
+    var ctx = canvas.getContext("2d");
+
+
+var data = [
+    {
+        title: 'Marihuana: 20%',
+        value: 20,
+        color:"#F38630"
+    },
+    {
+        title: 'Otras sustancias: 80%',
+        value : 80,
+        color : "#E0E4CC"
+    }       
+]
+
+
+    new Chart(ctx).Pie(data,{animation: false});
+ legend(document.getElementById('legend'), data);
+
+
+
+    
+function legend(parent, data) {
+    parent.className = 'legend';
+    var datas = data.hasOwnProperty('datasets') ? data.datasets : data;
+
+    datas.forEach(function (d) {
+        var title = document.createElement('span');
+        title.className = 'title';
+        title.style.borderColor = d.hasOwnProperty('strokeColor') ? d.strokeColor : d.color;
+        title.style.borderStyle = 'solid';
+        parent.appendChild(title);
+
+        var text = document.createTextNode(d.title);
+        title.appendChild(text);
+    });
+}
+
+                </script>
+            </div>
+        </div>    
+    </div>                           
+</div>
+</div>
+<script type="text/javascript" src="phonegap.js"></script>
+<script type="text/javascript">
+app.initialize();
+</script>
+</body>
+</html>

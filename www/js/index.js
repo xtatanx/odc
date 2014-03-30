@@ -33,17 +33,49 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        app.receivedEvent('deviceready');
+        app.bindEvents();
     },
     // Update DOM on a Received Event
-    receivedEvent: function(id) {
-        var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
+    bindEvents: function() {
+        var $menu_btn = $('.menu_btn');
+        var $drugPage = $('#drug_item');
+        var $tabs = $('#tabs'); 
+        var theHeight = $(window).height();
 
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
+        $.widget( "ui.tabs", $.ui.tabs, {
 
-        console.log('Received Event: ' + id);
+            _createWidget: function( options, element ) {
+                var page, delayedCreate,
+                    that = this;
+
+                if ( $.mobile.page ) {
+                    page = $( element )
+                        .parents( ":jqmData(role='page'),:mobile-page" )
+                        .first();
+
+                    if ( page.length > 0 && !page.hasClass( "ui-page-active" ) ) {
+                        delayedCreate = this._super;
+                        page.one( "pagebeforeshow", function() {
+                            delayedCreate.call( that, options, element );
+                        });
+                    }
+                } else {
+                    return this._super();
+                }
+            }
+        });               
+
+        $menu_btn.on('touchstart', function(){
+            $(this).addClass('menu_btn__tap');
+        });
+
+        $menu_btn.on('touchend', function(){
+            $(this).removeClass('menu_btn__tap');
+        });
+
+        $(document).on('pageshow', '#drug_item', function(){
+            $(this).height(theHeight);
+        });
+
     }
 };
