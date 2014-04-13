@@ -34,10 +34,11 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        app.bindEvents();
+        console.log('device is ready, binding custom events');
+        app.bindTheEvents();
     },
     // Update DOM on a Received Event
-    bindEvents: function() {
+    bindTheEvents: function() {
         var $menu_btn = $('.menu_btn');
         var $drugPage = $('#drug_item');
         var $tabs = $('#tabs'); 

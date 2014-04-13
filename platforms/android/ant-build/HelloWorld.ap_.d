@@ -30,7 +30,6 @@
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/jquery-mobile \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/js \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/LSD.html \
-/Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/marihuana \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/marihuana.html \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/phonegap.js \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/plugins \
@@ -43,6 +42,8 @@
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/css/icons.css \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/css/index.css \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/css/index.styl \
+/Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/css/media-queries.css \
+/Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/css/media-queries.styl \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/fonts/checkbox.eot \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/fonts/checkbox.svg \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/fonts/checkbox.ttf \

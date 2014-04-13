@@ -9,8 +9,8 @@
 	font-style: normal;
 }
 
-[class^="icons-"], [class*=" icons-"] {
-	font-family: 'checkbox';
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
@@ -23,21 +23,39 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icons-beer_icons-01:before {
+.icon-tabaco:before {
+	content: "\e600";
+}
+.icon-sedantes:before {
+	content: "\e601";
+}
+.icon-poper:before {
 	content: "\e602";
 }
-.icons-extasis_icons-01:before {
+.icon-opioides:before {
 	content: "\e603";
 }
-.icons-cocaine_icons-01-01:before {
+.icon-metaanfetamina:before {
 	content: "\e604";
 }
-.icons-heroin_icons-01-01:before {
+.icon-marihuana:before {
 	content: "\e605";
 }
-.icons-marihuana_icons-01:before {
+.icon-lsd:before {
 	content: "\e606";
 }
-.icons-lsd_icons-01:before {
+.icon-ketamina:before {
 	content: "\e607";
+}
+.icon-heroina:before {
+	content: "\e608";
+}
+.icon-extasis:before {
+	content: "\e609";
+}
+.icon-cocaina:before {
+	content: "\e60a";
+}
+.icon-alcohol:before {
+	content: "\e60b";
 }
