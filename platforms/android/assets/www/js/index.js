@@ -51,19 +51,8 @@ var app = {
         var $drugPage = $('#drug_item');
         var $tabs = $('#tabs'); 
         var $document = $(document);
+        var $window = $(window);
         var theHeight = $(window).height();
-        var scrolling = false;
-
-        // prevent click on elements when scrolling
-        $document.on({
-            'scrollstart': function(e) {
-                scrolling = true;
-                console.log(scrolling);
-            },
-            'scrollstop': function(e){
-                scrolling = false
-            }
-        });
 
         // create taps widget
         $.widget( "ui.tabs", $.ui.tabs, {
@@ -89,21 +78,6 @@ var app = {
             }
         });
 
-        // Manage the state of the icons in the index page
-        $menu_btn.on({
-
-            'touchstart': function(){
-                if (!scrolling){
-                  $(this).addClass('menu_btn__tap');
-                  console.log(scrolling);  
-                } 
-            },
-
-            'touchend': function(){
-                $(this).removeClass('menu_btn__tap');
-            }
-        });
-
 
         // content fits 100% of the window height
         $document.on('pageshow', '[data-role="page"]', function(){
@@ -111,17 +85,19 @@ var app = {
         });
 
     },
+    
     toolBarsInit: function(){
 
         $( "[data-role='header'], [data-role='footer']" ).toolbar({theme: 'a'});
     },
+
     calcPageHeight: function(){
         console.log('calcuting height');
 
         var headerH =  $( "[data-role='header']").outerHeight();
         var footerH =  $( "[data-role='footer']").outerHeight();
         var winH = $(window).height();
-        var pageH = winH - footerH - headerH + 2;
+        var pageH = winH - footerH - headerH;
 
         console.log('the footer height ' + footerH);
 
