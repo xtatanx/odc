@@ -1,4 +1,4 @@
-*{-webkit-tap-highlight-color:rgba(0,0,0,0)}
+*{-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:html}
 body{-webkit-touch-callout:none;-webkit-text-size-adjust:none;-webkit-user-select:none;background-color:#2ab3e7 !important;background-attachment:fixed;font-family:'quicksandlight','HelveticaNeue',Helvetica,Arial,sans-serif;font-size:16px;height:100%;margin:0;padding:0;text-transform:uppercase;width:100%}
 .ui-content{padding-bottom:0;padding-top:0;height:100%;overflow-y:scroll;-webkit-overflow-scrolling:touch}
 .ui-overlay-a,.ui-page-theme-a,.ui-page-theme-a .ui-panel-wrapper{background:#272727}
