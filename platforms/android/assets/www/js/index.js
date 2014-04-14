@@ -27,7 +27,13 @@ var app = {
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
-        document.addEventListener('deviceready', this.onDeviceReady, false);
+        // check if is mobile or desktop to fire onDeviceReady event - just for developing purposes
+        if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/)) {
+            document.addEventListener('deviceready', this.onDeviceReady, false);
+        } else {
+            this.onDeviceReady();
+        }        
+        // 
     },
     // deviceready Event Handler
     //
@@ -36,14 +42,30 @@ var app = {
     onDeviceReady: function() {
         console.log('device is ready, binding custom events');
         app.bindTheEvents();
+        app.toolBarsInit();
     },
     // Update DOM on a Received Event
     bindTheEvents: function() {
+        // cache some variables
         var $menu_btn = $('.menu_btn');
         var $drugPage = $('#drug_item');
         var $tabs = $('#tabs'); 
+        var $document = $(document);
         var theHeight = $(window).height();
+        var scrolling = false;
 
+        // prevent click on elements when scrolling
+        $document.on({
+            'scrollstart': function(e) {
+                scrolling = true;
+                console.log(scrolling);
+            },
+            'scrollstop': function(e){
+                scrolling = false
+            }
+        });
+
+        // create taps widget
         $.widget( "ui.tabs", $.ui.tabs, {
 
             _createWidget: function( options, element ) {
@@ -65,19 +87,44 @@ var app = {
                     return this._super();
                 }
             }
-        });               
-        
-        $menu_btn.on('touchstart', function(){
-            $(this).addClass('menu_btn__tap');
         });
 
-        $menu_btn.on('touchend', function(){
-            $(this).removeClass('menu_btn__tap');
-        });        
+        // Manage the state of the icons in the index page
+        $menu_btn.on({
 
-        $(document).on('pageshow', '#drug_item', function(){
-            $(this).height(theHeight);
+            'touchstart': function(){
+                if (!scrolling){
+                  $(this).addClass('menu_btn__tap');
+                  console.log(scrolling);  
+                } 
+            },
+
+            'touchend': function(){
+                $(this).removeClass('menu_btn__tap');
+            }
         });
 
+
+        // content fits 100% of the window height
+        $document.on('pageshow', '[data-role="page"]', function(){
+            app.calcPageHeight();
+        });
+
+    },
+    toolBarsInit: function(){
+
+        $( "[data-role='header'], [data-role='footer']" ).toolbar({theme: 'a'});
+    },
+    calcPageHeight: function(){
+        console.log('calcuting height');
+
+        var headerH =  $( "[data-role='header']").outerHeight();
+        var footerH =  $( "[data-role='footer']").outerHeight();
+        var winH = $(window).height();
+        var pageH = winH - footerH - headerH + 2;
+
+        console.log('the footer height ' + footerH);
+
+        $( "[data-role='page']").height(pageH);
     }
 };

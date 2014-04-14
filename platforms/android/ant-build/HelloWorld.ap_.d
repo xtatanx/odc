@@ -59,10 +59,14 @@
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/img/alcohol.jpg \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/img/bg_home.jpg \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/img/cocaina.jpg \
+/Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/img/dpcd.png \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/img/extasis.jpg \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/img/heroina.jpg \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/img/lsd.jpg \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/img/marihuana.jpg \
+/Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/img/minjusticia_logo.png \
+/Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/img/odc_logo.png \
+/Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/img/prosperidad_logo.png \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/img/red-point.png \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/img/silueta.png \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/jquery-mobile/images \

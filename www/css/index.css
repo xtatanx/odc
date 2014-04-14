@@ -42,3 +42,4 @@ body{-webkit-touch-callout:none;-webkit-text-size-adjust:none;-webkit-user-selec
 .ui-page-theme-a .tab{background:none;color:#fff;font-weight:normal;text-shadow:none;border-color:#fff}
 .silueta{width:100%;max-width:320px;margin:0 auto;display:block;position:relative;}
 .silueta img{width:100%}
+.ui-content{padding-bottom:0;padding-top:0;height:100%}
