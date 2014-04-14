@@ -32,21 +32,28 @@ body
  
 // my styles
 [data-role="page"]
-  background url(../img/bg_home.jpg) center center no-repeat
-  -moz-background-size cover
-  background-size cover
+  background #2ab3e7
 
 #chartCanvas
   margin .5em auto
-  display block  
+  display block
+
 #drug
   margin 1em 0 
   img
     width 100%
+
 #drug_item > .ui-content
   box-sizing border-box
   -webkit-box-sizing border-box
   position relative
+
+#footer
+  text-align center
+
+#header, #footer
+  background #fff
+
 #home
   -moz-background-size cover
   background-size cover  
@@ -117,6 +124,23 @@ body
   text-align center
   font-weight normal
 
+.footer_logo  
+  width 28%
+  display inline-block
+  vertical-align middle
+  padding-top 16px
+  & + .footer_logo
+    margin-left 4%
+
+  & img
+    width 100%
+
+.hr
+  width 90%
+  margin 6px auto
+  height 3px
+  background #28328a    
+
 .home_title
   font-size 2em
   color #fff
@@ -162,6 +186,15 @@ body
     text-shadow none
   &__tap
     background #fff
+
+.odc_logo
+  display block
+  margin 0 auto
+  width 182px
+  height 46px
+  padding 7px 0
+  & img
+    width 100%
 
 .red_point
   background url(../img/red-point.png) 0 0 no-repeat

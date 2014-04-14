@@ -27,7 +27,13 @@ var app = {
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
-        document.addEventListener('deviceready', this.onDeviceReady, false);
+        // check if is mobile or desktop to fire onDeviceReady event - just for developing purposes
+        if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/)) {
+            document.addEventListener('deviceready', this.onDeviceReady, false);
+        } else {
+            this.onDeviceReady();
+        }        
+        // 
     },
     // deviceready Event Handler
     //
@@ -36,6 +42,7 @@ var app = {
     onDeviceReady: function() {
         console.log('device is ready, binding custom events');
         app.bindTheEvents();
+        app.toolBarsInit();
     },
     // Update DOM on a Received Event
     bindTheEvents: function() {
@@ -78,6 +85,8 @@ var app = {
         $(document).on('pageshow', '#drug_item', function(){
             $(this).height(theHeight);
         });
-
+    },
+    toolBarsInit: function(){
+        $( "[data-role='header'], [data-role='footer']" ).toolbar({theme: 'a'});
     }
 };
