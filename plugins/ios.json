@@ -4,22 +4,44 @@
         "uninstalled": []
     },
     "config_munge": {
-        "framework": {
-            "Social.framework": {
-                "false": 1
+        "files": {
+            "framework": {
+                "parents": {
+                    "Social.framework": [
+                        {
+                            "xml": "false",
+                            "count": 2
+                        }
+                    ],
+                    "MessageUI.framework": [
+                        {
+                            "xml": "false",
+                            "count": 1
+                        }
+                    ]
+                }
             },
-            "MessageUI.framework": {
-                "false": 1
-            }
-        },
-        "config.xml": {
-            "/*": {
-                "<feature name=\"SocialSharing\"><param name=\"ios-package\" value=\"SocialSharing\" /></feature>": 1
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"SocialSharing\"><param name=\"ios-package\" value=\"SocialSharing\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"TwitterFacebookSharePlugin\"><param name=\"ios-package\" value=\"TwitterFacebookSharePlugin\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
             }
         }
     },
     "installed_plugins": {
         "nl.x-services.plugins.socialsharing": {
+            "PACKAGE_NAME": "com.phonegap.helloworld"
+        },
+        "com.gestionaleauto.plugins.TwitterFacebookSharePlugin": {
             "PACKAGE_NAME": "com.phonegap.helloworld"
         }
     },

@@ -27,22 +27,34 @@ var app = {
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
-        document.addEventListener('deviceready', this.onDeviceReady, false);
+        // check if is mobile or desktop to fire onDeviceReady event - just for developing purposes
+        if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/)) {
+            document.addEventListener('deviceready', this.onDeviceReady, false);
+        } else {
+            this.onDeviceReady();
+        }        
+        // 
     },
     // deviceready Event Handler
     //
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        app.bindEvents();
+        console.log('device is ready, binding custom events');
+        app.bindTheEvents();
+        app.toolBarsInit();
     },
     // Update DOM on a Received Event
-    bindEvents: function() {
+    bindTheEvents: function() {
+        // cache some variables
         var $menu_btn = $('.menu_btn');
         var $drugPage = $('#drug_item');
         var $tabs = $('#tabs'); 
+        var $document = $(document);
+        var $window = $(window);
         var theHeight = $(window).height();
 
+        // create taps widget
         $.widget( "ui.tabs", $.ui.tabs, {
 
             _createWidget: function( options, element ) {
@@ -64,19 +76,31 @@ var app = {
                     return this._super();
                 }
             }
-        });               
-        
-        $menu_btn.on('touchstart', function(){
-            $(this).addClass('menu_btn__tap');
         });
 
-        $menu_btn.on('touchend', function(){
-            $(this).removeClass('menu_btn__tap');
-        });        
 
-        $(document).on('pageshow', '#drug_item', function(){
-            $(this).height(theHeight);
+        // content fits 100% of the window height
+        $document.on('pageshow', '[data-role="page"]', function(){
+            app.calcPageHeight();
         });
 
+    },
+    
+    toolBarsInit: function(){
+
+        $( "[data-role='header'], [data-role='footer']" ).toolbar({theme: 'a'});
+    },
+
+    calcPageHeight: function(){
+        console.log('calcuting height');
+
+        var headerH =  $( "[data-role='header']").outerHeight();
+        var footerH =  $( "[data-role='footer']").outerHeight();
+        var winH = $(window).height();
+        var pageH = winH - footerH - headerH;
+
+        console.log('the footer height ' + footerH);
+
+        $( "[data-role='page']").height(pageH);
     }
 };
