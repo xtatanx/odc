@@ -53,7 +53,10 @@ var app = {
         var theHeight = $(window).height();
 
         // create toolbars
-        $( "[data-role='header'], [data-role='footer']" ).toolbar({theme: 'a'});
+        $( "[data-role='header'], [data-role='footer']" ).toolbar({
+            theme: 'a',
+            tapToggle: false
+        });
 
         // create taps widget
         $.widget( "ui.tabs", $.ui.tabs, {

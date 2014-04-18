@@ -17,7 +17,7 @@
 			var today= new Date();
              
 			var nextUpdate = window.localStorage.getItem("nextUpdate");
-            var n = new Date(nextUpdate.getFullYear(), nextUpdate.getMonth(), nextUpdate.getDate());
+      var n = new Date(nextUpdate.getFullYear(), nextUpdate.getMonth(), nextUpdate.getDate());
             
             	alert('hoy '+today);
 			alert('siguiente '+n);
