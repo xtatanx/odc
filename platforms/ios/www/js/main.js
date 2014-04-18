@@ -15,8 +15,13 @@
 		else
 		{
 			var today= new Date();
+             
 			var nextUpdate = window.localStorage.getItem("nextUpdate");
-			if(today<nextUpdate)
+            var n = new Date(nextUpdate.getFullYear(), nextUpdate.getMonth(), nextUpdate.getDate());
+            
+            	alert('hoy '+today);
+			alert('siguiente '+n);
+			if(today.valueOf()<nextUpdate.valueOf())
 			{
 				alert('actualizar');
 				  $.blockUI({ message: 'Actualizando datos...'});

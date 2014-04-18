@@ -20,9 +20,8 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta name="format-detection" content="telephone=no" />
-    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+   
+   
     <link rel="stylesheet" href="jquery-mobile/jquery.mobile-1.4.2.min.css">
     <!-- <link rel="stylesheet" href="jquery-mobile/jquery.mobile.theme-1.4.2.min.css"> -->
     <link rel="stylesheet" type="text/css" href="css/icons.css" />
@@ -31,19 +30,32 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="jquery-mobile/jquery.mobile-1.4.2.min.js"></script>
-        <script src="js/thirdparty/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/thirdparty/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="phonegap.js"></script>
+    <script src="js/thirdparty/chart.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/graphs.js"></script>     
    
 
-     <script src="js/thirdparty/chart.js" type="text/javascript"></script>
-         <script type="text/javascript" src="js/graphs.js"></script>     
+    
     <title>ODC</title>
+    <script type="text/javascript" charset="utf-8">
+     function marihuanaAlert1() {
+        navigator.notification.alert(
+    'Eres el ganador!',      // mensaje (message)
+    null,      // función 'callback' a llamar con el índice del botón pulsado (confirmCallback)
+    'Game Over',            // titulo (title)
+        'Restart'          // botones (buttonLabels)
+        );
+    }
 
-   
+    </script>
 
 </head>
 <body>
     <div data-role="page" id="drug_item">
         <div data-role="header">
+              <br>
+            <a class="back_btn ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext" href="#back" data-rel="back">Atras</a>
             <h1>Éxtasis</h1>
         </div>
         <div role="main" class="ui-content">
@@ -52,18 +64,17 @@
                 <ul>
                   <li><a class="tab ui-btn-active" href="#drug" data-ajax="false">Detalle</a></li>
                   <li><a class="tab" href="#drug_info" data-ajax="false">Información</a></li>
-                  <li><a class="tab" href="#drug_chart" data-ajax="false">Gráficos</a></li>
+                  <li><a class="tab" href="#drug_chart" data-ajax="false" data-chart="true">Gráficos</a></li>
+                  <li><a class="tab" href="#about" data-ajax="false" data-chart="true">About</a></li>
               </ul>
             </div>
             <div id="drug" class="tab_body">
                 <img src="img/extasis.jpg" alt="">
                 <div class="aditional_info">
-                    <div class="drug_label">Toxicidad (%): <span class="drug_statistic">20</span></div>
-                    <div class="drug_label">Potencial de adicción (%):<span class="drug_statistic">10</ span></div>
-                </div>
-            </div>
-            <div id="drug_info" class="tab_body">
-               <p>
+                    <div class="drug_label">Grado de adulteración (%): <span class="drug_statistic">21</span></div>
+                    <div class="drug_label">Potencialidad de daño (%):<span class="drug_statistic">21</ span></div>
+                    <div class="drug_label">Características:</div>
+                        <p>
                 Qué busca el que la consume:<br>
                 * Euforia<br>
                 * Sociabilidad<br>
@@ -94,10 +105,21 @@
                 Ansiedad extrema: ideas delirantes, agitación, alucinaciones, agresividad.
                 
                </p>
+                </div>
             </div>
-                        
+            <div id="drug_info" class="tab_body">
+                <div class="silueta">
+                    <img src="img/humano.png" alt="silueta">
+                    <div class="red_point" onclick="alert('Afectación aguda: xxxxxxxxxxxxxxxxxxxxxxxxxx\n Afectación crónica: xxxxxxxxxxxxxxxxxxxxxxxxxx')"></div>
+                    <div class="red_point2" onclick="alert('Afectación aguda: xxxxxxxxxxxxxxxxxxxxxxxxxx\n Afectación crónica: xxxxxxxxxxxxxxxxxxxxxxxxxx')"></div>
+                </div>
+              
+               <button class="share_btn" onclick="window.plugins.socialsharing.share('Message and image', null, 'https://lh6.googleusercontent.com/-QlemySq92Zw/UziBe6PwHSI/AAAAAAAAB0E/T8EGAtNGQ38/w200-h320-no/14+-+1', null)">compartir</button>
+
+
+            </div>
             <div id="drug_chart" class="tab_body">
-                <h2>Grado de pureza</h2>
+                <h2 class="drug_chart_title">Prevalencia de consumo / región</h2>
                 <script>
 
 //alert('hola');
@@ -108,39 +130,55 @@ var elementID = 'chartCanvas'; // Unique ID
 
     $('<canvas>').attr({
         id: elementID,
-        //width: document.getElementById("selectMunGraphs").offsetWidth,
-        //height: document.getElementById("selectMunGraphs").offsetWidth*0.7
+        width: 200,
+        height: 200
     }).css({
-            background: "#FFFFFF"
+            /*background: "#FFFFFF"*/
         }).appendTo('#drug_chart');
 
     $('<div>').attr({
         id: 'legend'
     }).css({
-            background: "#FFFFFF"
+            /*background: "#FFFFFF"*/
         }).appendTo('#drug_chart');
 
 
- var canvas = document.getElementById('chartCanvas'); // Use the created element
+    var canvas = document.getElementById('chartCanvas'); // Use the created element
     var ctx = canvas.getContext("2d");
 
 
 var data = [
     {
-        title: 'Éxtasis: 80%',
-        value: 80,
+        title: 'Caribe: 20%',
+        value: 20,
         color:"#F38630"
     },
     {
-        title: 'Otras sustancias: 20%',
-        value : 20,
+        title: 'Pacifico: 10%',
+        value : 10,
         color : "#E0E4CC"
-    }       
+    },
+    {
+        title: 'Andina: 19%',
+        value : 19,
+        color : "#E034CC"
+    },
+    {
+        title: 'Orinoquia: 31%',
+        value : 31,
+        color : "#b034CC"
+    }   
+    ,
+    {
+        title: 'Amazonia: 20%',
+        value : 20,
+        color : "#3034CC"
+    }   
+
 ]
 
-
-    new Chart(ctx).Pie(data,{animation: false});
- legend(document.getElementById('legend'), data);
+    new Chart(ctx).Pie(data);
+    legend(document.getElementById('legend'), data);
 
 
 
@@ -161,15 +199,15 @@ function legend(parent, data) {
     });
 }
 
+
                 </script>
+            </div>
+                  <div id="about" class="tab_body">
             </div>
         </div>    
     </div>                           
 </div>
 </div>
-<script type="text/javascript" src="phonegap.js"></script>
-<script type="text/javascript">
-app.initialize();
-</script>
+
 </body>
 </html>

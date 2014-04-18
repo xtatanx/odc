@@ -18,6 +18,12 @@
                             "xml": "false",
                             "count": 1
                         }
+                    ],
+                    "AudioToolbox.framework": [
+                        {
+                            "xml": "true",
+                            "count": 1
+                        }
                     ]
                 }
             },
@@ -25,11 +31,15 @@
                 "parents": {
                     "/*": [
                         {
+                            "xml": "<feature name=\"TwitterFacebookSharePlugin\"><param name=\"ios-package\" value=\"TwitterFacebookSharePlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
                             "xml": "<feature name=\"SocialSharing\"><param name=\"ios-package\" value=\"SocialSharing\" /></feature>",
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"TwitterFacebookSharePlugin\"><param name=\"ios-package\" value=\"TwitterFacebookSharePlugin\" /></feature>",
+                            "xml": "<feature name=\"Notification\"><param name=\"ios-package\" value=\"CDVNotification\" /></feature>",
                             "count": 1
                         }
                     ]
@@ -38,10 +48,13 @@
         }
     },
     "installed_plugins": {
+        "com.gestionaleauto.plugins.TwitterFacebookSharePlugin": {
+            "PACKAGE_NAME": "com.phonegap.helloworld"
+        },
         "nl.x-services.plugins.socialsharing": {
             "PACKAGE_NAME": "com.phonegap.helloworld"
         },
-        "com.gestionaleauto.plugins.TwitterFacebookSharePlugin": {
+        "org.apache.cordova.dialogs": {
             "PACKAGE_NAME": "com.phonegap.helloworld"
         }
     },

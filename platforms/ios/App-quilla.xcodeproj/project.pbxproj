@@ -38,9 +38,13 @@
 		7E7966E61810823500FA85AD /* icon-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DC1810823500FA85AD /* icon-small.png */; };
 		7E7966E71810823500FA85AD /* icon-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DD1810823500FA85AD /* icon-small@2x.png */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
-		063446E347D9409C87ACFFD1 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944E743778F9406F80D0537C /* Social.framework */; };
-		857E1EFC91374584B99665F0 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1580A43F82014F90835AE635 /* MessageUI.framework */; };
-		EFDCE749A0334BFB92AEF601 /* TwitterFacebookSharePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D9D2E80FFC40639ABEC1CB /* TwitterFacebookSharePlugin.m */; };
+		FEF8820A0C6F4D64AA1BAC83 /* TwitterFacebookSharePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = FA438B22B04146F1B1C61695 /* TwitterFacebookSharePlugin.m */; };
+		C2B8BF076DBE4B0C9B3F28D4 /* SocialSharing.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C50277191948389931EDCA /* SocialSharing.m */; };
+		872C0627BF4F4982A1E0EAB1 /* CDVNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D35A65C0B84F829738180E /* CDVNotification.m */; };
+		4BFFBCB9AE7448E6ACD38293 /* CDVNotification.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 971816E2D58943DEAFCF69B7 /* CDVNotification.bundle */; };
+		1323CFC690FB4E3D81003AE6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC31B381A8604B1A81CE950F /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		E786B0BAA7B94455B43943E5 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11FD2456DE3B461C9BFB9CA2 /* Social.framework */; };
+		1CE2536C39954F77BB83F737 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ACBA6225E7749DD911C3A29 /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,10 +109,16 @@
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "App-quilla/config.xml"; sourceTree = "<group>"; };
-		944E743778F9406F80D0537C /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Social.framework"; path = "System/Library/Frameworks/Social.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
-		1580A43F82014F90835AE635 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "MessageUI.framework"; path = "System/Library/Frameworks/MessageUI.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
-		09D9D2E80FFC40639ABEC1CB /* TwitterFacebookSharePlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "TwitterFacebookSharePlugin.m"; path = "com.gestionaleauto.plugins.TwitterFacebookSharePlugin/TwitterFacebookSharePlugin.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		0DE85F7CD6B3480AAE64D027 /* TwitterFacebookSharePlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "TwitterFacebookSharePlugin.h"; path = "com.gestionaleauto.plugins.TwitterFacebookSharePlugin/TwitterFacebookSharePlugin.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		FA438B22B04146F1B1C61695 /* TwitterFacebookSharePlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "TwitterFacebookSharePlugin.m"; path = "com.gestionaleauto.plugins.TwitterFacebookSharePlugin/TwitterFacebookSharePlugin.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		D32443A6F01E4FA980E70999 /* TwitterFacebookSharePlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "TwitterFacebookSharePlugin.h"; path = "com.gestionaleauto.plugins.TwitterFacebookSharePlugin/TwitterFacebookSharePlugin.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		35C50277191948389931EDCA /* SocialSharing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "SocialSharing.m"; path = "nl.x-services.plugins.socialsharing/SocialSharing.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		3BE7980B032546BE8D2DBAFB /* SocialSharing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SocialSharing.h"; path = "nl.x-services.plugins.socialsharing/SocialSharing.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		28D35A65C0B84F829738180E /* CDVNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVNotification.m"; path = "org.apache.cordova.dialogs/CDVNotification.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		1AF75DDE2DC044B89F0EC53C /* CDVNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVNotification.h"; path = "org.apache.cordova.dialogs/CDVNotification.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		971816E2D58943DEAFCF69B7 /* CDVNotification.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = "CDVNotification.bundle"; path = "CDVNotification.bundle"; sourceTree = "<group>"; };
+		DC31B381A8604B1A81CE950F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AudioToolbox.framework"; path = "System/Library/Frameworks/AudioToolbox.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		11FD2456DE3B461C9BFB9CA2 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Social.framework"; path = "System/Library/Frameworks/Social.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		8ACBA6225E7749DD911C3A29 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "MessageUI.framework"; path = "System/Library/Frameworks/MessageUI.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,8 +131,9 @@
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */,
 				5AEE5B35173C68D80009041E /* CoreLocation.framework in Frameworks */,
-				063446E347D9409C87ACFFD1 /* Social.framework in Frameworks */,
-				857E1EFC91374584B99665F0 /* MessageUI.framework in Frameworks */,
+				1323CFC690FB4E3D81003AE6 /* AudioToolbox.framework in Frameworks */,
+				E786B0BAA7B94455B43943E5 /* Social.framework in Frameworks */,
+				1CE2536C39954F77BB83F737 /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +215,7 @@
 				308D052D1370CCF300D202BF /* icons */,
 				308D05311370CCF300D202BF /* splash */,
 				8D1107310486CEB800E47090 /* App-quilla-Info.plist */,
+				971816E2D58943DEAFCF69B7 /* CDVNotification.bundle */,
 			);
 			name = Resources;
 			path = "App-quilla/Resources";
@@ -216,8 +228,9 @@
 				5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 				305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */,
-				944E743778F9406F80D0537C /* Social.framework */,
-				1580A43F82014F90835AE635 /* MessageUI.framework */,
+				DC31B381A8604B1A81CE950F /* AudioToolbox.framework */,
+				11FD2456DE3B461C9BFB9CA2 /* Social.framework */,
+				8ACBA6225E7749DD911C3A29 /* MessageUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -233,8 +246,12 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				09D9D2E80FFC40639ABEC1CB /* TwitterFacebookSharePlugin.m */,
-				0DE85F7CD6B3480AAE64D027 /* TwitterFacebookSharePlugin.h */,
+				FA438B22B04146F1B1C61695 /* TwitterFacebookSharePlugin.m */,
+				D32443A6F01E4FA980E70999 /* TwitterFacebookSharePlugin.h */,
+				35C50277191948389931EDCA /* SocialSharing.m */,
+				3BE7980B032546BE8D2DBAFB /* SocialSharing.h */,
+				28D35A65C0B84F829738180E /* CDVNotification.m */,
+				1AF75DDE2DC044B89F0EC53C /* CDVNotification.h */,
 			);
 			name = Plugins;
 			path = "App-quilla/Plugins";
@@ -398,6 +415,7 @@
 				7E7966E11810823500FA85AD /* icon-50@2x.png in Resources */,
 				7E7966E51810823500FA85AD /* icon-76@2x.png in Resources */,
 				30FC414916E50CA1004E6F35 /* icon-72@2x.png in Resources */,
+				4BFFBCB9AE7448E6ACD38293 /* CDVNotification.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,7 +447,9 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				EFDCE749A0334BFB92AEF601 /* TwitterFacebookSharePlugin.m in Sources */,
+				FEF8820A0C6F4D64AA1BAC83 /* TwitterFacebookSharePlugin.m in Sources */,
+				C2B8BF076DBE4B0C9B3F28D4 /* SocialSharing.m in Sources */,
+				872C0627BF4F4982A1E0EAB1 /* CDVNotification.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
