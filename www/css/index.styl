@@ -193,6 +193,7 @@ body
   width 90%
   margin 0 auto
   position relative
+  font-weight normal
   &:before
     font-size 3em
     position absolute
@@ -202,6 +203,7 @@ body
     margin-left -24.5px
     color #fff
     text-shadow none
+    font-weight normal
 
 .odc_logo
   display block
@@ -252,7 +254,19 @@ body
   img
     width 100% 
 
-  
+@media screen and (min-width: 480px)
+  .menu_btn
+    &:before
+      font-size 5em
+      margin-left - 40.5px
+      margin-top - 40px    
+
+@media screen and (min-width: 768px)
+  .menu_btn
+    &:before
+      font-size 7em
+      margin-left - 56.5px
+      margin-top - 56px    
 
 
 

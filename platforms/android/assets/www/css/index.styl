@@ -63,7 +63,7 @@ body
 #header, #footer
   background #fff
   height auto
-  
+
 #home
   -moz-background-size cover
   background-size cover  
@@ -186,15 +186,20 @@ body
   border .2em solid #fff
   border-radius 50%
   box-sizing border-box
-  display block 
+  display inline-block 
   padding-top 90%
   text-align center
   text-decoration none
   width 90%
   margin 0 auto
+  position relative
   &:before
     font-size 3em
-    vertical-align middle
+    position absolute
+    top 50%
+    left 50%
+    margin-top -24px
+    margin-left -24.5px
     color #fff
     text-shadow none
 
@@ -247,7 +252,19 @@ body
   img
     width 100% 
 
-  
+@media screen and (min-width: 480px)
+  .menu_btn
+    &:before
+      font-size 5em
+      margin-left - 40.5px
+      margin-top - 40px    
+
+@media screen and (min-width: 768px)
+  .menu_btn
+    &:before
+      font-size 7em
+      margin-left - 56.5px
+      margin-top - 56px    
 
 
 

@@ -31,8 +31,8 @@ body{-webkit-text-size-adjust:none;-webkit-touch-callout:none;-webkit-user-selec
 .legend{background:#fafafa;}
 .legend .title{text-transform:none;text-shadow:none;font-size:1em}
 .menu_btn_wrapper{width:100%;padding:8px 0}
-.menu_btn{-moz-box-sizing:border-box;border:.2em solid #fff;border-radius:50%;box-sizing:border-box;display:inline-block;padding-top:90%;text-align:center;text-decoration:none;width:90%;margin:0 auto;position:relative;}
-.menu_btn:before{font-size:3em;position:absolute;top:50%;left:50%;margin-top:-24px;margin-left:-24.5px;color:#fff;text-shadow:none}
+.menu_btn{-moz-box-sizing:border-box;border:.2em solid #fff;border-radius:50%;box-sizing:border-box;display:inline-block;padding-top:90%;text-align:center;text-decoration:none;width:90%;margin:0 auto;position:relative;font-weight:normal;}
+.menu_btn:before{font-size:3em;position:absolute;top:50%;left:50%;margin-top:-24px;margin-left:-24.5px;color:#fff;text-shadow:none;font-weight:normal}
 .odc_logo{display:block;height:46px;margin:0 auto;padding:9px 0;width:182px;}
 .odc_logo img{width:100%}
 .red_point{background:url("../img/red-point.png") 0 0 no-repeat;height:30px;width:30px;position:absolute;top:28%;left:56%}
@@ -42,3 +42,6 @@ body{-webkit-text-size-adjust:none;-webkit-touch-callout:none;-webkit-user-selec
 .ui-page-theme-a .tab{background:none;color:#fff;font-weight:normal;text-shadow:none;border-color:#fff}
 .silueta{width:100%;max-width:320px;margin:0 auto;display:block;position:relative;}
 .silueta img{width:100%}
+@media screen and (min-width: 480px){.menu_btn:before{font-size:5em;margin-left:-40.5px;margin-top:-40px}
+}@media screen and (min-width: 768px){.menu_btn:before{font-size:7em;margin-left:-56.5px;margin-top:-56px}
+}

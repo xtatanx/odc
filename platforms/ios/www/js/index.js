@@ -54,8 +54,8 @@ var app = {
         var theHeight = $(window).height();
 
         // hide statusBAr
-        statusbar = window.plugins.statusBar;
-        statusbar.hide();
+        // statusbar = window.plugins.statusBar;
+        // statusbar.hide();
         // create toolbars
         $( "[data-role='header'], [data-role='footer']" ).toolbar({
             theme: 'a',
