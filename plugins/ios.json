@@ -45,6 +45,11 @@
                     ]
                 }
             }
+        },
+        "config.xml": {
+            "/*": {
+                "<feature name=\"StatusBar\"><param name=\"ios-package\" value=\"StatusBar\" /></feature>": 1
+            }
         }
     },
     "installed_plugins": {
@@ -55,6 +60,9 @@
             "PACKAGE_NAME": "com.phonegap.helloworld"
         },
         "org.apache.cordova.dialogs": {
+            "PACKAGE_NAME": "com.phonegap.helloworld"
+        },
+        "org.apache.cordova.plugins.StatusBar": {
             "PACKAGE_NAME": "com.phonegap.helloworld"
         }
     },

@@ -20,6 +20,13 @@ module.exports = [
         "merges": [
             "navigator.notification"
         ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.plugins.StatusBar/www/StatusBar.js",
+        "id": "org.apache.cordova.plugins.StatusBar.StatusBar",
+        "merges": [
+            "plugins.statusBar"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -27,7 +34,8 @@ module.exports.metadata =
 {
     "com.gestionaleauto.plugins.TwitterFacebookSharePlugin": "1.0.0",
     "nl.x-services.plugins.socialsharing": "4.0.8",
-    "org.apache.cordova.dialogs": "0.2.6"
+    "org.apache.cordova.dialogs": "0.2.6",
+    "org.apache.cordova.plugins.StatusBar": "0.1.0"
 }
 // BOTTOM OF METADATA
 });

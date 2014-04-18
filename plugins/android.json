@@ -40,6 +40,9 @@
         },
         "org.apache.cordova.dialogs": {
             "PACKAGE_NAME": "com.phonegap.helloworld"
+        },
+        "org.apache.cordova.plugins.StatusBar": {
+            "PACKAGE_NAME": "com.phonegap.helloworld"
         }
     },
     "dependent_plugins": {}

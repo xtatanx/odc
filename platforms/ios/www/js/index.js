@@ -53,6 +53,9 @@ var app = {
         var $window = $(window);
         var theHeight = $(window).height();
 
+        // hide statusBAr
+        statusbar = window.plugins.statusBar;
+        statusbar.hide();
         // create toolbars
         $( "[data-role='header'], [data-role='footer']" ).toolbar({
             theme: 'a',
@@ -94,15 +97,10 @@ var app = {
     },
 
     calcPageHeight: function(){
-        alert('calc...');
-        console.log('calcuting height');
-
         var headerH =  $( "[data-role='header']").outerHeight();
         var footerH =  $( "[data-role='footer']").outerHeight();
         var winH = $(window).height();
         var pageH = winH - footerH - headerH;
-
-        console.log('the footer height ' + footerH);
 
         $( "[data-role='page']").height(pageH);
     }

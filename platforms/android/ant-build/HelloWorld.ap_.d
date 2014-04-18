@@ -310,6 +310,7 @@
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/plugins/com.gestionaleauto.plugins.TwitterFacebookSharePlugin \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/plugins/nl.x-services.plugins.socialsharing \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/plugins/org.apache.cordova.dialogs \
+/Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/plugins/org.apache.cordova.plugins.StatusBar \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/plugins/com.gestionaleauto.plugins.TwitterFacebookSharePlugin/www \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/plugins/com.gestionaleauto.plugins.TwitterFacebookSharePlugin/www/GATwitterFacebookShare.js \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/plugins/nl.x-services.plugins.socialsharing/www \
@@ -318,6 +319,8 @@
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/plugins/org.apache.cordova.dialogs/www/android \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/plugins/org.apache.cordova.dialogs/www/notification.js \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/plugins/org.apache.cordova.dialogs/www/android/notification.js \
+/Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/plugins/org.apache.cordova.plugins.StatusBar/www \
+/Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/plugins/org.apache.cordova.plugins.StatusBar/www/StatusBar.js \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/res/icon \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/res/screen \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/res/icon/android \
