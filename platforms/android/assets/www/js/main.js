@@ -1,4 +1,4 @@
-	function verificarFechas()
+	app.verificarFechas = function()
 	{
 		var storedDate = window.localStorage.getItem("firstDate");
 		if(!storedDate)//se ejecuta solo la primera vez que se abre la aplicacion
@@ -16,8 +16,8 @@
 		{
 			var today= new Date();
              
-			var nextUpdate = window.localStorage.getItem("nextUpdate");
-            var n = new Date(nextUpdate.getFullYear(), nextUpdate.getMonth(), nextUpdate.getDate());
+			var nextUpdate = new Date(window.localStorage.getItem("nextUpdate"));
+      var n = new Date(nextUpdate.getFullYear(), nextUpdate.getMonth(), nextUpdate.getDate());
             
             	alert('hoy '+today);
 			alert('siguiente '+n);

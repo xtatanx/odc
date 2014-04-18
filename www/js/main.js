@@ -1,4 +1,4 @@
-	function verificarFechas()
+	app.verificarFechas = function()
 	{
 		var storedDate = window.localStorage.getItem("firstDate");
 		if(!storedDate)//se ejecuta solo la primera vez que se abre la aplicacion

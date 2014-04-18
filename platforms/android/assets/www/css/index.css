@@ -11,7 +11,7 @@ body{-webkit-text-size-adjust:none;-webkit-touch-callout:none;-webkit-user-selec
 #drug img{width:100%}
 #drug_item > .ui-content{box-sizing:border-box;-webkit-box-sizing:border-box;position:relative}
 #footer{text-align:center}
-#header,#footer{background:#fff}
+#header,#footer{background:#fff;height:auto}
 #home{-moz-background-size:cover;background-size:cover}
 #tabs{-webkit-box-sizing:border-box;box-sizing:border-box;height:100%}
 .aditional_info{margin:1em 0}
@@ -33,7 +33,7 @@ body{-webkit-text-size-adjust:none;-webkit-touch-callout:none;-webkit-user-selec
 .menu_btn_wrapper{width:100%;padding:8px 0}
 .menu_btn{-moz-box-sizing:border-box;border:.2em solid #fff;border-radius:50%;box-sizing:border-box;display:block;padding-top:90%;text-align:center;text-decoration:none;width:90%;margin:0 auto;}
 .menu_btn:before{font-size:3em;vertical-align:middle;color:#fff;text-shadow:none}
-.odc_logo{display:block;margin:0 auto;width:182px;height:46px;padding:7px 0;}
+.odc_logo{display:block;height:46px;margin:0 auto;padding:9px 0;width:182px;}
 .odc_logo img{width:100%}
 .red_point{background:url("../img/red-point.png") 0 0 no-repeat;height:30px;width:30px;position:absolute;top:28%;left:56%}
 .red_point2{background:url("../img/red-point.png") 0 0 no-repeat;height:30px;width:30px;position:absolute;top:10%;left:46%}

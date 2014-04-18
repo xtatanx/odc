@@ -39,11 +39,12 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        console.log('device is ready, binding custom events');
+        app.calcPageHeight();
         app.bindTheEvents();
     },
     // Update DOM on a Received Event
     bindTheEvents: function() {
+        console.log('device is ready, binding custom events');
         // cache some variables
         var $menu_btn = $('.menu_btn');
         var $drugPage = $('#drug_item');
@@ -56,6 +57,11 @@ var app = {
         $( "[data-role='header'], [data-role='footer']" ).toolbar({
             theme: 'a',
             tapToggle: false
+        });
+
+        // content fits 100% of the window height
+        $document.on('pageshow', '[data-role="page"]', function(){
+            app.calcPageHeight();
         });
 
         // create taps widget
@@ -82,15 +88,13 @@ var app = {
             }
         });
 
-
-        // content fits 100% of the window height
-        $document.on('pageshow', '[data-role="page"]', function(){
-            app.calcPageHeight();
-        });
+        // check for updates every time the app initialize
+        this.verificarFechas();
 
     },
 
     calcPageHeight: function(){
+        alert('calc...');
         console.log('calcuting height');
 
         var headerH =  $( "[data-role='header']").outerHeight();
