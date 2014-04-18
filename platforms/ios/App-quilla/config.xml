@@ -19,15 +19,6 @@
     <feature name="LocalStorage">
         <param name="ios-package" value="CDVLocalStorage" />
     </feature>
-<<<<<<< Updated upstream
-    <feature name="TwitterFacebookSharePlugin">
-        <param name="ios-package" value="TwitterFacebookSharePlugin" />
-    </feature>
-    <feature name="SocialSharing">
-        <param name="ios-package" value="SocialSharing" />
-    </feature>
-=======
->>>>>>> Stashed changes
     <name>App-quilla</name>
     <description>
         Hello World sample application that responds to the deviceready event.

@@ -33,6 +33,9 @@
 
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/thirdparty/jquery.blockUI.js"></script>
+       
         <script type="text/javascript" src="jquery-mobile/jquery.mobile-1.4.2.min.js"></script>
         <script type="text/javascript" src="js/thirdparty/chart.js" ></script>
         <script type="text/javascript" src="js/graphs.js"></script>
@@ -41,7 +44,7 @@
 
         <title>ODC</title>
     </head>
-    <body>
+    <body onload="verificarFechas()">
        
         <div id="header" data-role="header" data-position="fixed">
             <div class="odc_logo">
@@ -68,109 +71,55 @@
                     </div> 
                     <div class="ui-block-a">
                         <div class="menu_btn_wrapper">
-                            <a href="alcohol.html" class="menu_btn icons-beer_icons-01"></a>
+                            <a href="cocaina.html" class="menu_btn icons-beer_icons-01"></a>
                         </div>
                     </div>
                     <div class="ui-block-b">
                         <div class="menu_btn_wrapper">
-                            <a href="extasis.html" class="menu_btn icons-extasis_icons-01"></a>
+                            <a href="heroina.html" class="menu_btn icons-extasis_icons-01"></a>
                         </div>
                     </div>
                     <div class="ui-block-c">
                         <div class="menu_btn_wrapper">
-                            <a href="cocaina.html" class="menu_btn icons-cocaine_icons-01-01"></a>
+                            <a href="LSD.html" class="menu_btn icons-cocaine_icons-01-01"></a>
                         </div>
                     </div> 
                     <div class="ui-block-a">
                         <div class="menu_btn_wrapper">
-                            <a href="alcohol.html" class="menu_btn icons-beer_icons-01"></a>
+                            <a href="inhalables.html" class="menu_btn icons-beer_icons-01"></a>
                         </div>
                     </div>
                     <div class="ui-block-b">
                         <div class="menu_btn_wrapper">
-                            <a href="extasis.html" class="menu_btn icons-extasis_icons-01"></a>
+                            <a href="tabaco.html" class="menu_btn icons-extasis_icons-01"></a>
                         </div>
                     </div>
                     <div class="ui-block-c">
                         <div class="menu_btn_wrapper">
-                            <a href="cocaina.html" class="menu_btn icons-cocaine_icons-01-01"></a>
+                            <a href="sedantes.html" class="menu_btn icons-cocaine_icons-01-01"></a>
                         </div>
                     </div> 
                     <div class="ui-block-a">
                         <div class="menu_btn_wrapper">
-                            <a href="alcohol.html" class="menu_btn icons-beer_icons-01"></a>
+                            <a href="opioides.html" class="menu_btn icons-beer_icons-01"></a>
                         </div>
                     </div>
                     <div class="ui-block-b">
                         <div class="menu_btn_wrapper">
-                            <a href="extasis.html" class="menu_btn icons-extasis_icons-01"></a>
+                            <a href="2cb.html" class="menu_btn icons-cocaine_icons-01-01"></a>
                         </div>
                     </div>
                     <div class="ui-block-c">
                         <div class="menu_btn_wrapper">
-                            <a href="cocaina.html" class="menu_btn icons-cocaine_icons-01-01"></a>
+                            <a href="ketamina.html" class="menu_btn icons-beer_icons-01"></a>
                         </div>
                     </div>
                     <div class="ui-block-a">
                         <div class="menu_btn_wrapper">
-                            <a href="alcohol.html" class="menu_btn icons-beer_icons-01"></a>
+                            <a href="metanfetaminas.html" class="menu_btn icons-extasis_icons-01"></a>
                         </div>
                     </div>
-                    <div class="ui-block-b">
-                        <div class="menu_btn_wrapper">
-                            <a href="extasis.html" class="menu_btn icons-extasis_icons-01"></a>
-                        </div>
-                    </div>
-                    <div class="ui-block-c">
-                        <div class="menu_btn_wrapper">
-                            <a href="cocaina.html" class="menu_btn icons-cocaine_icons-01-01"></a>
-                        </div>
-                    </div> 
-                    <div class="ui-block-a">
-                        <div class="menu_btn_wrapper">
-                            <a href="alcohol.html" class="menu_btn icons-beer_icons-01"></a>
-                        </div>
-                    </div>
-                    <div class="ui-block-b">
-                        <div class="menu_btn_wrapper">
-                            <a href="extasis.html" class="menu_btn icons-extasis_icons-01"></a>
-                        </div>
-                    </div>
-                    <div class="ui-block-c">
-                        <div class="menu_btn_wrapper">
-                            <a href="cocaina.html" class="menu_btn icons-cocaine_icons-01-01"></a>
-                        </div>
-                    </div> 
-                    <div class="ui-block-a">
-                        <div class="menu_btn_wrapper">
-                            <a href="alcohol.html" class="menu_btn icons-beer_icons-01"></a>
-                        </div>
-                    </div>
-                    <div class="ui-block-b">
-                        <div class="menu_btn_wrapper">
-                            <a href="extasis.html" class="menu_btn icons-extasis_icons-01"></a>
-                        </div>
-                    </div>
-                    <div class="ui-block-c">
-                        <div class="menu_btn_wrapper">
-                            <a href="cocaina.html" class="menu_btn icons-cocaine_icons-01-01"></a>
-                        </div>
-                    </div> 
-                    <div class="ui-block-a">
-                        <div class="menu_btn_wrapper">
-                            <a href="alcohol.html" class="menu_btn icons-beer_icons-01"></a>
-                        </div>
-                    </div>
-                    <div class="ui-block-b">
-                        <div class="menu_btn_wrapper">
-                            <a href="extasis.html" class="menu_btn icons-extasis_icons-01"></a>
-                        </div>
-                    </div>
-                    <div class="ui-block-c">
-                        <div class="menu_btn_wrapper">
-                            <a href="cocaina.html" class="menu_btn icons-cocaine_icons-01-01"></a>
-                        </div>
-                    </div>                                        
+                                                          
                 </div>               
             </div>
         </div>

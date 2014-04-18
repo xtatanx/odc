@@ -1,9 +1,5 @@
 *{-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:html;user-select:html}
-<<<<<<< Updated upstream
-body{-webkit-touch-callout:none;-webkit-text-size-adjust:none;-webkit-user-select:none;background-color:#2ab3e7 !important;background-attachment:fixed;font-family:'quicksandlight','HelveticaNeue',Helvetica,Arial,sans-serif;font-size:16px;height:100%;margin:0;padding:0;text-transform:uppercase;width:100%}
-=======
 body{-webkit-text-size-adjust:none;-webkit-touch-callout:none;-webkit-user-select:none;background-attachment:fixed;background-color:#2ab3e7 !important;font-family:'quicksandlight','HelveticaNeue',Helvetica,Arial,sans-serif;font-size:16px;height:100%;margin:0;padding:0;text-transform:uppercase;width:100%}
->>>>>>> Stashed changes
 .ui-content{padding-bottom:0;padding-top:0;height:100%;overflow-y:scroll;-webkit-overflow-scrolling:touch}
 .ui-overlay-a,.ui-page-theme-a,.ui-page-theme-a .ui-panel-wrapper{background:#272727}
 .ui-grid-b>.ui-block-a,.ui-grid-b>.ui-block-b,.ui-grid-b>.ui-block-c{text-align:center}
@@ -34,8 +30,8 @@ body{-webkit-text-size-adjust:none;-webkit-touch-callout:none;-webkit-user-selec
 .home_introduction{color:#fff;text-shadow:none;font-size:1em;text-transform:none;text-align:center}
 .legend{background:#fafafa;}
 .legend .title{text-transform:none;text-shadow:none;font-size:1em}
-.menu_btn_wrapper{padding:1em 9px;display:inline-block}
-.menu_btn{width:100px;border:.2em solid #fff;display:block;border-radius:100%;text-align:center;text-decoration:none;height:100px;}
+.menu_btn_wrapper{width:100%;padding:8px 0}
+.menu_btn{-moz-box-sizing:border-box;border:.2em solid #fff;border-radius:50%;box-sizing:border-box;display:block;padding-top:90%;text-align:center;text-decoration:none;width:90%;margin:0 auto;}
 .menu_btn:before{font-size:3em;vertical-align:middle;color:#fff;text-shadow:none}
 .odc_logo{display:block;margin:0 auto;width:182px;height:46px;padding:7px 0;}
 .odc_logo img{width:100%}
