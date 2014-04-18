@@ -17,7 +17,6 @@
  * under the License.
  */
 var app = {
-    chart: false,
     // Application Constructor
     initialize: function() {
         this.bindEvents();
@@ -42,7 +41,6 @@ var app = {
     onDeviceReady: function() {
         console.log('device is ready, binding custom events');
         app.bindTheEvents();
-        app.toolBarsInit();
     },
     // Update DOM on a Received Event
     bindTheEvents: function() {
@@ -53,6 +51,9 @@ var app = {
         var $document = $(document);
         var $window = $(window);
         var theHeight = $(window).height();
+
+        // create toolbars
+        $( "[data-role='header'], [data-role='footer']" ).toolbar({theme: 'a'});
 
         // create taps widget
         $.widget( "ui.tabs", $.ui.tabs, {
@@ -84,11 +85,6 @@ var app = {
             app.calcPageHeight();
         });
 
-    },
-    
-    toolBarsInit: function(){
-
-        $( "[data-role='header'], [data-role='footer']" ).toolbar({theme: 'a'});
     },
 
     calcPageHeight: function(){

@@ -285,11 +285,17 @@
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/js/graphs.js \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/js/index.js \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/js/jquery.js \
+/Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/js/main.js \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/js/SocialSharing.js \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/js/thirdparty \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/js/thirdparty/chart.js \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/js/thirdparty/jquery-1.9.1.min.js \
+/Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/js/thirdparty/jquery.blockUI.js \
+/Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/js/thirdparty/SocialSharing.js \
+/Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/plugins/com.gestionaleauto.plugins.TwitterFacebookSharePlugin \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/plugins/nl.x-services.plugins.socialsharing \
+/Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/plugins/com.gestionaleauto.plugins.TwitterFacebookSharePlugin/www \
+/Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/plugins/com.gestionaleauto.plugins.TwitterFacebookSharePlugin/www/GATwitterFacebookShare.js \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/plugins/nl.x-services.plugins.socialsharing/www \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/plugins/nl.x-services.plugins.socialsharing/www/SocialSharing.js \
 /Users/jhonnatan/Documents/trabajo-independiente/appquilla/platforms/android/assets/www/res/icon \
