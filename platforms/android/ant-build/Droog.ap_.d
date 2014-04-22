@@ -296,15 +296,16 @@
 /Users/daniel/Desktop/ODC/platforms/android/assets/www/js/index.js \
 /Users/daniel/Desktop/ODC/platforms/android/assets/www/js/jquery.js \
 /Users/daniel/Desktop/ODC/platforms/android/assets/www/js/main.js \
-/Users/daniel/Desktop/ODC/platforms/android/assets/www/js/SocialSharing.js \
 /Users/daniel/Desktop/ODC/platforms/android/assets/www/js/thirdparty \
 /Users/daniel/Desktop/ODC/platforms/android/assets/www/js/thirdparty/chart.js \
 /Users/daniel/Desktop/ODC/platforms/android/assets/www/js/thirdparty/googleapi.js \
 /Users/daniel/Desktop/ODC/platforms/android/assets/www/js/thirdparty/jquery-1.9.1.min.js \
 /Users/daniel/Desktop/ODC/platforms/android/assets/www/js/thirdparty/jquery.blockUI.js \
 /Users/daniel/Desktop/ODC/platforms/android/assets/www/js/thirdparty/jquery.blockUI.min.js \
+/Users/daniel/Desktop/ODC/platforms/android/assets/www/js/thirdparty/jquery.js \
 /Users/daniel/Desktop/ODC/platforms/android/assets/www/js/thirdparty/jquery.mobile-1.3.2.min.js \
 /Users/daniel/Desktop/ODC/platforms/android/assets/www/js/thirdparty/jquery.mobile-1.4.1.min.js \
+/Users/daniel/Desktop/ODC/platforms/android/assets/www/js/thirdparty/jquery.mobile-1.4.2.min.js \
 /Users/daniel/Desktop/ODC/platforms/android/assets/www/js/thirdparty/Map.js \
 /Users/daniel/Desktop/ODC/platforms/android/assets/www/js/thirdparty/SocialSharing.js \
 /Users/daniel/Desktop/ODC/platforms/android/assets/www/plugins/com.gestionaleauto.plugins.TwitterFacebookSharePlugin \
