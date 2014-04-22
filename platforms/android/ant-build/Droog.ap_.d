@@ -1,5 +1,6 @@
 /Users/daniel/Desktop/ODC/platforms/android/ant-build/Droog.ap_ \
  : /Users/daniel/Desktop/ODC/platforms/android/res/drawable/icon.png \
+/Users/daniel/Desktop/ODC/platforms/android/res/drawable/splash.png \
 /Users/daniel/Desktop/ODC/platforms/android/res/drawable-hdpi/icon.png \
 /Users/daniel/Desktop/ODC/platforms/android/res/drawable-ldpi/icon.png \
 /Users/daniel/Desktop/ODC/platforms/android/res/drawable-mdpi/icon.png \
@@ -7,6 +8,7 @@
 /Users/daniel/Desktop/ODC/platforms/android/res/values/strings.xml \
 /Users/daniel/Desktop/ODC/platforms/android/res/xml/config.xml \
 /Users/daniel/Desktop/ODC/platforms/android/ant-build/res/drawable/icon.png \
+/Users/daniel/Desktop/ODC/platforms/android/ant-build/res/drawable/splash.png \
 /Users/daniel/Desktop/ODC/platforms/android/ant-build/res/drawable-hdpi/icon.png \
 /Users/daniel/Desktop/ODC/platforms/android/ant-build/res/drawable-ldpi/icon.png \
 /Users/daniel/Desktop/ODC/platforms/android/ant-build/res/drawable-mdpi/icon.png \
@@ -76,6 +78,7 @@
 /Users/daniel/Desktop/ODC/platforms/android/assets/www/img/prosperidad_logo.png \
 /Users/daniel/Desktop/ODC/platforms/android/assets/www/img/red-point.png \
 /Users/daniel/Desktop/ODC/platforms/android/assets/www/img/silueta.png \
+/Users/daniel/Desktop/ODC/platforms/android/assets/www/img/splash.png \
 /Users/daniel/Desktop/ODC/platforms/android/assets/www/jquery-mobile/images \
 /Users/daniel/Desktop/ODC/platforms/android/assets/www/jquery-mobile/jquery.mobile-1.4.2.min.css \
 /Users/daniel/Desktop/ODC/platforms/android/assets/www/jquery-mobile/jquery.mobile-1.4.2.min.js \

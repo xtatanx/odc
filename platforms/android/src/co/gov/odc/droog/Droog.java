@@ -1,4 +1,5 @@
 /*
+
        Licensed to the Apache Software Foundation (ASF) under one
        or more contributor license agreements.  See the NOTICE file
        distributed with this work for additional information
@@ -31,6 +32,9 @@ public class Droog extends CordovaActivity
         super.init();
         // Set by <content src="index.html" /> in config.xml
         super.loadUrl(Config.getStartUrl());
+      
+        super.setIntegerProperty("splashscreen", R.drawable.splash);
+        super.loadUrl("file:///android_asset/www/index.html", 2500);
         //super.loadUrl("file:///android_asset/www/index.html");
     }
 }

@@ -19,6 +19,7 @@
         <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
         <param name="ios-package" value="CDVNotification" />
     </feature>
+    <preference name="SplashScreen" value="splash" />
     <preference name="permissions" value="none" />
     <preference name="orientation" value="portrait" />
     <preference name="target-device" value="universal" />
