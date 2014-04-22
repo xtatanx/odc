@@ -19,11 +19,8 @@
     <feature name="LocalStorage">
         <param name="ios-package" value="CDVLocalStorage" />
     </feature>
-    <feature name="TwitterFacebookSharePlugin">
-        <param name="ios-package" value="TwitterFacebookSharePlugin" />
-    </feature>
-    <feature name="SocialSharing">
-        <param name="ios-package" value="SocialSharing" />
+    <feature name="StatusBar">
+        <param name="ios-package" value="StatusBar" />
     </feature>
     <name>Droog</name>
     <description>

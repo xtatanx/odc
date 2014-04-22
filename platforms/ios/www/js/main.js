@@ -8,8 +8,8 @@
 			var nextUpdate = new Date();
 			nextUpdate.setMonth(today.getMonth() + 1);
 			window.localStorage.setItem("nextUpdate",nextUpdate);
-			alert('guardado '+today);
-			alert('siguiente '+nextUpdate);
+		//	alert('guardado '+today);
+			//alert('siguiente '+nextUpdate);
 			setImageURLS();
 		}
 		else
@@ -19,16 +19,16 @@
 			var nextUpdate = new Date(window.localStorage.getItem("nextUpdate"));
       var n = new Date(nextUpdate.getFullYear(), nextUpdate.getMonth(), nextUpdate.getDate());
             
-            	alert('hoy '+today);
-			alert('siguiente '+n);
+            //	alert('hoy '+today);
+			//alert('siguiente '+n);
 			if(today.valueOf()<nextUpdate.valueOf())
 			{
-				alert('actualizar');
+				//alert('actualizar');
 				  $.blockUI({ message: 'Actualizando datos...'});
 				$.get("http://yoreporto.herokuapp.com/twitter/tweets/", {"count": 20}, "json").
 					done(function (data) {
 					 $.unblockUI();
-					alert('downloaded');
+					//alert('downloaded');
 					
 					var nombre="nombredroga";
 					var imageURL=window.localStorage.getItem(nombre+"URL");

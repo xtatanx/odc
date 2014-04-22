@@ -36,6 +36,7 @@
 /Users/daniel/Desktop/ODC/platforms/android/assets/www/marihuana.html \
 /Users/daniel/Desktop/ODC/platforms/android/assets/www/metanfetaminas.html \
 /Users/daniel/Desktop/ODC/platforms/android/assets/www/opioides.html \
+/Users/daniel/Desktop/ODC/platforms/android/assets/www/phonegap.js \
 /Users/daniel/Desktop/ODC/platforms/android/assets/www/plugins \
 /Users/daniel/Desktop/ODC/platforms/android/assets/www/res \
 /Users/daniel/Desktop/ODC/platforms/android/assets/www/sedantes.html \
