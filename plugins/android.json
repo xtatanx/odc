@@ -29,20 +29,27 @@
                     ]
                 }
             }
+        },
+        "res/xml/config.xml": {
+            "/*": {
+                "<feature name=\"SocialSharing\"><param name=\"android-package\" value=\"nl.xservices.plugins.SocialSharing\" /></feature>": 1
+            }
+        },
+        "AndroidManifest.xml": {
+            "/manifest": {
+                "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />": 1
+            }
         }
     },
     "installed_plugins": {
-        "nl.x-services.plugins.socialsharing": {
-            "PACKAGE_NAME": "com.phonegap.helloworld"
-        },
-        "com.gestionaleauto.plugins.TwitterFacebookSharePlugin": {
-            "PACKAGE_NAME": "com.phonegap.helloworld"
-        },
         "org.apache.cordova.dialogs": {
             "PACKAGE_NAME": "com.phonegap.helloworld"
         },
         "org.apache.cordova.plugins.StatusBar": {
             "PACKAGE_NAME": "com.phonegap.helloworld"
+        },
+        "nl.x-services.plugins.socialsharing": {
+            "PACKAGE_NAME": "co.gov.odc.droog"
         }
     },
     "dependent_plugins": {}

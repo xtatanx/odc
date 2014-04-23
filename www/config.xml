@@ -26,6 +26,10 @@
     </feature>
     <preference name="SplashScreen" value="splash" />
 <preference name="SplashScreenDelay" value="2000" />
+<feature name="SocialSharing">
+        <param name="ios-package" value="SocialSharing" /> 
+    </feature>
+    <gap:plugin name="nl.x-services.plugins.socialsharing" />
     
     <!--
         If you do not want any permissions to be added to your app, add the
@@ -87,7 +91,7 @@
     <gap:splash src="res/screen/ios/screen-ipad-portrait.png"      gap:platform="ios"     width="768" height="1024" />
     <gap:splash src="res/screen/ios/screen-ipad-landscape.png"     gap:platform="ios"     width="1024" height="768" />
     <gap:splash src="res/screen/windows-phone/screen-portrait.jpg" gap:platform="winphone" />
-    <gap:plugin name="nl.x-services.plugins.socialsharing" />
+    
     <!--
         Define access to external domains.
 

@@ -48,22 +48,28 @@
         },
         "config.xml": {
             "/*": {
-                "<feature name=\"StatusBar\"><param name=\"ios-package\" value=\"StatusBar\" /></feature>": 1
+                "<feature name=\"StatusBar\"><param name=\"ios-package\" value=\"StatusBar\" /></feature>": 1,
+                "<feature name=\"SocialSharing\"><param name=\"ios-package\" value=\"SocialSharing\" /></feature>": 1
+            }
+        },
+        "framework": {
+            "Social.framework": {
+                "false": 1
+            },
+            "MessageUI.framework": {
+                "false": 1
             }
         }
     },
     "installed_plugins": {
-        "com.gestionaleauto.plugins.TwitterFacebookSharePlugin": {
-            "PACKAGE_NAME": "com.phonegap.helloworld"
-        },
-        "nl.x-services.plugins.socialsharing": {
-            "PACKAGE_NAME": "com.phonegap.helloworld"
-        },
         "org.apache.cordova.dialogs": {
             "PACKAGE_NAME": "com.phonegap.helloworld"
         },
         "org.apache.cordova.plugins.StatusBar": {
             "PACKAGE_NAME": "com.phonegap.helloworld"
+        },
+        "nl.x-services.plugins.socialsharing": {
+            "PACKAGE_NAME": "co.gov.odc.droog"
         }
     },
     "dependent_plugins": {}
