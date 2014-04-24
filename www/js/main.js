@@ -1,8 +1,5 @@
 	app.verificarFechas = function()
 	{
-        
-        var statusbar = window.plugins.statusBar;
-statusbar.hide();
 		var storedDate = window.localStorage.getItem("firstDate");
 		if(!storedDate)//se ejecuta solo la primera vez que se abre la aplicacion
 		{
