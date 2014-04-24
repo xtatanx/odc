@@ -104,6 +104,10 @@ var app = {
         var winH = $(window).height();
         var pageH = winH - footerH - headerH;
 
-        $( "[data-role='page']").height(pageH);
+        $( "[data-role='page']").css{
+            'height': pageH,
+            'padding-top': headerH,
+            'padding-bottom': footerH
+        };
     }
 };
