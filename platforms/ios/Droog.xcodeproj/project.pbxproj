@@ -38,9 +38,13 @@
 		7E7966E61810823500FA85AD /* icon-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DC1810823500FA85AD /* icon-small.png */; };
 		7E7966E71810823500FA85AD /* icon-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DD1810823500FA85AD /* icon-small@2x.png */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
-		0D66000456B6482182F193B6 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B1620B6A1940B18261F6A6 /* Social.framework */; };
-		986E7B9DBCC347D6B0CC3169 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 597ED842A5D643F9A28EEDB6 /* MessageUI.framework */; };
-		80BE6CB0EECB47EBB27CD794 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D25D80F0B0B4A60A5BBCA97 /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FFA4059E3F014E21864449D4 /* SocialSharing.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A06D434295948C1A7FEF6F0 /* SocialSharing.m */; };
+		FB5ECD525203435BA94E972A /* CDVNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F4D4DDC4DC49BEA9D4369E /* CDVNotification.m */; };
+		AE928F9689F24230B38E113A /* CDVNotification.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3BA8DF0F701A431289510CC4 /* CDVNotification.bundle */; };
+		38DA29A3D21C4042AEC194D9 /* StatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BC3305709A64721A3DF1867 /* StatusBar.m */; };
+		DD21CDFAF27D4BF18A8D74B6 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D30DE04EA9C645028BE2F089 /* Social.framework */; };
+		DFAF7E5E35B344A9829F748F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C536564E393F4A35B9F16E97 /* MessageUI.framework */; };
+		437D3A4005B847B4BF07513B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57AE14689059460A90877DC7 /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,9 +109,16 @@
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "Droog/config.xml"; sourceTree = "<group>"; };
-		00B1620B6A1940B18261F6A6 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Social.framework"; path = "System/Library/Frameworks/Social.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
-		597ED842A5D643F9A28EEDB6 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "MessageUI.framework"; path = "System/Library/Frameworks/MessageUI.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
-		6D25D80F0B0B4A60A5BBCA97 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AudioToolbox.framework"; path = "System/Library/Frameworks/AudioToolbox.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		3A06D434295948C1A7FEF6F0 /* SocialSharing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "SocialSharing.m"; path = "nl.x-services.plugins.socialsharing/SocialSharing.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		66984372BBED42FBAB2DA67B /* SocialSharing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SocialSharing.h"; path = "nl.x-services.plugins.socialsharing/SocialSharing.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		A7F4D4DDC4DC49BEA9D4369E /* CDVNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVNotification.m"; path = "org.apache.cordova.dialogs/CDVNotification.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		4E02509E6BD449B6887DF357 /* CDVNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVNotification.h"; path = "org.apache.cordova.dialogs/CDVNotification.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		3BA8DF0F701A431289510CC4 /* CDVNotification.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = "CDVNotification.bundle"; path = "CDVNotification.bundle"; sourceTree = "<group>"; };
+		4BC3305709A64721A3DF1867 /* StatusBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "StatusBar.m"; path = "org.apache.cordova.plugins.StatusBar/StatusBar.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		7D9387EB7DBE4C7188B8A870 /* StatusBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "StatusBar.h"; path = "org.apache.cordova.plugins.StatusBar/StatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		D30DE04EA9C645028BE2F089 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Social.framework"; path = "System/Library/Frameworks/Social.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		C536564E393F4A35B9F16E97 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "MessageUI.framework"; path = "System/Library/Frameworks/MessageUI.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		57AE14689059460A90877DC7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AudioToolbox.framework"; path = "System/Library/Frameworks/AudioToolbox.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,9 +131,9 @@
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */,
 				5AEE5B35173C68D80009041E /* CoreLocation.framework in Frameworks */,
-				0D66000456B6482182F193B6 /* Social.framework in Frameworks */,
-				986E7B9DBCC347D6B0CC3169 /* MessageUI.framework in Frameworks */,
-				80BE6CB0EECB47EBB27CD794 /* AudioToolbox.framework in Frameworks */,
+				DD21CDFAF27D4BF18A8D74B6 /* Social.framework in Frameworks */,
+				DFAF7E5E35B344A9829F748F /* MessageUI.framework in Frameworks */,
+				437D3A4005B847B4BF07513B /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +215,7 @@
 				308D052D1370CCF300D202BF /* icons */,
 				308D05311370CCF300D202BF /* splash */,
 				8D1107310486CEB800E47090 /* Droog-Info.plist */,
+				3BA8DF0F701A431289510CC4 /* CDVNotification.bundle */,
 			);
 			name = Resources;
 			path = "Droog/Resources";
@@ -216,9 +228,9 @@
 				5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 				305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */,
-				00B1620B6A1940B18261F6A6 /* Social.framework */,
-				597ED842A5D643F9A28EEDB6 /* MessageUI.framework */,
-				6D25D80F0B0B4A60A5BBCA97 /* AudioToolbox.framework */,
+				D30DE04EA9C645028BE2F089 /* Social.framework */,
+				C536564E393F4A35B9F16E97 /* MessageUI.framework */,
+				57AE14689059460A90877DC7 /* AudioToolbox.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -234,6 +246,12 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				3A06D434295948C1A7FEF6F0 /* SocialSharing.m */,
+				66984372BBED42FBAB2DA67B /* SocialSharing.h */,
+				A7F4D4DDC4DC49BEA9D4369E /* CDVNotification.m */,
+				4E02509E6BD449B6887DF357 /* CDVNotification.h */,
+				4BC3305709A64721A3DF1867 /* StatusBar.m */,
+				7D9387EB7DBE4C7188B8A870 /* StatusBar.h */,
 			);
 			name = Plugins;
 			path = "Droog/Plugins";
@@ -397,6 +415,7 @@
 				7E7966E11810823500FA85AD /* icon-50@2x.png in Resources */,
 				7E7966E51810823500FA85AD /* icon-76@2x.png in Resources */,
 				30FC414916E50CA1004E6F35 /* icon-72@2x.png in Resources */,
+				AE928F9689F24230B38E113A /* CDVNotification.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +447,9 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
+				FFA4059E3F014E21864449D4 /* SocialSharing.m in Sources */,
+				FB5ECD525203435BA94E972A /* CDVNotification.m in Sources */,
+				38DA29A3D21C4042AEC194D9 /* StatusBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

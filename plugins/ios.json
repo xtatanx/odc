@@ -22,7 +22,7 @@
                     "AudioToolbox.framework": [
                         {
                             "xml": "true",
-                            "count": 2
+                            "count": 1
                         }
                     ]
                 }
@@ -36,7 +36,7 @@
                         },
                         {
                             "xml": "<feature name=\"Notification\"><param name=\"ios-package\" value=\"CDVNotification\" /></feature>",
-                            "count": 2
+                            "count": 1
                         },
                         {
                             "xml": "<feature name=\"StatusBar\"><param name=\"ios-package\" value=\"StatusBar\" /></feature>",
@@ -45,22 +45,16 @@
                     ]
                 }
             }
-        },
-        "framework": {
-            "AudioToolbox.framework": {}
-        },
-        "config.xml": {
-            "/*": {}
         }
     },
     "installed_plugins": {
         "nl.x-services.plugins.socialsharing": {
             "PACKAGE_NAME": "co.gov.odc.droog"
         },
-        "org.apache.cordova.plugins.StatusBar": {
+        "org.apache.cordova.dialogs": {
             "PACKAGE_NAME": "co.gov.odc.droog"
         },
-        "org.apache.cordova.dialogs": {
+        "org.apache.cordova.plugins.StatusBar": {
             "PACKAGE_NAME": "co.gov.odc.droog"
         }
     },
