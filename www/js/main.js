@@ -1,6 +1,11 @@
 	app.verificarFechas = function()
 	{
-        
+         navigator.notification.alert(
+    'Eres el ganador!',      // mensaje (message)
+    null,      // función 'callback' a llamar con el índice del botón pulsado (confirmCallback)
+    'Game Over',            // titulo (title)
+        'Restart'          // botones (buttonLabels)
+        );
         var statusbar = window.plugins.statusBar;
 statusbar.hide();
 		var storedDate = window.localStorage.getItem("firstDate");
@@ -27,7 +32,7 @@ statusbar.hide();
 			if(today.valueOf()<nextUpdate.valueOf())
 			{
 				//alert('actualizar');
-				  $.blockUI({ message: 'Actualizando datos...'});
+				  $.blockUI({ message: 'Cargando datos...'});
 				$.get("http://yoreporto.herokuapp.com/twitter/tweets/", {"count": 20}, "json").
 					done(function (data) {
 					 $.unblockUI();
@@ -87,19 +92,19 @@ statusbar.hide();
 	//setea las URL de las imagenes de cada droga
 	function setImageURLS()
 	{
-		window.localStorage.setItem("AlcoholURL","www");
-		window.localStorage.setItem("TabacoURL","www");
-		window.localStorage.setItem("MarihuanaURL","www");
-		window.localStorage.setItem("CocainaURL","www");
-		window.localStorage.setItem("InhalablesURL","www");
-		window.localStorage.setItem("ExtasisURL","www");
-		window.localStorage.setItem("HeroinaURL","www");
-		window.localStorage.setItem("LSDURL","www");
-		window.localStorage.setItem("sedantesURL","www");
-		window.localStorage.setItem("opioidesURL","www");
-		window.localStorage.setItem("2CBURL","www");
-		window.localStorage.setItem("KetaminaURL","www");
-		window.localStorage.setItem("AnfetaminaURL","www");
+		window.localStorage.setItem("AlcoholURL","http://www.odc.gov.co/Portals/1/aplicacion-odc/imagenes/prevalencia-consumo-alcohol.jpg");
+		window.localStorage.setItem("TabacoURL","http://www.odc.gov.co/Portals/1/aplicacion-odc/imagenes/prevalencia-consumo-tabaco.jpg");
+		window.localStorage.setItem("MarihuanaURL","http://www.odc.gov.co/Portals/1/aplicacion-odc/imagenes/prevalencia-consumo-marihuana.jpg");
+		window.localStorage.setItem("CocainaURL","http://www.odc.gov.co/Portals/1/aplicacion-odc/imagenes/prevalencia-consumo-cocaina.jpg");
+		window.localStorage.setItem("InhalablesURL","http://www.odc.gov.co/Portals/1/aplicacion-odc/imagenes/prevalencia-consumo-solventes.jpg");
+		window.localStorage.setItem("ExtasisURL","http://www.odc.gov.co/Portals/1/aplicacion-odc/imagenes/prevalencia-consumo-extasis.jpg");
+		window.localStorage.setItem("HeroinaURL","http://www.odc.gov.co/Portals/1/aplicacion-odc/imagenes/prevalencia-consumo-heroina.jpg");
+		window.localStorage.setItem("LSDURL","http://www.odc.gov.co/Portals/1/aplicacion-odc/imagenes/prevalencia-consumo-lsd.jpg");
+		window.localStorage.setItem("sedantesURL","http://www.odc.gov.co/Portals/1/aplicacion-odc/imagenes/prevalencia-consumo-sedantes.jpg");
+		window.localStorage.setItem("opioidesURL","http://www.odc.gov.co/Portals/1/aplicacion-odc/imagenes/prevalencia-consumo-opioides.jpg");
+		window.localStorage.setItem("2CBURL","http://www.odc.gov.co/Portals/1/aplicacion-odc/imagenes/prevalencia-consumo-2-CB.jpg");
+		window.localStorage.setItem("KetaminaURL","http://www.odc.gov.co/Portals/1/aplicacion-odc/imagenes/prevalencia-consumo-ketamina.jpg");
+		window.localStorage.setItem("AnfetaminaURL","http://www.odc.gov.co/Portals/1/aplicacion-odc/imagenes/prevalencia-consumo-anfetaminas.jpg");
 		//alert('hey');
 	}
 	
