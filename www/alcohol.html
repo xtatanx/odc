@@ -58,21 +58,22 @@
             <div data-role="header">
                 <a class="back_btn ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext" href="index.html" data-rel="back">Atras</a>
                 <h1>Alcohol</h1>
+                
             </div>            
             <div data-role="tabs" id="tabs">
               <div data-role="navbar" class="tabs_navbar">
                 <ul>
                   <li><a class="tab ui-btn-active" href="#drug" data-ajax="false">Detalle</a></li>
                   <li><a class="tab" href="#drug_info" data-ajax="false">Información</a></li>
-                  <li><a class="tab" href="#drug_chart" data-ajax="false" data-chart="true">Gráficos</a></li>
-                  <li><a class="tab" href="#about" data-ajax="false" data-chart="true">About</a></li>
+                  <li><a class="tab" href="#drug_chart" data-ajax="false" data-chart="true">Estadísticas</a></li>
+                 
               </ul>
             </div>
             <div id="drug" class="tab_body">
-                <img src="img/alcohol.jpg" alt="">
+                <img src="img/official_pictures/alcohol.jpg" alt="">
                 <div class="aditional_info">
                     <div class="drug_label">Grado de adulteración (%): <span class="drug_statistic">21</span></div>
-                    <div class="drug_label">Potencialidad de daño (%):<span class="drug_statistic">21</ span></div>
+                    <div class="drug_label">Potencialidad de daño (%):  <span class="drug_statistic">21</span></div>
                     <div class="drug_label">Características:</div>
                        <p>
                 Qué busca el que lo consume:<br>
@@ -105,7 +106,7 @@
             <div id="drug_info" class="tab_body">
                 <div class="silueta">
                     <img src="img/humano.png" alt="silueta">
-                    <div class="red_point" onclick="alert('Afectación aguda: xxxxxxxxxxxxxxxxxxxxxxxxxx\n Afectación crónica: xxxxxxxxxxxxxxxxxxxxxxxxxx')"></div>
+                    <div class="red_point" onclick="marihuanaAlert1()"></div>
                     <div class="red_point2" onclick="alert('Afectación aguda: xxxxxxxxxxxxxxxxxxxxxxxxxx\n Afectación crónica: xxxxxxxxxxxxxxxxxxxxxxxxxx')"></div>
                 </div>
               

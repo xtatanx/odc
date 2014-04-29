@@ -1,11 +1,11 @@
 	app.verificarFechas = function()
 	{
-   	// navigator.notification.alert(
-    // 'Eres el ganador!',      // mensaje (message)
-    // null,      // función 'callback' a llamar con el índice del botón pulsado (confirmCallback)
-    // 'Game Over',            // titulo (title)
-    //     'Restart'          // botones (buttonLabels)
-    //     );
+   	 /*navigator.notification.alert(
+     'Eres el ganador!',      // mensaje (message)
+     null,      // función 'callback' a llamar con el índice del botón pulsado (confirmCallback)
+     'Game Over',            // titulo (title)
+         'Restart'          // botones (buttonLabels)
+         );*/
    	
 		var storedDate = window.localStorage.getItem("firstDate");
 		if(!storedDate)//se ejecuta solo la primera vez que se abre la aplicacion

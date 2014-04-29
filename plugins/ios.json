@@ -45,16 +45,33 @@
                     ]
                 }
             }
+        },
+        "framework": {
+            "AudioToolbox.framework": {
+                "true": 1
+            },
+            "Social.framework": {
+                "false": 1
+            },
+            "MessageUI.framework": {
+                "false": 1
+            }
+        },
+        "config.xml": {
+            "/*": {
+                "<feature name=\"Notification\"><param name=\"ios-package\" value=\"CDVNotification\" /></feature>": 1,
+                "<feature name=\"SocialSharing\"><param name=\"ios-package\" value=\"SocialSharing\" /></feature>": 1
+            }
         }
     },
     "installed_plugins": {
-        "nl.x-services.plugins.socialsharing": {
+        "org.apache.cordova.plugins.StatusBar": {
             "PACKAGE_NAME": "co.gov.odc.droog"
         },
         "org.apache.cordova.dialogs": {
             "PACKAGE_NAME": "co.gov.odc.droog"
         },
-        "org.apache.cordova.plugins.StatusBar": {
+        "nl.x-services.plugins.socialsharing": {
             "PACKAGE_NAME": "co.gov.odc.droog"
         }
     },
