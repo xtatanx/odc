@@ -64,6 +64,9 @@ var app = {
             tapToggle: false
         });
 
+        //create panels
+        $( "[data-role='panel']" ).panel();
+
         // content fits 100% of the window height
         $document.on('pageshow', '[data-role="page"]', function(){
             app.calcPageHeight();
