@@ -14,8 +14,6 @@
     <script type="text/javascript" src="jquery-mobile/jquery.mobile-1.4.2.min.js"></script>
     <script type="text/javascript" src="js/thirdparty/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="phonegap.js"></script>
-    <script src="js/thirdparty/chart.js" type="text/javascript"></script>
-    <script type="text/javascript" src="js/graphs.js"></script>     
    
 
     
@@ -92,94 +90,14 @@
                     <div class="red_point2" onclick="alert('Afectación aguda: xxxxxxxxxxxxxxxxxxxxxxxxxx\n Afectación crónica: xxxxxxxxxxxxxxxxxxxxxxxxxx')"></div>
                 </div>
               
-                             <button class="share_btn" onclick="window.plugins.socialsharing.share('Message and image', null, 'www/img/splash.png', null)">compartir</button>
+                             <button class="share_btn" onclick="window.plugins.socialsharing.share('Lee y comparte nuestra app Droog', null, 'www/img/splash.png', null)">compartir</button>
 
 
 
             </div>
             <div id="drug_chart" class="tab_body">
                 <h2 class="drug_chart_title">Prevalencia de consumo / región</h2>
-                <script>
-
-//alert('hola');
-
-var elementID = 'chartCanvas'; // Unique ID
-    $('#drug_chart canvas').remove();
-    $('#legend').remove();
-
-    $('<canvas>').attr({
-        id: elementID,
-        width: 200,
-        height: 200
-    }).css({
-            /*background: "#FFFFFF"*/
-        }).appendTo('#drug_chart');
-
-    $('<div>').attr({
-        id: 'legend'
-    }).css({
-            /*background: "#FFFFFF"*/
-        }).appendTo('#drug_chart');
-
-
-    var canvas = document.getElementById('chartCanvas'); // Use the created element
-    var ctx = canvas.getContext("2d");
-
-
-var data = [
-    {
-        title: 'Caribe: 20%',
-        value: 20,
-        color:"#F38630"
-    },
-    {
-        title: 'Pacifico: 10%',
-        value : 10,
-        color : "#E0E4CC"
-    },
-    {
-        title: 'Andina: 19%',
-        value : 19,
-        color : "#E034CC"
-    },
-    {
-        title: 'Orinoquia: 31%',
-        value : 31,
-        color : "#b034CC"
-    }   
-    ,
-    {
-        title: 'Amazonia: 20%',
-        value : 20,
-        color : "#3034CC"
-    }   
-
-]
-
-    new Chart(ctx).Pie(data);
-    legend(document.getElementById('legend'), data);
-
-
-
-    
-function legend(parent, data) {
-    parent.className = 'legend';
-    var datas = data.hasOwnProperty('datasets') ? data.datasets : data;
-
-    datas.forEach(function (d) {
-        var title = document.createElement('span');
-        title.className = 'title';
-        title.style.borderColor = d.hasOwnProperty('strokeColor') ? d.strokeColor : d.color;
-        title.style.borderStyle = 'solid';
-        parent.appendChild(title);
-
-        var text = document.createTextNode(d.title);
-        title.appendChild(text);
-    });
-}
-
-
-                </script>
+            <img src="img/stats/prevalencia-consumo-cocaina.jpg" alt="">    
             </div>
                   <div id="about" class="tab_body">
             </div>
