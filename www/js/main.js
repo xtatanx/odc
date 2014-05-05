@@ -1,4 +1,4 @@
-	app.verificarFechas = function()
+app.verificarFechas = function()
 	{
    	 /*navigator.notification.alert(
      'Eres el ganador!',      // mensaje (message)
