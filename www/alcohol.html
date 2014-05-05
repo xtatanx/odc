@@ -53,10 +53,9 @@
 <body>
     <div data-role="page" id="drug_item">
         <div role="main" class="ui-content">
-            <div data-role="header">
+            <div data-role="header" id="pageHeader">
                 <a class="back_btn ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext" href="index.html" data-rel="back">Atras</a>
                 <h1>Alcohol</h1>
-                
             </div>            
             <div data-role="tabs" id="tabs">
               <div data-role="navbar" class="tabs_navbar">
@@ -70,9 +69,19 @@
             <div id="drug" class="tab_body">
                 <img src="img/official_pictures/alcohol.jpg" alt="">
                 <div class="aditional_info">
-                    <div class="drug_label">Grado de adulteración (%): <span class="drug_statistic">21</span></div>
-                    <div class="drug_label">Potencialidad de daño (%):  <span class="drug_statistic">21</span></div>
-                    <div class="drug_label">Características:</div>
+                    <div class="drug_label drug_label__interna">
+                        Grado de adulteración (%): 
+                        <span class="drug_statistic">
+                            <span class="drug_statistic_num">21</span>
+                        </span>
+                    </div>
+                    <div class="drug_label drug_label__interna">
+                        Potencialidad de daño (%):  
+                        <span class="drug_statistic">
+                            <span class="drug_statistic_num">21</span>
+                        </span>
+                    </div>
+                    <div class="drug_label drug_label__interna">Características:</div>
                        <p>
                 Qué busca el que lo consume:<br>
                 * Relajación y tranquilidad<br>
@@ -109,8 +118,6 @@
                 </div>
               
                <button class="share_btn" onclick="window.plugins.socialsharing.share('Lee y comparte nuestra app Droog', null, 'www/img/splash.png', null)">compartir</button>
-
-
             </div>
             <div id="drug_chart" class="tab_body">
                 <h2 class="drug_chart_title">Prevalencia de consumo / región</h2>

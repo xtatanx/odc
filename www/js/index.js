@@ -112,14 +112,23 @@ var app = {
         var content = $('ui-content');
         var contentMargins = content.outerHeight() - content.height();
         var pageH = winH - headerH - footerH - contentMargins;
-        console.log(winH);
-        console.log(headerH);
-        console.log(footerH);
-        console.log(pageH);
+        var pageHeader = $("#pageHeader");
+        var tabs = $('#tabs');
+
+        // locate the title of drugs in pages as fixed
+        pageHeader.css({
+            'top': headerH
+        });
+
+        // give space to title
+        // tabs.css({
+        //     'margin-top': pageHeader.outerHeight()
+        // });
 
         $("[data-role='page']").css({
             'min-height': pageH,
             'height': pageH
         });
+
     }
 };
