@@ -99,7 +99,7 @@ var app = {
         });
 
         // check for updates every time the app initialize
-        // this.verificarFechas();
+        this.verificarFechas();
 
     },
 
