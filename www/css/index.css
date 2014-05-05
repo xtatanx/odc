@@ -13,10 +13,10 @@ body{-webkit-text-size-adjust:none;-webkit-touch-callout:none;-webkit-user-selec
 #drug_chart img{width:100%}
 #drug_item > .ui-content{box-sizing:border-box;-webkit-box-sizing:border-box;position:relative}
 #footer{text-align:center}
-#header,#footer{background:#fff;height:auto}
+#header,#footer{background:#fff;height:auto;padding:.5em 0}
 #home{-moz-background-size:cover;background-size:cover}
 #info_panel{position:fixed}
-#odc_info{top:1.1em;right:.8em;padding:.4em .6em;}
+#odc_info{top:50%;margin-top:-17.5px;right:.8em;padding:.4em .6em;}
 #odc_info:before{color:#2ab3e7;color:rgba(42,179,231,0.8);font-size:1.8em;font-weight:normal}
 #panel_header{background:#2ab3e7;color:#fff}
 #panel_title{text-shadow:none;width:90%;margin:0 auto;font-size:1.2em;padding:.5em 0}
