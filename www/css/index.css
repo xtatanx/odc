@@ -9,6 +9,7 @@ body{-webkit-text-size-adjust:none;-webkit-touch-callout:none;-webkit-user-selec
 #chartCanvas{margin:.5em auto;display:block}
 #drug{margin:1em 0;}
 #drug img{width:100%}
+#drug_chart img{width:100%}
 #drug_item > .ui-content{box-sizing:border-box;-webkit-box-sizing:border-box;position:relative}
 #footer{text-align:center}
 #header,#footer{background:#fff;height:auto}
