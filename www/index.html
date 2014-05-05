@@ -6,7 +6,7 @@
         <meta name="format-detection" content="telephone=no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        
+
         <link rel="stylesheet" href="jquery-mobile/jquery.mobile-1.4.2.min.css"/>
         <link rel="stylesheet" href="jquery-mobile/jquery.mobile.theme-1.4.2.min.css"/>
         <link rel="stylesheet" type="text/css" href="css/icons.css" />
@@ -35,7 +35,26 @@
             <a class="ui-btn-right ui-btn ui-corner-all ui-icon-info ui-btn-icon-notext" id="odc_info" href="#info_panel"></a>
         </div>
         <div data-role="panel" id="info_panel" data-position="right" data-theme="a" data-display="overlay">
-            <h1>Acerca de...</h1>
+            <div id="panel_header" data-role="header">
+              <h1 id="panel_title">Acerca de...</h1>
+            </div>
+            <div class="panel_content">
+              <h3 class="panel_subtitle">Creado por:</h3>
+              <ul class="panel_list">
+                <li>
+                  <p>Daniel Alejandro Guerrero</p>
+                  <p class="bold"><span class="panel_twitterIcon"><img src="img/twitter-icon.png" alt="twitter icon"></span> @alejandromagno9</p>
+                </li>
+                <li>
+                  <p>Daniel Warner</p>
+                  <p class="bold"><span class="panel_twitterIcon"><img src="img/twitter-icon.png" alt="twitter icon"></span>@...</p>
+                </li>
+                <li>
+                  <p>Jhonnatan Gonzalez</p>
+                  <p class="bold"><span class="panel_twitterIcon"><img src="img/twitter-icon.png" alt="twitter icon"></span>@jhonnatanhxc</p>
+                </li>
+              </ul>
+            </div>
         </div><!-- /panel -->  
         <div data-role="page" id="home"> 
             <div role="main" class="ui-content">
