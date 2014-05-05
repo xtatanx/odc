@@ -1,983 +1,0 @@
-TDroog
-v6
-r1
-cCheck dependencies
-cProcessInfoPlistFile /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/Info.plist /Users/daniel/Desktop/ODC/platforms/ios/Droog/Droog-Info.plist
-cPhaseScriptExecution Copy\ www\ directory /Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Script-304B58A110DAC018002A0835.sh
-cCpResource Droog/Resources/icons/icon-76.png build/emulator/Droog.app/icon-76.png
-cCpResource Droog/Resources/icons/icon-40@2x.png build/emulator/Droog.app/icon-40@2x.png
-cCpResource Droog/Resources/icons/icon-72.png build/emulator/Droog.app/icon-72.png
-cCpResource Droog/Resources/icons/icon.png build/emulator/Droog.app/icon.png
-cCpResource Droog/Resources/icons/icon@2x.png build/emulator/Droog.app/icon@2x.png
-cCopyStringsFile /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/en.lproj/Localizable.strings Droog/Resources/en.lproj/Localizable.strings
-cCompileXIB /Users/daniel/Desktop/ODC/platforms/ios/Droog/Classes/MainViewController.xib
-cCpResource Droog/Resources/icons/icon-60@2x.png build/emulator/Droog.app/icon-60@2x.png
-cCpResource Droog/Resources/icons/icon-50.png build/emulator/Droog.app/icon-50.png
-cCopyStringsFile /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/de.lproj/Localizable.strings Droog/Resources/de.lproj/Localizable.strings
-cCpResource Droog/Resources/icons/icon-small.png build/emulator/Droog.app/icon-small.png
-cCpResource Droog/Resources/splash/Default-Landscape@2x~ipad.png build/emulator/Droog.app/Default-Landscape@2x~ipad.png
-cCpResource Droog/Resources/splash/Default-Landscape~ipad.png build/emulator/Droog.app/Default-Landscape~ipad.png
-cCpResource Droog/Resources/splash/Default-Portrait@2x~ipad.png build/emulator/Droog.app/Default-Portrait@2x~ipad.png
-cCpResource Droog/Resources/icons/icon-small@2x.png build/emulator/Droog.app/icon-small@2x.png
-cCpResource Droog/Resources/splash/Default-Portrait~ipad.png build/emulator/Droog.app/Default-Portrait~ipad.png
-cCpResource Droog/Resources/icons/icon-40.png build/emulator/Droog.app/icon-40.png
-cCpResource Droog/Resources/splash/Default@2x~iphone.png build/emulator/Droog.app/Default@2x~iphone.png
-cCpResource Droog/Resources/icons/icon-60.png build/emulator/Droog.app/icon-60.png
-cCpResource Droog/Resources/splash/Default~iphone.png build/emulator/Droog.app/Default~iphone.png
-cCpResource Droog/Resources/splash/Default-568h@2x~iphone.png build/emulator/Droog.app/Default-568h@2x~iphone.png
-cCpResource Droog/Resources/icons/icon-50@2x.png build/emulator/Droog.app/icon-50@2x.png
-cCpResource Droog/Resources/icons/icon-76@2x.png build/emulator/Droog.app/icon-76@2x.png
-cCpResource Droog/Resources/icons/icon-72@2x.png build/emulator/Droog.app/icon-72@2x.png
-cCpResource Droog/Resources/CDVNotification.bundle build/emulator/Droog.app/CDVNotification.bundle
-cProcessPCH /var/folders/_8/9dq87dp53y3ccks_dzj2xk340000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Droog-Prefix-bvyixaisrrokkgaktbslbhlehawz/Droog-Prefix.pch.pch Droog/Droog-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/main.o /Users/daniel/Desktop/ODC/platforms/ios/Droog/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/AppDelegate.o /Users/daniel/Desktop/ODC/platforms/ios/Droog/Classes/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/MainViewController.o /Users/daniel/Desktop/ODC/platforms/ios/Droog/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/SocialSharing.o /Users/daniel/Desktop/ODC/platforms/ios/Droog/Plugins/nl.x-services.plugins.socialsharing/SocialSharing.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/CDVNotification.o /Users/daniel/Desktop/ODC/platforms/ios/Droog/Plugins/org.apache.cordova.dialogs/CDVNotification.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/StatusBar.o /Users/daniel/Desktop/ODC/platforms/ios/Droog/Plugins/org.apache.cordova.plugins.StatusBar/StatusBar.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cLd /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/Droog normal i386
-cGenerateDSYMFile /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app.dSYM /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/Droog
-cTouch /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk
-c00000000534BE29B0000000000000198
-t1397482139
-s408
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/SDKSettings.plist
-c00000000531FEF1200000000000003B4
-t1394601746
-s948
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/CoreServices/SystemVersion.plist
-c00000000531FEF1F000000000000019E
-t1394601759
-s414
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/AssetsLibrary.framework/AssetsLibrary
-c00000000531FEF210000000000059340
-t1394601761
-s365376
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-c00000000531FEF230000000000904120
-t1394601763
-s9453856
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c00000000534BE2770000000000446820
-t1397482103
-s4483104
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
-c00000000531FEF2300000000000F1A80
-t1394601763
-s989824
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/MessageUI.framework/MessageUI
-c00000000531FEF2800000000002E5520
-t1394601768
-s3036448
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
-c00000000531FEF2800000000001BE790
-t1394601768
-s1828752
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/Social.framework/Social
-c00000000531FEF2A0000000000222210
-t1394601770
-s2236944
-
-N/Users/daniel/Desktop/ODC/platforms/ios/Droog/Classes/AppDelegate.m
-c00000000535F140E00000000000013A1
-t1398739982
-s5025
-
-N/Users/daniel/Desktop/ODC/platforms/ios/Droog/Classes/MainViewController.m
-c00000000535F140E0000000000001266
-t1398739982
-s4710
-
-N/Users/daniel/Desktop/ODC/platforms/ios/Droog/Classes/MainViewController.xib
-c00000000535F140E0000000000001759
-t1398739982
-s5977
-
-N/Users/daniel/Desktop/ODC/platforms/ios/Droog/Droog-Info.plist
-c00000000535F14140000000000000A0C
-t1398739988
-s2572
-
-N/Users/daniel/Desktop/ODC/platforms/ios/Droog/Droog-Prefix.pch
-c00000000535F140E00000000000003BB
-t1398739982
-s955
-
-N/Users/daniel/Desktop/ODC/platforms/ios/Droog/Plugins/nl.x-services.plugins.socialsharing/SocialSharing.m
-c00000000535F140F00000000000038E4
-t1398739983
-s14564
-
-N/Users/daniel/Desktop/ODC/platforms/ios/Droog/Plugins/org.apache.cordova.dialogs/CDVNotification.m
-c00000000535F140F00000000000016A3
-t1398739983
-s5795
-
-N/Users/daniel/Desktop/ODC/platforms/ios/Droog/Plugins/org.apache.cordova.plugins.StatusBar/StatusBar.m
-c00000000535F14100000000000000C2E
-t1398739984
-s3118
-
-N/Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/CDVNotification.bundle
-c00000000535F140F0000000000000066
-t1398739983
-s102
-
-N/Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/de.lproj/Localizable.strings
-c00000000535F140E00000000000004C0
-t1398739982
-s1216
-
-N/Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/en.lproj/Localizable.strings
-c00000000535F140E00000000000004AB
-t1398739982
-s1195
-
-N/Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/icons/icon-40.png
-c00000000535F140E0000000000000FF2
-t1398739982
-s4082
-
-N/Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/icons/icon-40@2x.png
-c00000000535F140E0000000000001CF3
-t1398739982
-s7411
-
-N/Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/icons/icon-50.png
-c00000000535F140E000000000000130A
-t1398739982
-s4874
-
-N/Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/icons/icon-50@2x.png
-c00000000535F140E000000000000258B
-t1398739982
-s9611
-
-N/Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/icons/icon-60.png
-c00000000535F140E00000000000016B3
-t1398739982
-s5811
-
-N/Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/icons/icon-60@2x.png
-c00000000535F140E0000000000002E94
-t1398739982
-s11924
-
-N/Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/icons/icon-72.png
-c00000000535F140E0000000000001350
-t1398739982
-s4944
-
-N/Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/icons/icon-72@2x.png
-c00000000535F140E0000000000002DBA
-t1398739982
-s11706
-
-N/Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/icons/icon-76.png
-c00000000535F140E0000000000001B71
-t1398739982
-s7025
-
-N/Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/icons/icon-76@2x.png
-c00000000535F140E0000000000003B9E
-t1398739982
-s15262
-
-N/Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/icons/icon-small.png
-c00000000535F140E0000000000000CDE
-t1398739982
-s3294
-
-N/Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/icons/icon-small@2x.png
-c00000000535F140E00000000000015E8
-t1398739982
-s5608
-
-N/Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/icons/icon.png
-c00000000535F140E0000000000000F3E
-t1398739982
-s3902
-
-N/Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/icons/icon@2x.png
-c00000000535F140E0000000000001EBD
-t1398739982
-s7869
-
-N/Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/splash/Default-568h@2x~iphone.png
-c00000000535F140E00000000000085B1
-t1398739982
-s34225
-
-N/Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/splash/Default-Landscape@2x~ipad.png
-c00000000535F140E0000000000033D0A
-t1398739982
-s212234
-
-N/Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/splash/Default-Landscape~ipad.png
-c00000000535F140E00000000000166A2
-t1398739982
-s91810
-
-N/Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/splash/Default-Portrait@2x~ipad.png
-c00000000535F140E0000000000033F7C
-t1398739982
-s212860
-
-N/Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/splash/Default-Portrait~ipad.png
-c00000000535F140E0000000000016641
-t1398739982
-s91713
-
-N/Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/splash/Default@2x~iphone.png
-c00000000535F140E0000000000007323
-t1398739982
-s29475
-
-N/Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/splash/Default~iphone.png
-c00000000535F140E000000000000289A
-t1398739982
-s10394
-
-N/Users/daniel/Desktop/ODC/platforms/ios/Droog/main.m
-c00000000535F140E0000000000000457
-t1398739982
-s1111
-
-N/Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/AppDelegate.o
-t1398739994
-s73908
-
-N/Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/CDVNotification.o
-t1398739994
-s68392
-
-N/Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/Droog.LinkFileList
-c00000000535F141600000000000002F8
-t1398739990
-s760
-
-N/Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/MainViewController.o
-t1398739994
-s51492
-
-N/Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/SocialSharing.o
-t1398739994
-s96972
-
-N/Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/StatusBar.o
-t1398739994
-s49176
-
-N/Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/main.o
-t1398739994
-s2924
-
-N/Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Script-304B58A110DAC018002A0835.sh
-c00000000535F1416000000000000002D
-t1398739990
-s45
-
-N/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app
-t1398739994
-s1054
-
-N/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app.dSYM
-t2
-s0
-
-N/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/CDVNotification.bundle
-t1398739991
-s102
-
-N/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/Default-568h@2x~iphone.png
-t1398739991
-s34225
-
-N/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/Default-Landscape@2x~ipad.png
-t1398739991
-s212234
-
-N/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/Default-Landscape~ipad.png
-t1398739991
-s91810
-
-N/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/Default-Portrait@2x~ipad.png
-t1398739991
-s212860
-
-N/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/Default-Portrait~ipad.png
-t1398739991
-s91713
-
-N/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/Default@2x~iphone.png
-t1398739991
-s29475
-
-N/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/Default~iphone.png
-t1398739991
-s10394
-
-N/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/Droog
-t1398739994
-s315000
-
-N/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/Info.plist
-t1398739990
-s1270
-
-N/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/MainViewController.nib
-t1398739993
-s836
-
-N/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/PkgInfo
-t2
-s0
-
-N/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/de.lproj/Localizable.strings
-t1398739991
-s280
-
-N/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/en.lproj/Localizable.strings
-t1398739991
-s166
-
-N/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/icon-40.png
-t1398739991
-s4082
-
-N/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/icon-40@2x.png
-t1398739991
-s7411
-
-N/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/icon-50.png
-t1398739991
-s4874
-
-N/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/icon-50@2x.png
-t1398739991
-s9611
-
-N/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/icon-60.png
-t1398739991
-s5811
-
-N/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/icon-60@2x.png
-t1398739991
-s11924
-
-N/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/icon-72.png
-t1398739991
-s4944
-
-N/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/icon-72@2x.png
-t1398739991
-s11706
-
-N/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/icon-76.png
-t1398739991
-s7025
-
-N/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/icon-76@2x.png
-t1398739991
-s15262
-
-N/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/icon-small.png
-t1398739991
-s3294
-
-N/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/icon-small@2x.png
-t1398739991
-s5608
-
-N/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/icon.png
-t1398739991
-s3902
-
-N/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/icon@2x.png
-t1398739991
-s7869
-
-N/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/libCordova.a
-c00000000535F141600000000000D34B8
-t1398739990
-s865464
-
-N/var/folders/_8/9dq87dp53y3ccks_dzj2xk340000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Droog-Prefix-bvyixaisrrokkgaktbslbhlehawz/Droog-Prefix.pch.pch
-t1398739994
-s5376140
-
-CCheck dependencies
-r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies0b0d3c964b0fb941^25b13c964b0fb941^---0#1#1#--18"Check dependencies36"0ABD7016-DA97-400A-ACAD-4B6C9F70BB9D-
-
-CCompileC build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/AppDelegate.o /Users/daniel/Desktop/ODC/platforms/ios/Droog/Classes/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s420432794.338695
-e420432794.438492
-r1
-xCompileC
-xbuild/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/AppDelegate.o
-x/Users/daniel/Desktop/ODC/platforms/ios/Droog/Classes/AppDelegate.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/daniel/Desktop/ODC/platforms/ios/Droog/Classes/AppDelegate.m
-d/Users/daniel/Desktop/ODC/platforms/ios/Droog/Classes/AppDelegate.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVViewController.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h
-d/Users/daniel/Desktop/ODC/platforms/ios/Droog/Classes/MainViewController.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Compile /Users/daniel/Desktop/ODC/platforms/ios/Droog/Classes/AppDelegate.m206"[1mCompileC[0m build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/AppDelegate.o [1mDroog/Classes/AppDelegate.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler93df569a4b0fb941^7e57709a4b0fb941^---0#0#1#-19%DVTDocumentLocation2@74"file:///Users/daniel/Desktop/ODC/platforms/ios/Droog/Classes/AppDelegate.m0000000000000000^3794"[1mCompileC[0m build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/AppDelegate.o [1mDroog/Classes/AppDelegate.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/daniel/Desktop/ODC/platforms/ios    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/adt-bundle-mac-x86_64-20130917/sdk/platform-tools:/Applications/adt-bundle-mac-x86_64-20130917/sdk/tools:/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/:/Applications/adt-bundle-mac-x86_64-20130917/eclipse/plugins/org.apache.ant_1.8.3.v201301120609/bin:"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Droog-generated-files.hmap -I/Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Droog-own-target-headers.hmap -I/Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Droog-all-target-headers.hmap -iquote /Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Droog-project-headers.hmap -I/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include -I/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/usr/local/lib/include -I/Users/daniel/Desktop/ODC/platforms/ios/build/UninstalledProducts/include -I/Users/daniel/Desktop/ODC/platforms/ios/build/emulator -I/Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/DerivedSources/i386 -I/Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/DerivedSources -F/Users/daniel/Desktop/ODC/platforms/ios/build/emulator -include /var/folders/_8/9dq87dp53y3ccks_dzj2xk340000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Droog-Prefix-bvyixaisrrokkgaktbslbhlehawz/Droog-Prefix.pch -MMD -MT dependencies -MF /Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/AppDelegate.d --serialize-diagnostics /Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/AppDelegate.dia -c /Users/daniel/Desktop/ODC/platforms/ios/Droog/Classes/AppDelegate.m -o /Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/AppDelegate.o36"61733F76-C0B2-4E96-B36C-1EACFD9EB832-
-b27D7F322-02CF-4E8B-88F2-99EFA0ADB551
-
-CCompileC build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/CDVNotification.o /Users/daniel/Desktop/ODC/platforms/ios/Droog/Plugins/org.apache.cordova.dialogs/CDVNotification.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s420432794.366159
-e420432794.472304
-r1
-xCompileC
-xbuild/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/CDVNotification.o
-x/Users/daniel/Desktop/ODC/platforms/ios/Droog/Plugins/org.apache.cordova.dialogs/CDVNotification.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/daniel/Desktop/ODC/platforms/ios/Droog/Plugins/org.apache.cordova.dialogs/CDVNotification.m
-d/Users/daniel/Desktop/ODC/platforms/ios/Droog/Plugins/org.apache.cordova.dialogs/CDVNotification.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"Compile /Users/daniel/Desktop/ODC/platforms/ios/Droog/Plugins/org.apache.cordova.dialogs/CDVNotification.m241"[1mCompileC[0m build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/CDVNotification.o [1mDroog/Plugins/org.apache.cordova.dialogs/CDVNotification.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler27145e9a4b0fb941^19e6789a4b0fb941^---0#0#1#-19%DVTDocumentLocation2@105"file:///Users/daniel/Desktop/ODC/platforms/ios/Droog/Plugins/org.apache.cordova.dialogs/CDVNotification.m0000000000000000^3872"[1mCompileC[0m build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/CDVNotification.o [1mDroog/Plugins/org.apache.cordova.dialogs/CDVNotification.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/daniel/Desktop/ODC/platforms/ios    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/adt-bundle-mac-x86_64-20130917/sdk/platform-tools:/Applications/adt-bundle-mac-x86_64-20130917/sdk/tools:/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/:/Applications/adt-bundle-mac-x86_64-20130917/eclipse/plugins/org.apache.ant_1.8.3.v201301120609/bin:"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Droog-generated-files.hmap -I/Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Droog-own-target-headers.hmap -I/Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Droog-all-target-headers.hmap -iquote /Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Droog-project-headers.hmap -I/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include -I/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/usr/local/lib/include -I/Users/daniel/Desktop/ODC/platforms/ios/build/UninstalledProducts/include -I/Users/daniel/Desktop/ODC/platforms/ios/build/emulator -I/Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/DerivedSources/i386 -I/Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/DerivedSources -F/Users/daniel/Desktop/ODC/platforms/ios/build/emulator -include /var/folders/_8/9dq87dp53y3ccks_dzj2xk340000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Droog-Prefix-bvyixaisrrokkgaktbslbhlehawz/Droog-Prefix.pch -MMD -MT dependencies -MF /Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/CDVNotification.d --serialize-diagnostics /Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/CDVNotification.dia -c /Users/daniel/Desktop/ODC/platforms/ios/Droog/Plugins/org.apache.cordova.dialogs/CDVNotification.m -o /Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/CDVNotification.o36"865C87C7-0109-4073-8882-8812270DC3B1-
-b27D7F322-02CF-4E8B-88F2-99EFA0ADB551
-
-CCompileC build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/MainViewController.o /Users/daniel/Desktop/ODC/platforms/ios/Droog/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s420432794.339035
-e420432794.425012
-r1
-xCompileC
-xbuild/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/MainViewController.o
-x/Users/daniel/Desktop/ODC/platforms/ios/Droog/Classes/MainViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/daniel/Desktop/ODC/platforms/ios/Droog/Classes/MainViewController.m
-d/Users/daniel/Desktop/ODC/platforms/ios/Droog/Classes/MainViewController.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVViewController.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Compile /Users/daniel/Desktop/ODC/platforms/ios/Droog/Classes/MainViewController.m220"[1mCompileC[0m build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/MainViewController.o [1mDroog/Classes/MainViewController.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler670c579a4b0fb941^85cd6c9a4b0fb941^---0#0#1#-19%DVTDocumentLocation2@81"file:///Users/daniel/Desktop/ODC/platforms/ios/Droog/Classes/MainViewController.m0000000000000000^3836"[1mCompileC[0m build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/MainViewController.o [1mDroog/Classes/MainViewController.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/daniel/Desktop/ODC/platforms/ios    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/adt-bundle-mac-x86_64-20130917/sdk/platform-tools:/Applications/adt-bundle-mac-x86_64-20130917/sdk/tools:/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/:/Applications/adt-bundle-mac-x86_64-20130917/eclipse/plugins/org.apache.ant_1.8.3.v201301120609/bin:"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Droog-generated-files.hmap -I/Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Droog-own-target-headers.hmap -I/Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Droog-all-target-headers.hmap -iquote /Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Droog-project-headers.hmap -I/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include -I/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/usr/local/lib/include -I/Users/daniel/Desktop/ODC/platforms/ios/build/UninstalledProducts/include -I/Users/daniel/Desktop/ODC/platforms/ios/build/emulator -I/Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/DerivedSources/i386 -I/Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/DerivedSources -F/Users/daniel/Desktop/ODC/platforms/ios/build/emulator -include /var/folders/_8/9dq87dp53y3ccks_dzj2xk340000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Droog-Prefix-bvyixaisrrokkgaktbslbhlehawz/Droog-Prefix.pch -MMD -MT dependencies -MF /Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/MainViewController.d --serialize-diagnostics /Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/MainViewController.dia -c /Users/daniel/Desktop/ODC/platforms/ios/Droog/Classes/MainViewController.m -o /Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/MainViewController.o36"0B4E0749-C921-470E-B66D-BA96812CC52E-
-b27D7F322-02CF-4E8B-88F2-99EFA0ADB551
-
-CCompileC build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/SocialSharing.o /Users/daniel/Desktop/ODC/platforms/ios/Droog/Plugins/nl.x-services.plugins.socialsharing/SocialSharing.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s420432794.339788
-e420432794.475135
-r1
-xCompileC
-xbuild/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/SocialSharing.o
-x/Users/daniel/Desktop/ODC/platforms/ios/Droog/Plugins/nl.x-services.plugins.socialsharing/SocialSharing.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/daniel/Desktop/ODC/platforms/ios/Droog/Plugins/nl.x-services.plugins.socialsharing/SocialSharing.m
-d/Users/daniel/Desktop/ODC/platforms/ios/Droog/Plugins/nl.x-services.plugins.socialsharing/SocialSharing.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDV.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVViewController.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVDebug.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVTimer.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVJSON.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection113"Compile /Users/daniel/Desktop/ODC/platforms/ios/Droog/Plugins/nl.x-services.plugins.socialsharing/SocialSharing.m246"[1mCompileC[0m build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/SocialSharing.o [1mDroog/Plugins/nl.x-services.plugins.socialsharing/SocialSharing.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler0b29579a4b0fb941^ada4799a4b0fb941^---0#0#1#-19%DVTDocumentLocation2@112"file:///Users/daniel/Desktop/ODC/platforms/ios/Droog/Plugins/nl.x-services.plugins.socialsharing/SocialSharing.m0000000000000000^3878"[1mCompileC[0m build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/SocialSharing.o [1mDroog/Plugins/nl.x-services.plugins.socialsharing/SocialSharing.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/daniel/Desktop/ODC/platforms/ios    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/adt-bundle-mac-x86_64-20130917/sdk/platform-tools:/Applications/adt-bundle-mac-x86_64-20130917/sdk/tools:/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/:/Applications/adt-bundle-mac-x86_64-20130917/eclipse/plugins/org.apache.ant_1.8.3.v201301120609/bin:"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Droog-generated-files.hmap -I/Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Droog-own-target-headers.hmap -I/Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Droog-all-target-headers.hmap -iquote /Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Droog-project-headers.hmap -I/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include -I/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/usr/local/lib/include -I/Users/daniel/Desktop/ODC/platforms/ios/build/UninstalledProducts/include -I/Users/daniel/Desktop/ODC/platforms/ios/build/emulator -I/Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/DerivedSources/i386 -I/Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/DerivedSources -F/Users/daniel/Desktop/ODC/platforms/ios/build/emulator -include /var/folders/_8/9dq87dp53y3ccks_dzj2xk340000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Droog-Prefix-bvyixaisrrokkgaktbslbhlehawz/Droog-Prefix.pch -MMD -MT dependencies -MF /Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/SocialSharing.d --serialize-diagnostics /Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/SocialSharing.dia -c /Users/daniel/Desktop/ODC/platforms/ios/Droog/Plugins/nl.x-services.plugins.socialsharing/SocialSharing.m -o /Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/SocialSharing.o36"69DE675E-3A55-4E38-8C19-AC304AD1CE88-
-b27D7F322-02CF-4E8B-88F2-99EFA0ADB551
-
-CCompileC build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/StatusBar.o /Users/daniel/Desktop/ODC/platforms/ios/Droog/Plugins/org.apache.cordova.plugins.StatusBar/StatusBar.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s420432794.425370
-e420432794.490163
-r1
-xCompileC
-xbuild/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/StatusBar.o
-x/Users/daniel/Desktop/ODC/platforms/ios/Droog/Plugins/org.apache.cordova.plugins.StatusBar/StatusBar.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/daniel/Desktop/ODC/platforms/ios/Droog/Plugins/org.apache.cordova.plugins.StatusBar/StatusBar.m
-d/Users/daniel/Desktop/ODC/platforms/ios/Droog/Plugins/org.apache.cordova.plugins.StatusBar/StatusBar.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDV.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVViewController.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVDebug.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVTimer.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include/Cordova/CDVJSON.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection110"Compile /Users/daniel/Desktop/ODC/platforms/ios/Droog/Plugins/org.apache.cordova.plugins.StatusBar/StatusBar.m239"[1mCompileC[0m build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/StatusBar.o [1mDroog/Plugins/org.apache.cordova.plugins.StatusBar/StatusBar.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilere50c6d9a4b0fb941^747b7d9a4b0fb941^---0#0#1#-19%DVTDocumentLocation2@109"file:///Users/daniel/Desktop/ODC/platforms/ios/Droog/Plugins/org.apache.cordova.plugins.StatusBar/StatusBar.m0000000000000000^3856"[1mCompileC[0m build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/StatusBar.o [1mDroog/Plugins/org.apache.cordova.plugins.StatusBar/StatusBar.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/daniel/Desktop/ODC/platforms/ios    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/adt-bundle-mac-x86_64-20130917/sdk/platform-tools:/Applications/adt-bundle-mac-x86_64-20130917/sdk/tools:/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/:/Applications/adt-bundle-mac-x86_64-20130917/eclipse/plugins/org.apache.ant_1.8.3.v201301120609/bin:"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Droog-generated-files.hmap -I/Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Droog-own-target-headers.hmap -I/Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Droog-all-target-headers.hmap -iquote /Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Droog-project-headers.hmap -I/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include -I/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/usr/local/lib/include -I/Users/daniel/Desktop/ODC/platforms/ios/build/UninstalledProducts/include -I/Users/daniel/Desktop/ODC/platforms/ios/build/emulator -I/Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/DerivedSources/i386 -I/Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/DerivedSources -F/Users/daniel/Desktop/ODC/platforms/ios/build/emulator -include /var/folders/_8/9dq87dp53y3ccks_dzj2xk340000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Droog-Prefix-bvyixaisrrokkgaktbslbhlehawz/Droog-Prefix.pch -MMD -MT dependencies -MF /Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/StatusBar.d --serialize-diagnostics /Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/StatusBar.dia -c /Users/daniel/Desktop/ODC/platforms/ios/Droog/Plugins/org.apache.cordova.plugins.StatusBar/StatusBar.m -o /Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/StatusBar.o36"011D0FEE-98C9-4652-A105-68D41176B615-
-b27D7F322-02CF-4E8B-88F2-99EFA0ADB551
-
-CCompileC build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/main.o /Users/daniel/Desktop/ODC/platforms/ios/Droog/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s420432794.338425
-e420432794.364786
-r1
-xCompileC
-xbuild/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/main.o
-x/Users/daniel/Desktop/ODC/platforms/ios/Droog/main.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/daniel/Desktop/ODC/platforms/ios/Droog/main.m
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Compile /Users/daniel/Desktop/ODC/platforms/ios/Droog/main.m184"[1mCompileC[0m build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/main.o [1mDroog/main.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler06be569a4b0fb941^97735d9a4b0fb941^---0#0#1#-19%DVTDocumentLocation2@59"file:///Users/daniel/Desktop/ODC/platforms/ios/Droog/main.m0000000000000000^3736"[1mCompileC[0m build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/main.o [1mDroog/main.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/daniel/Desktop/ODC/platforms/ios    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/adt-bundle-mac-x86_64-20130917/sdk/platform-tools:/Applications/adt-bundle-mac-x86_64-20130917/sdk/tools:/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/:/Applications/adt-bundle-mac-x86_64-20130917/eclipse/plugins/org.apache.ant_1.8.3.v201301120609/bin:"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Droog-generated-files.hmap -I/Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Droog-own-target-headers.hmap -I/Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Droog-all-target-headers.hmap -iquote /Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Droog-project-headers.hmap -I/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include -I/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/usr/local/lib/include -I/Users/daniel/Desktop/ODC/platforms/ios/build/UninstalledProducts/include -I/Users/daniel/Desktop/ODC/platforms/ios/build/emulator -I/Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/DerivedSources/i386 -I/Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/DerivedSources -F/Users/daniel/Desktop/ODC/platforms/ios/build/emulator -include /var/folders/_8/9dq87dp53y3ccks_dzj2xk340000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Droog-Prefix-bvyixaisrrokkgaktbslbhlehawz/Droog-Prefix.pch -MMD -MT dependencies -MF /Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/main.d --serialize-diagnostics /Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/main.dia -c /Users/daniel/Desktop/ODC/platforms/ios/Droog/main.m -o /Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/main.o36"C09A6F22-C748-4C62-87D9-3D9AB9CD5187-
-b27D7F322-02CF-4E8B-88F2-99EFA0ADB551
-
-CCompileXIB /Users/daniel/Desktop/ODC/platforms/ios/Droog/Classes/MainViewController.xib
-s420432791.154435
-e420432794.032525
-r1
-xCompileXIB
-x/Users/daniel/Desktop/ODC/platforms/ios/Droog/Classes/MainViewController.xib
-o2014-04-28 21:53:13.478 Interface Builder Cocoa Touch Tool[10201:303] CFPreferences: user home directory at file:///Users/daniel/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Compiling /Users/daniel/Desktop/ODC/platforms/ios/Droog/Classes/MainViewController.xib63"[1mCompileXIB[0m [1mDroog/Classes/MainViewController.xib[0m01a327974b0fb941^eb55089a4b0fb941^-231"2014-04-28 21:53:13.478 Interface Builder Cocoa Touch Tool[10201:303] CFPreferences: user home directory at file:///Users/daniel/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.-0#0#1#-19%DVTDocumentLocation2@83"file:///Users/daniel/Desktop/ODC/platforms/ios/Droog/Classes/MainViewController.xib0000000000000000^1105"[1mCompileXIB[0m [1mDroog/Classes/MainViewController.xib[0m    cd /Users/daniel/Desktop/ODC/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/adt-bundle-mac-x86_64-20130917/sdk/platform-tools:/Applications/adt-bundle-mac-x86_64-20130917/sdk/tools:/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/:/Applications/adt-bundle-mac-x86_64-20130917/eclipse/plugins/org.apache.ant_1.8.3.v201301120609/bin:"    export XCODE_DEVELOPER_USR_PATH=/Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 6.0 --output-format human-readable-text --compile /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/MainViewController.nib /Users/daniel/Desktop/ODC/platforms/ios/Droog/Classes/MainViewController.xib36"12ECDFDB-E0BE-465C-A45A-2AB53E126759-
-b27D7F322-02CF-4E8B-88F2-99EFA0ADB551
-
-CCopyStringsFile /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/de.lproj/Localizable.strings Droog/Resources/de.lproj/Localizable.strings
-s420432791.159362
-e420432791.161630
-r1
-xCopyStringsFile
-x/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/de.lproj/Localizable.strings
-xDroog/Resources/de.lproj/Localizable.strings
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection49"Copy Droog/Resources/de.lproj/Localizable.strings122"[1mCopyStringsFile[0m build/emulator/Droog.app/de.lproj/Localizable.strings Droog/Resources/de.lproj/Localizable.strings6a1529974b0fb941^af7929974b0fb941^---0#0#1#-19%DVTDocumentLocation2@91"file:///Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/de.lproj/Localizable.strings0000000000000000^906"[1mCopyStringsFile[0m build/emulator/Droog.app/de.lproj/Localizable.strings Droog/Resources/de.lproj/Localizable.strings    cd /Users/daniel/Desktop/ODC/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/adt-bundle-mac-x86_64-20130917/sdk/platform-tools:/Applications/adt-bundle-mac-x86_64-20130917/sdk/tools:/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/:/Applications/adt-bundle-mac-x86_64-20130917/eclipse/plugins/org.apache.ant_1.8.3.v201301120609/bin:"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/de.lproj -- Droog/Resources/de.lproj/Localizable.strings36"9A2542DA-282E-449B-A7C3-16C37868C6FB-
-b27D7F322-02CF-4E8B-88F2-99EFA0ADB551
-
-CCopyStringsFile /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/en.lproj/Localizable.strings Droog/Resources/en.lproj/Localizable.strings
-s420432791.153874
-e420432791.158326
-r1
-xCopyStringsFile
-x/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/en.lproj/Localizable.strings
-xDroog/Resources/en.lproj/Localizable.strings
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection49"Copy Droog/Resources/en.lproj/Localizable.strings122"[1mCopyStringsFile[0m build/emulator/Droog.app/en.lproj/Localizable.strings Droog/Resources/en.lproj/Localizable.strings498327974b0fb941^758f28974b0fb941^---0#0#1#-19%DVTDocumentLocation2@91"file:///Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/en.lproj/Localizable.strings0000000000000000^906"[1mCopyStringsFile[0m build/emulator/Droog.app/en.lproj/Localizable.strings Droog/Resources/en.lproj/Localizable.strings    cd /Users/daniel/Desktop/ODC/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/adt-bundle-mac-x86_64-20130917/sdk/platform-tools:/Applications/adt-bundle-mac-x86_64-20130917/sdk/tools:/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/:/Applications/adt-bundle-mac-x86_64-20130917/eclipse/plugins/org.apache.ant_1.8.3.v201301120609/bin:"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/en.lproj -- Droog/Resources/en.lproj/Localizable.strings36"E98BCCF9-C789-4713-936F-9FDB5BAF691B-
-b27D7F322-02CF-4E8B-88F2-99EFA0ADB551
-
-CCpResource Droog/Resources/CDVNotification.bundle build/emulator/Droog.app/CDVNotification.bundle
-s420432791.175937
-e420432791.177431
-r1
-xCpResource
-xDroog/Resources/CDVNotification.bundle
-xbuild/emulator/Droog.app/CDVNotification.bundle
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection52"Copy build/emulator/Droog.app/CDVNotification.bundle105"[1mCpResource[0m Droog/Resources/CDVNotification.bundle build/emulator/Droog.app/CDVNotification.bundleac3c2d974b0fb941^836c2d974b0fb941^---0#0#1#-19%DVTDocumentLocation2@94"file:///Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/CDVNotification.bundle0034f01edcffdf42^933"[1mCpResource[0m Droog/Resources/CDVNotification.bundle build/emulator/Droog.app/CDVNotification.bundle    cd /Users/daniel/Desktop/ODC/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/adt-bundle-mac-x86_64-20130917/sdk/platform-tools:/Applications/adt-bundle-mac-x86_64-20130917/sdk/tools:/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/:/Applications/adt-bundle-mac-x86_64-20130917/eclipse/plugins/org.apache.ant_1.8.3.v201301120609/bin:"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/CDVNotification.bundle /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app36"EE5F6E5C-3FA9-4D89-9308-C2F7F0CB5E9E-
-b27D7F322-02CF-4E8B-88F2-99EFA0ADB551
-
-CCpResource Droog/Resources/icons/icon-40.png build/emulator/Droog.app/icon-40.png
-s420432791.166000
-e420432791.169335
-r1
-xCpResource
-xDroog/Resources/icons/icon-40.png
-xbuild/emulator/Droog.app/icon-40.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Copy build/emulator/Droog.app/icon-40.png89"[1mCpResource[0m Droog/Resources/icons/icon-40.png build/emulator/Droog.app/icon-40.png1b122b974b0fb941^e25c2b974b0fb941^---0#0#1#-19%DVTDocumentLocation2@83"file:///Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/icon-40.png0034f01edcffdf42^912"[1mCpResource[0m Droog/Resources/icons/icon-40.png build/emulator/Droog.app/icon-40.png    cd /Users/daniel/Desktop/ODC/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/adt-bundle-mac-x86_64-20130917/sdk/platform-tools:/Applications/adt-bundle-mac-x86_64-20130917/sdk/tools:/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/:/Applications/adt-bundle-mac-x86_64-20130917/eclipse/plugins/org.apache.ant_1.8.3.v201301120609/bin:"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/icons/icon-40.png /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app36"17AF6672-A903-4C0A-9F6A-6D3D21080A41-
-b27D7F322-02CF-4E8B-88F2-99EFA0ADB551
-
-CCpResource Droog/Resources/icons/icon-40@2x.png build/emulator/Droog.app/icon-40@2x.png
-s420432791.151841
-e420432791.153564
-r1
-xCpResource
-xDroog/Resources/icons/icon-40@2x.png
-xbuild/emulator/Droog.app/icon-40@2x.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"Copy build/emulator/Droog.app/icon-40@2x.png95"[1mCpResource[0m Droog/Resources/icons/icon-40@2x.png build/emulator/Droog.app/icon-40@2x.png48fc26974b0fb941^1e4f27974b0fb941^---0#0#1#-19%DVTDocumentLocation2@86"file:///Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/icon-40@2x.png0034f01edcffdf42^921"[1mCpResource[0m Droog/Resources/icons/icon-40@2x.png build/emulator/Droog.app/icon-40@2x.png    cd /Users/daniel/Desktop/ODC/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/adt-bundle-mac-x86_64-20130917/sdk/platform-tools:/Applications/adt-bundle-mac-x86_64-20130917/sdk/tools:/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/:/Applications/adt-bundle-mac-x86_64-20130917/eclipse/plugins/org.apache.ant_1.8.3.v201301120609/bin:"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/icons/icon-40@2x.png /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app36"4024977D-2FC1-48BB-AA87-56821AA887B4-
-b27D7F322-02CF-4E8B-88F2-99EFA0ADB551
-
-CCpResource Droog/Resources/icons/icon-50.png build/emulator/Droog.app/icon-50.png
-s420432791.155407
-e420432791.159650
-r1
-xCpResource
-xDroog/Resources/icons/icon-50.png
-xbuild/emulator/Droog.app/icon-50.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Copy build/emulator/Droog.app/icon-50.png89"[1mCpResource[0m Droog/Resources/icons/icon-50.png build/emulator/Droog.app/icon-50.png8f8928974b0fb941^dfdf28974b0fb941^---0#0#1#-19%DVTDocumentLocation2@83"file:///Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/icon-50.png0034f01edcffdf42^912"[1mCpResource[0m Droog/Resources/icons/icon-50.png build/emulator/Droog.app/icon-50.png    cd /Users/daniel/Desktop/ODC/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/adt-bundle-mac-x86_64-20130917/sdk/platform-tools:/Applications/adt-bundle-mac-x86_64-20130917/sdk/tools:/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/:/Applications/adt-bundle-mac-x86_64-20130917/eclipse/plugins/org.apache.ant_1.8.3.v201301120609/bin:"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/icons/icon-50.png /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app36"73D67240-7A18-4B89-A68B-FE3CBAA57459-
-b27D7F322-02CF-4E8B-88F2-99EFA0ADB551
-
-CCpResource Droog/Resources/icons/icon-50@2x.png build/emulator/Droog.app/icon-50@2x.png
-s420432791.173067
-e420432791.175735
-r1
-xCpResource
-xDroog/Resources/icons/icon-50@2x.png
-xbuild/emulator/Droog.app/icon-50@2x.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"Copy build/emulator/Droog.app/icon-50@2x.png95"[1mCpResource[0m Droog/Resources/icons/icon-50@2x.png build/emulator/Droog.app/icon-50@2x.png26732c974b0fb941^c91e2d974b0fb941^---0#0#1#-19%DVTDocumentLocation2@86"file:///Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/icon-50@2x.png0034f01edcffdf42^921"[1mCpResource[0m Droog/Resources/icons/icon-50@2x.png build/emulator/Droog.app/icon-50@2x.png    cd /Users/daniel/Desktop/ODC/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/adt-bundle-mac-x86_64-20130917/sdk/platform-tools:/Applications/adt-bundle-mac-x86_64-20130917/sdk/tools:/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/:/Applications/adt-bundle-mac-x86_64-20130917/eclipse/plugins/org.apache.ant_1.8.3.v201301120609/bin:"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/icons/icon-50@2x.png /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app36"2A8A697A-7B66-42B1-B91A-EF0B43800690-
-b27D7F322-02CF-4E8B-88F2-99EFA0ADB551
-
-CCpResource Droog/Resources/icons/icon-60.png build/emulator/Droog.app/icon-60.png
-s420432791.170189
-e420432791.171435
-r1
-xCpResource
-xDroog/Resources/icons/icon-60.png
-xbuild/emulator/Droog.app/icon-60.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Copy build/emulator/Droog.app/icon-60.png89"[1mCpResource[0m Droog/Resources/icons/icon-60.png build/emulator/Droog.app/icon-60.png3aad2b974b0fb941^dee82b974b0fb941^---0#0#1#-19%DVTDocumentLocation2@83"file:///Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/icon-60.png0034f01edcffdf42^912"[1mCpResource[0m Droog/Resources/icons/icon-60.png build/emulator/Droog.app/icon-60.png    cd /Users/daniel/Desktop/ODC/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/adt-bundle-mac-x86_64-20130917/sdk/platform-tools:/Applications/adt-bundle-mac-x86_64-20130917/sdk/tools:/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/:/Applications/adt-bundle-mac-x86_64-20130917/eclipse/plugins/org.apache.ant_1.8.3.v201301120609/bin:"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/icons/icon-60.png /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app36"628D4D4D-51F3-4453-9356-965D71DBE7F1-
-b27D7F322-02CF-4E8B-88F2-99EFA0ADB551
-
-CCpResource Droog/Resources/icons/icon-60@2x.png build/emulator/Droog.app/icon-60@2x.png
-s420432791.156661
-e420432791.161125
-r1
-xCpResource
-xDroog/Resources/icons/icon-60@2x.png
-xbuild/emulator/Droog.app/icon-60@2x.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"Copy build/emulator/Droog.app/icon-60@2x.png95"[1mCpResource[0m Droog/Resources/icons/icon-60@2x.png build/emulator/Droog.app/icon-60@2x.png4d8528974b0fb941^804a29974b0fb941^---0#0#1#-19%DVTDocumentLocation2@86"file:///Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/icon-60@2x.png0034f01edcffdf42^921"[1mCpResource[0m Droog/Resources/icons/icon-60@2x.png build/emulator/Droog.app/icon-60@2x.png    cd /Users/daniel/Desktop/ODC/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/adt-bundle-mac-x86_64-20130917/sdk/platform-tools:/Applications/adt-bundle-mac-x86_64-20130917/sdk/tools:/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/:/Applications/adt-bundle-mac-x86_64-20130917/eclipse/plugins/org.apache.ant_1.8.3.v201301120609/bin:"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/icons/icon-60@2x.png /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app36"BD463BF2-E379-4864-A6DC-9664F1E842C1-
-b27D7F322-02CF-4E8B-88F2-99EFA0ADB551
-
-CCpResource Droog/Resources/icons/icon-72.png build/emulator/Droog.app/icon-72.png
-s420432791.152024
-e420432791.153455
-r1
-xCpResource
-xDroog/Resources/icons/icon-72.png
-xbuild/emulator/Droog.app/icon-72.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Copy build/emulator/Droog.app/icon-72.png89"[1mCpResource[0m Droog/Resources/icons/icon-72.png build/emulator/Droog.app/icon-72.pngee0427974b0fb941^f14927974b0fb941^---0#0#1#-19%DVTDocumentLocation2@83"file:///Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/icon-72.png0034f01edcffdf42^912"[1mCpResource[0m Droog/Resources/icons/icon-72.png build/emulator/Droog.app/icon-72.png    cd /Users/daniel/Desktop/ODC/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/adt-bundle-mac-x86_64-20130917/sdk/platform-tools:/Applications/adt-bundle-mac-x86_64-20130917/sdk/tools:/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/:/Applications/adt-bundle-mac-x86_64-20130917/eclipse/plugins/org.apache.ant_1.8.3.v201301120609/bin:"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/icons/icon-72.png /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app36"8FE4B7BC-2087-46CB-BCEF-296076F07EF4-
-b27D7F322-02CF-4E8B-88F2-99EFA0ADB551
-
-CCpResource Droog/Resources/icons/icon-72@2x.png build/emulator/Droog.app/icon-72@2x.png
-s420432791.174083
-e420432791.176517
-r1
-xCpResource
-xDroog/Resources/icons/icon-72@2x.png
-xbuild/emulator/Droog.app/icon-72@2x.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"Copy build/emulator/Droog.app/icon-72@2x.png95"[1mCpResource[0m Droog/Resources/icons/icon-72@2x.png build/emulator/Droog.app/icon-72@2x.png5bb02c974b0fb941^6f2b2d974b0fb941^---0#0#1#-19%DVTDocumentLocation2@86"file:///Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/icon-72@2x.png0034f01edcffdf42^921"[1mCpResource[0m Droog/Resources/icons/icon-72@2x.png build/emulator/Droog.app/icon-72@2x.png    cd /Users/daniel/Desktop/ODC/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/adt-bundle-mac-x86_64-20130917/sdk/platform-tools:/Applications/adt-bundle-mac-x86_64-20130917/sdk/tools:/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/:/Applications/adt-bundle-mac-x86_64-20130917/eclipse/plugins/org.apache.ant_1.8.3.v201301120609/bin:"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/icons/icon-72@2x.png /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app36"1FE49972-7CA5-48FB-BA89-EC01FEB3DFE8-
-b27D7F322-02CF-4E8B-88F2-99EFA0ADB551
-
-CCpResource Droog/Resources/icons/icon-76.png build/emulator/Droog.app/icon-76.png
-s420432791.151676
-e420432791.153172
-r1
-xCpResource
-xDroog/Resources/icons/icon-76.png
-xbuild/emulator/Droog.app/icon-76.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Copy build/emulator/Droog.app/icon-76.png89"[1mCpResource[0m Droog/Resources/icons/icon-76.png build/emulator/Droog.app/icon-76.pngf7e726974b0fb941^492e27974b0fb941^---0#0#1#-19%DVTDocumentLocation2@83"file:///Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/icon-76.png0034f01edcffdf42^912"[1mCpResource[0m Droog/Resources/icons/icon-76.png build/emulator/Droog.app/icon-76.png    cd /Users/daniel/Desktop/ODC/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/adt-bundle-mac-x86_64-20130917/sdk/platform-tools:/Applications/adt-bundle-mac-x86_64-20130917/sdk/tools:/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/:/Applications/adt-bundle-mac-x86_64-20130917/eclipse/plugins/org.apache.ant_1.8.3.v201301120609/bin:"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/icons/icon-76.png /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app36"F6AC4B29-3D93-47F2-A097-15B5310330FB-
-b27D7F322-02CF-4E8B-88F2-99EFA0ADB551
-
-CCpResource Droog/Resources/icons/icon-76@2x.png build/emulator/Droog.app/icon-76@2x.png
-s420432791.173728
-e420432791.175981
-r1
-xCpResource
-xDroog/Resources/icons/icon-76@2x.png
-xbuild/emulator/Droog.app/icon-76@2x.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"Copy build/emulator/Droog.app/icon-76@2x.png95"[1mCpResource[0m Droog/Resources/icons/icon-76@2x.png build/emulator/Droog.app/icon-76@2x.png28992c974b0fb941^0c232d974b0fb941^---0#0#1#-19%DVTDocumentLocation2@86"file:///Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/icon-76@2x.png0034f01edcffdf42^921"[1mCpResource[0m Droog/Resources/icons/icon-76@2x.png build/emulator/Droog.app/icon-76@2x.png    cd /Users/daniel/Desktop/ODC/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/adt-bundle-mac-x86_64-20130917/sdk/platform-tools:/Applications/adt-bundle-mac-x86_64-20130917/sdk/tools:/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/:/Applications/adt-bundle-mac-x86_64-20130917/eclipse/plugins/org.apache.ant_1.8.3.v201301120609/bin:"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/icons/icon-76@2x.png /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app36"9C26386D-25D0-4922-A60A-0A127991368A-
-b27D7F322-02CF-4E8B-88F2-99EFA0ADB551
-
-CCpResource Droog/Resources/icons/icon-small.png build/emulator/Droog.app/icon-small.png
-s420432791.160599
-e420432791.161954
-r1
-xCpResource
-xDroog/Resources/icons/icon-small.png
-xbuild/emulator/Droog.app/icon-small.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"Copy build/emulator/Droog.app/icon-small.png95"[1mCpResource[0m Droog/Resources/icons/icon-small.png build/emulator/Droog.app/icon-small.png223529974b0fb941^c99229974b0fb941^---0#0#1#-19%DVTDocumentLocation2@86"file:///Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/icon-small.png0034f01edcffdf42^921"[1mCpResource[0m Droog/Resources/icons/icon-small.png build/emulator/Droog.app/icon-small.png    cd /Users/daniel/Desktop/ODC/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/adt-bundle-mac-x86_64-20130917/sdk/platform-tools:/Applications/adt-bundle-mac-x86_64-20130917/sdk/tools:/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/:/Applications/adt-bundle-mac-x86_64-20130917/eclipse/plugins/org.apache.ant_1.8.3.v201301120609/bin:"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/icons/icon-small.png /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app36"07497F41-4DA9-4AF0-B19E-D51A68DA4C53-
-b27D7F322-02CF-4E8B-88F2-99EFA0ADB551
-
-CCpResource Droog/Resources/icons/icon-small@2x.png build/emulator/Droog.app/icon-small@2x.png
-s420432791.163672
-e420432791.165793
-r1
-xCpResource
-xDroog/Resources/icons/icon-small@2x.png
-xbuild/emulator/Droog.app/icon-small@2x.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection47"Copy build/emulator/Droog.app/icon-small@2x.png101"[1mCpResource[0m Droog/Resources/icons/icon-small@2x.png build/emulator/Droog.app/icon-small@2x.png0e2d2a974b0fb941^daa82a974b0fb941^---0#0#1#-19%DVTDocumentLocation2@89"file:///Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/icon-small@2x.png0034f01edcffdf42^930"[1mCpResource[0m Droog/Resources/icons/icon-small@2x.png build/emulator/Droog.app/icon-small@2x.png    cd /Users/daniel/Desktop/ODC/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/adt-bundle-mac-x86_64-20130917/sdk/platform-tools:/Applications/adt-bundle-mac-x86_64-20130917/sdk/tools:/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/:/Applications/adt-bundle-mac-x86_64-20130917/eclipse/plugins/org.apache.ant_1.8.3.v201301120609/bin:"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/icons/icon-small@2x.png /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app36"8DC4B932-2793-4D72-95CF-27C0F0A2E916-
-b27D7F322-02CF-4E8B-88F2-99EFA0ADB551
-
-CCpResource Droog/Resources/icons/icon.png build/emulator/Droog.app/icon.png
-s420432791.152866
-e420432791.155003
-r1
-xCpResource
-xDroog/Resources/icons/icon.png
-xbuild/emulator/Droog.app/icon.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection38"Copy build/emulator/Droog.app/icon.png83"[1mCpResource[0m Droog/Resources/icons/icon.png build/emulator/Droog.app/icon.png8c4927974b0fb941^f7b027974b0fb941^---0#0#1#-19%DVTDocumentLocation2@80"file:///Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/icon.png0034f01edcffdf42^903"[1mCpResource[0m Droog/Resources/icons/icon.png build/emulator/Droog.app/icon.png    cd /Users/daniel/Desktop/ODC/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/adt-bundle-mac-x86_64-20130917/sdk/platform-tools:/Applications/adt-bundle-mac-x86_64-20130917/sdk/tools:/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/:/Applications/adt-bundle-mac-x86_64-20130917/eclipse/plugins/org.apache.ant_1.8.3.v201301120609/bin:"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/icons/icon.png /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app36"1DD4BAE6-F5A9-4CF0-8A49-C051EC94722D-
-b27D7F322-02CF-4E8B-88F2-99EFA0ADB551
-
-CCpResource Droog/Resources/icons/icon@2x.png build/emulator/Droog.app/icon@2x.png
-s420432791.153771
-e420432791.156107
-r1
-xCpResource
-xDroog/Resources/icons/icon@2x.png
-xbuild/emulator/Droog.app/icon@2x.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Copy build/emulator/Droog.app/icon@2x.png89"[1mCpResource[0m Droog/Resources/icons/icon@2x.png build/emulator/Droog.app/icon@2x.png908227974b0fb941^ee2628974b0fb941^---0#0#1#-19%DVTDocumentLocation2@83"file:///Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/icon@2x.png0034f01edcffdf42^912"[1mCpResource[0m Droog/Resources/icons/icon@2x.png build/emulator/Droog.app/icon@2x.png    cd /Users/daniel/Desktop/ODC/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/adt-bundle-mac-x86_64-20130917/sdk/platform-tools:/Applications/adt-bundle-mac-x86_64-20130917/sdk/tools:/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/:/Applications/adt-bundle-mac-x86_64-20130917/eclipse/plugins/org.apache.ant_1.8.3.v201301120609/bin:"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/icons/icon@2x.png /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app36"F191B6FA-8359-4860-9DFE-6BBD0676CAE6-
-b27D7F322-02CF-4E8B-88F2-99EFA0ADB551
-
-CCpResource Droog/Resources/splash/Default-568h@2x~iphone.png build/emulator/Droog.app/Default-568h@2x~iphone.png
-s420432791.171628
-e420432791.173505
-r1
-xCpResource
-xDroog/Resources/splash/Default-568h@2x~iphone.png
-xbuild/emulator/Droog.app/Default-568h@2x~iphone.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection56"Copy build/emulator/Droog.app/Default-568h@2x~iphone.png120"[1mCpResource[0m Droog/Resources/splash/Default-568h@2x~iphone.png build/emulator/Droog.app/Default-568h@2x~iphone.png8e062c974b0fb941^ee602c974b0fb941^---0#0#1#-19%DVTDocumentLocation2@98"file:///Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/Default-568h@2x~iphone.png0034f01edcffdf42^959"[1mCpResource[0m Droog/Resources/splash/Default-568h@2x~iphone.png build/emulator/Droog.app/Default-568h@2x~iphone.png    cd /Users/daniel/Desktop/ODC/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/adt-bundle-mac-x86_64-20130917/sdk/platform-tools:/Applications/adt-bundle-mac-x86_64-20130917/sdk/tools:/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/:/Applications/adt-bundle-mac-x86_64-20130917/eclipse/plugins/org.apache.ant_1.8.3.v201301120609/bin:"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/splash/Default-568h@2x~iphone.png /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app36"EF351164-197F-440A-A6FE-402EDEE5A4A2-
-b27D7F322-02CF-4E8B-88F2-99EFA0ADB551
-
-CCpResource Droog/Resources/splash/Default-Landscape@2x~ipad.png build/emulator/Droog.app/Default-Landscape@2x~ipad.png
-s420432791.161617
-e420432791.162992
-r1
-xCpResource
-xDroog/Resources/splash/Default-Landscape@2x~ipad.png
-xbuild/emulator/Droog.app/Default-Landscape@2x~ipad.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection59"Copy build/emulator/Droog.app/Default-Landscape@2x~ipad.png126"[1mCpResource[0m Droog/Resources/splash/Default-Landscape@2x~ipad.png build/emulator/Droog.app/Default-Landscape@2x~ipad.png707829974b0fb941^12c029974b0fb941^---0#0#1#-19%DVTDocumentLocation2@101"file:///Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/Default-Landscape@2x~ipad.png0034f01edcffdf42^968"[1mCpResource[0m Droog/Resources/splash/Default-Landscape@2x~ipad.png build/emulator/Droog.app/Default-Landscape@2x~ipad.png    cd /Users/daniel/Desktop/ODC/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/adt-bundle-mac-x86_64-20130917/sdk/platform-tools:/Applications/adt-bundle-mac-x86_64-20130917/sdk/tools:/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/:/Applications/adt-bundle-mac-x86_64-20130917/eclipse/plugins/org.apache.ant_1.8.3.v201301120609/bin:"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/splash/Default-Landscape@2x~ipad.png /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app36"A25A365C-4717-46DC-B143-C893108D565A-
-b27D7F322-02CF-4E8B-88F2-99EFA0ADB551
-
-CCpResource Droog/Resources/splash/Default-Landscape~ipad.png build/emulator/Droog.app/Default-Landscape~ipad.png
-s420432791.162617
-e420432791.164201
-r1
-xCpResource
-xDroog/Resources/splash/Default-Landscape~ipad.png
-xbuild/emulator/Droog.app/Default-Landscape~ipad.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection56"Copy build/emulator/Droog.app/Default-Landscape~ipad.png120"[1mCpResource[0m Droog/Resources/splash/Default-Landscape~ipad.png build/emulator/Droog.app/Default-Landscape~ipad.png07d229974b0fb941^bb092a974b0fb941^---0#0#1#-19%DVTDocumentLocation2@98"file:///Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/Default-Landscape~ipad.png0034f01edcffdf42^959"[1mCpResource[0m Droog/Resources/splash/Default-Landscape~ipad.png build/emulator/Droog.app/Default-Landscape~ipad.png    cd /Users/daniel/Desktop/ODC/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/adt-bundle-mac-x86_64-20130917/sdk/platform-tools:/Applications/adt-bundle-mac-x86_64-20130917/sdk/tools:/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/:/Applications/adt-bundle-mac-x86_64-20130917/eclipse/plugins/org.apache.ant_1.8.3.v201301120609/bin:"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/splash/Default-Landscape~ipad.png /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app36"BDB446B2-93C9-47E3-AE67-68D933FEA88B-
-b27D7F322-02CF-4E8B-88F2-99EFA0ADB551
-
-CCpResource Droog/Resources/splash/Default-Portrait@2x~ipad.png build/emulator/Droog.app/Default-Portrait@2x~ipad.png
-s420432791.162708
-e420432791.166718
-r1
-xCpResource
-xDroog/Resources/splash/Default-Portrait@2x~ipad.png
-xbuild/emulator/Droog.app/Default-Portrait@2x~ipad.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection58"Copy build/emulator/Droog.app/Default-Portrait@2x~ipad.png124"[1mCpResource[0m Droog/Resources/splash/Default-Portrait@2x~ipad.png build/emulator/Droog.app/Default-Portrait@2x~ipad.pngd2e129974b0fb941^39b62a974b0fb941^---0#0#1#-19%DVTDocumentLocation2@100"file:///Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/Default-Portrait@2x~ipad.png0034f01edcffdf42^965"[1mCpResource[0m Droog/Resources/splash/Default-Portrait@2x~ipad.png build/emulator/Droog.app/Default-Portrait@2x~ipad.png    cd /Users/daniel/Desktop/ODC/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/adt-bundle-mac-x86_64-20130917/sdk/platform-tools:/Applications/adt-bundle-mac-x86_64-20130917/sdk/tools:/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/:/Applications/adt-bundle-mac-x86_64-20130917/eclipse/plugins/org.apache.ant_1.8.3.v201301120609/bin:"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/splash/Default-Portrait@2x~ipad.png /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app36"1C9C0010-6360-44BF-A1F3-BD9BA747B4F3-
-b27D7F322-02CF-4E8B-88F2-99EFA0ADB551
-
-CCpResource Droog/Resources/splash/Default-Portrait~ipad.png build/emulator/Droog.app/Default-Portrait~ipad.png
-s420432791.164830
-e420432791.166733
-r1
-xCpResource
-xDroog/Resources/splash/Default-Portrait~ipad.png
-xbuild/emulator/Droog.app/Default-Portrait~ipad.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection55"Copy build/emulator/Droog.app/Default-Portrait~ipad.png118"[1mCpResource[0m Droog/Resources/splash/Default-Portrait~ipad.png build/emulator/Droog.app/Default-Portrait~ipad.pngec4b2a974b0fb941^91b92a974b0fb941^---0#0#1#-19%DVTDocumentLocation2@97"file:///Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/Default-Portrait~ipad.png0034f01edcffdf42^956"[1mCpResource[0m Droog/Resources/splash/Default-Portrait~ipad.png build/emulator/Droog.app/Default-Portrait~ipad.png    cd /Users/daniel/Desktop/ODC/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/adt-bundle-mac-x86_64-20130917/sdk/platform-tools:/Applications/adt-bundle-mac-x86_64-20130917/sdk/tools:/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/:/Applications/adt-bundle-mac-x86_64-20130917/eclipse/plugins/org.apache.ant_1.8.3.v201301120609/bin:"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/splash/Default-Portrait~ipad.png /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app36"CC289150-EF4F-4C0D-AC11-5029C818DAEA-
-b27D7F322-02CF-4E8B-88F2-99EFA0ADB551
-
-CCpResource Droog/Resources/splash/Default@2x~iphone.png build/emulator/Droog.app/Default@2x~iphone.png
-s420432791.167048
-e420432791.169160
-r1
-xCpResource
-xDroog/Resources/splash/Default@2x~iphone.png
-xbuild/emulator/Droog.app/Default@2x~iphone.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Copy build/emulator/Droog.app/Default@2x~iphone.png110"[1mCpResource[0m Droog/Resources/splash/Default@2x~iphone.png build/emulator/Droog.app/Default@2x~iphone.png16dd2a974b0fb941^60572b974b0fb941^---0#0#1#-19%DVTDocumentLocation2@93"file:///Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/Default@2x~iphone.png0034f01edcffdf42^944"[1mCpResource[0m Droog/Resources/splash/Default@2x~iphone.png build/emulator/Droog.app/Default@2x~iphone.png    cd /Users/daniel/Desktop/ODC/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/adt-bundle-mac-x86_64-20130917/sdk/platform-tools:/Applications/adt-bundle-mac-x86_64-20130917/sdk/tools:/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/:/Applications/adt-bundle-mac-x86_64-20130917/eclipse/plugins/org.apache.ant_1.8.3.v201301120609/bin:"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/splash/Default@2x~iphone.png /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app36"C725BB8A-D8A6-4E25-911B-32C13781199C-
-b27D7F322-02CF-4E8B-88F2-99EFA0ADB551
-
-CCpResource Droog/Resources/splash/Default~iphone.png build/emulator/Droog.app/Default~iphone.png
-s420432791.171282
-e420432791.173456
-r1
-xCpResource
-xDroog/Resources/splash/Default~iphone.png
-xbuild/emulator/Droog.app/Default~iphone.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection48"Copy build/emulator/Droog.app/Default~iphone.png104"[1mCpResource[0m Droog/Resources/splash/Default~iphone.png build/emulator/Droog.app/Default~iphone.png8c122c974b0fb941^9d672c974b0fb941^---0#0#1#-19%DVTDocumentLocation2@90"file:///Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/Default~iphone.png0034f01edcffdf42^935"[1mCpResource[0m Droog/Resources/splash/Default~iphone.png build/emulator/Droog.app/Default~iphone.png    cd /Users/daniel/Desktop/ODC/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/adt-bundle-mac-x86_64-20130917/sdk/platform-tools:/Applications/adt-bundle-mac-x86_64-20130917/sdk/tools:/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/:/Applications/adt-bundle-mac-x86_64-20130917/eclipse/plugins/org.apache.ant_1.8.3.v201301120609/bin:"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/daniel/Desktop/ODC/platforms/ios/Droog/Resources/splash/Default~iphone.png /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app36"9267D083-2CD4-4B40-846E-B050F03D3259-
-b27D7F322-02CF-4E8B-88F2-99EFA0ADB551
-
-CGenerateDSYMFile /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app.dSYM /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/Droog
-s420432794.561733
-e420432794.608337
-r1
-xGenerateDSYMFile
-x/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app.dSYM
-x/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/Droog
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Generate /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app.dSYM93"[1mGenerateDSYMFile[0m [1mbuild/emulator/Droog.app.dSYM[0m build/emulator/Droog.app/Droogc6de8f9a4b0fb941^1bbc9b9a4b0fb941^---0#0#1#-19%DVTDocumentLocation2@76"file:///Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app.dSYM0034f01edcffdf42^909"[1mGenerateDSYMFile[0m [1mbuild/emulator/Droog.app.dSYM[0m build/emulator/Droog.app/Droog    cd /Users/daniel/Desktop/ODC/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/adt-bundle-mac-x86_64-20130917/sdk/platform-tools:/Applications/adt-bundle-mac-x86_64-20130917/sdk/tools:/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/:/Applications/adt-bundle-mac-x86_64-20130917/eclipse/plugins/org.apache.ant_1.8.3.v201301120609/bin:"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/Droog -o /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app.dSYM36"E89643D3-CC4B-4A65-9E00-A40293982A98-
-b27D7F322-02CF-4E8B-88F2-99EFA0ADB551
-
-CLd /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/Droog normal i386
-s420432794.491264
-e420432794.560808
-r1
-xLd
-x/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/Droog
-xnormal
-xi386
-d/Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/Droog.LinkFileList
-d/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/libCordova.a
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/crt1.o
-d/Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/main.o
-d/Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/AppDelegate.o
-d/Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/MainViewController.o
-d/Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/SocialSharing.o
-d/Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/CDVNotification.o
-d/Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/StatusBar.o
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreMedia.framework/CoreMedia
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libSystem.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/AssetsLibrary.framework/AssetsLibrary
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/Social.framework/Social
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/MessageUI.framework/MessageUI
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libobjc.dylib
-d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.ios.a
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/AVFoundation.framework/libAVFAudio.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_override.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcache_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcommonCrypto_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcorecrypto_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcompiler_rt_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcopyfile_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libdispatch.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libdyld_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libmacho_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libnotify_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libremovefile_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_blocks.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_c.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_dnssd.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_info.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_m.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_network.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libunwind_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libxpc.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_configuration.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_asl.dylib
-d/usr/lib/libSystem.B.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/host/libdyld.dylib
-d/usr/lib/system/libcache.dylib
-d/usr/lib/system/libcommonCrypto.dylib
-d/usr/lib/system/libcompiler_rt.dylib
-d/usr/lib/system/libcopyfile.dylib
-d/usr/lib/system/libcorecrypto.dylib
-d/usr/lib/system/libkeymgr.dylib
-d/usr/lib/system/liblaunch.dylib
-d/usr/lib/system/libmacho.dylib
-d/usr/lib/system/libquarantine.dylib
-d/usr/lib/system/libremovefile.dylib
-d/usr/lib/system/libsystem_asl.dylib
-d/usr/lib/system/libsystem_blocks.dylib
-d/usr/lib/system/libsystem_c.dylib
-d/usr/lib/system/libsystem_configuration.dylib
-d/usr/lib/system/libsystem_dnssd.dylib
-d/usr/lib/system/libsystem_info.dylib
-d/usr/lib/system/libsystem_kernel.dylib
-d/usr/lib/system/libsystem_m.dylib
-d/usr/lib/system/libsystem_malloc.dylib
-d/usr/lib/system/libsystem_notify.dylib
-d/usr/lib/system/libsystem_platform.dylib
-d/usr/lib/system/libsystem_pthread.dylib
-d/usr/lib/system/libsystem_sandbox.dylib
-d/usr/lib/system/libunc.dylib
-d/usr/lib/system/libunwind.dylib
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Link /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/Droog53"[1mLd[0m build/emulator/Droog.app/Droog normal i386c7d87d9a4b0fb941^71918f9a4b0fb941^---0#0#1#--1980"[1mLd[0m build/emulator/Droog.app/Droog normal i386    cd /Users/daniel/Desktop/ODC/platforms/ios    export IPHONEOS_DEPLOYMENT_TARGET=6.0    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/adt-bundle-mac-x86_64-20130917/sdk/platform-tools:/Applications/adt-bundle-mac-x86_64-20130917/sdk/tools:/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/:/Applications/adt-bundle-mac-x86_64-20130917/eclipse/plugins/org.apache.ant_1.8.3.v201301120609/bin:"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -L/Users/daniel/Desktop/ODC/platforms/ios/build/emulator -F/Users/daniel/Desktop/ODC/platforms/ios/build/emulator -filelist /Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/Droog.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -weak_framework CoreFoundation -weak_framework UIKit -weak_framework AVFoundation -weak_framework CoreMedia -weak-lSystem -force_load /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/libCordova.a -ObjC -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=6.0 -framework AssetsLibrary /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/libCordova.a -framework CoreGraphics -framework MobileCoreServices -framework CoreLocation -framework Social -framework MessageUI -weak_framework AudioToolbox -Xlinker -dependency_info -Xlinker /Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Objects-normal/i386/Droog_dependency_info.dat -o /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/Droog36"4CB95359-CB64-42E4-92D1-100519EE14B1-
-b27D7F322-02CF-4E8B-88F2-99EFA0ADB551
-
-CPhaseScriptExecution Copy\ www\ directory /Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Script-304B58A110DAC018002A0835.sh
-s420432790.242039
-e420432791.151111
-r1
-xPhaseScriptExecution
-xCopy www directory
-x/Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Script-304B58A110DAC018002A0835.sh
-o
-oreal	0m0.886s
-ouser	0m0.333s
-osys	0m0.517s
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"Run custom shell script 'Copy www directory'136"[1mPhaseScriptExecution[0m Copy\ www\ directory build/Droog.build/Debug-iphonesimulator/Droog.build/Script-304B58A110DAC018002A0835.shcd903e964b0fb941^56b726974b0fb941^-42"real	0m0.886suser	0m0.333ssys	0m0.517s3(21%IDEActivityLogMessage2@14"real	0m0.886s-420432791#1#14#-0#-----2@14"user	0m0.333s-420432791#15#14#-0#-----2@13"sys	0m0.517s-420432791#29#13#-0#-----0#0#1#--326"[1mPhaseScriptExecution[0m Copy\ www\ directory build/Droog.build/Debug-iphonesimulator/Droog.build/Script-304B58A110DAC018002A0835.sh    cd /Users/daniel/Desktop/ODC/platforms/ios    /bin/sh -c /Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Script-304B58A110DAC018002A0835.sh36"2CDABD78-03DD-4286-A151-829B6E37ABA9-
-b27D7F322-02CF-4E8B-88F2-99EFA0ADB551
-
-CProcessInfoPlistFile /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/Info.plist /Users/daniel/Desktop/ODC/platforms/ios/Droog/Droog-Info.plist
-s420432790.237956
-e420432790.239930
-r1
-xProcessInfoPlistFile
-x/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/Info.plist
-x/Users/daniel/Desktop/ODC/platforms/ios/Droog/Droog-Info.plist
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Process /Users/daniel/Desktop/ODC/platforms/ios/Droog/Droog-Info.plist95"[1mProcessInfoPlistFile[0m build/emulator/Droog.app/Info.plist [1mDroog/Droog-Info.plist[0mc9ff3c964b0fb941^0bd13d964b0fb941^---0#0#1#-19%DVTDocumentLocation2@69"file:///Users/daniel/Desktop/ODC/platforms/ios/Droog/Droog-Info.plist0000000000000000^985"[1mProcessInfoPlistFile[0m build/emulator/Droog.app/Info.plist [1mDroog/Droog-Info.plist[0m    cd /Users/daniel/Desktop/ODC/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/adt-bundle-mac-x86_64-20130917/sdk/platform-tools:/Applications/adt-bundle-mac-x86_64-20130917/sdk/tools:/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/:/Applications/adt-bundle-mac-x86_64-20130917/eclipse/plugins/org.apache.ant_1.8.3.v201301120609/bin:"    builtin-infoPlistUtility /Users/daniel/Desktop/ODC/platforms/ios/Droog/Droog-Info.plist -genpkginfo /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app/Info.plist36"5273D467-B692-4004-B9DF-8D8B9D189583-
-b27D7F322-02CF-4E8B-88F2-99EFA0ADB551
-
-CProcessPCH /var/folders/_8/9dq87dp53y3ccks_dzj2xk340000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Droog-Prefix-bvyixaisrrokkgaktbslbhlehawz/Droog-Prefix.pch.pch Droog/Droog-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s420432794.033373
-e420432794.337694
-r1
-xProcessPCH
-x/var/folders/_8/9dq87dp53y3ccks_dzj2xk340000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Droog-Prefix-bvyixaisrrokkgaktbslbhlehawz/Droog-Prefix.pch.pch
-xDroog/Droog-Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/daniel/Desktop/ODC/platforms/ios/Droog/Droog-Prefix.pch
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection33"Precompile Droog/Droog-Prefix.pch290"[1mProcessPCH[0m /var/folders/_8/9dq87dp53y3ccks_dzj2xk340000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Droog-Prefix-bvyixaisrrokkgaktbslbhlehawz/Droog-Prefix.pch.pch Droog/Droog-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerefad089a4b0fb941^ab75569a4b0fb941^---0#0#1#-19%DVTDocumentLocation2@69"file:///Users/daniel/Desktop/ODC/platforms/ios/Droog/Droog-Prefix.pch0000000000000000^3855"[1mProcessPCH[0m /var/folders/_8/9dq87dp53y3ccks_dzj2xk340000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Droog-Prefix-bvyixaisrrokkgaktbslbhlehawz/Droog-Prefix.pch.pch Droog/Droog-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/daniel/Desktop/ODC/platforms/ios    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/adt-bundle-mac-x86_64-20130917/sdk/platform-tools:/Applications/adt-bundle-mac-x86_64-20130917/sdk/tools:/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/:/Applications/adt-bundle-mac-x86_64-20130917/eclipse/plugins/org.apache.ant_1.8.3.v201301120609/bin:"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Droog-generated-files.hmap -I/Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Droog-own-target-headers.hmap -I/Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Droog-all-target-headers.hmap -iquote /Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/Droog-project-headers.hmap -I/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/include -I/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/usr/local/lib/include -I/Users/daniel/Desktop/ODC/platforms/ios/build/UninstalledProducts/include -I/Users/daniel/Desktop/ODC/platforms/ios/build/emulator -I/Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/DerivedSources/i386 -I/Users/daniel/Desktop/ODC/platforms/ios/build/Droog.build/Debug-iphonesimulator/Droog.build/DerivedSources -F/Users/daniel/Desktop/ODC/platforms/ios/build/emulator --serialize-diagnostics /var/folders/_8/9dq87dp53y3ccks_dzj2xk340000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Droog-Prefix-bvyixaisrrokkgaktbslbhlehawz/Droog-Prefix.pch.dia -MMD -MT dependencies -MF /var/folders/_8/9dq87dp53y3ccks_dzj2xk340000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Droog-Prefix-bvyixaisrrokkgaktbslbhlehawz/Droog-Prefix.pch.d -c /Users/daniel/Desktop/ODC/platforms/ios/Droog/Droog-Prefix.pch -o /var/folders/_8/9dq87dp53y3ccks_dzj2xk340000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Droog-Prefix-bvyixaisrrokkgaktbslbhlehawz/Droog-Prefix.pch.pch36"B45748F3-795B-4EE5-A48E-C5BC1B9ACB5C-
-b27D7F322-02CF-4E8B-88F2-99EFA0ADB551
-
-CTouch /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app
-s420432794.609621
-e420432794.614698
-r1
-xTouch
-x/Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Touch /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app38"[1mTouch[0m build/emulator/Droog.app0b289c9a4b0fb941^1c5d9d9a4b0fb941^---0#0#1#--697"[1mTouch[0m build/emulator/Droog.app    cd /Users/daniel/Desktop/ODC/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/adt-bundle-mac-x86_64-20130917/sdk/platform-tools:/Applications/adt-bundle-mac-x86_64-20130917/sdk/tools:/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/:/Applications/adt-bundle-mac-x86_64-20130917/eclipse/plugins/org.apache.ant_1.8.3.v201301120609/bin:"    /usr/bin/touch -c /Users/daniel/Desktop/ODC/platforms/ios/build/emulator/Droog.app36"261CDC25-A314-4AA7-86C8-8AD7E53FCC56-
-b27D7F322-02CF-4E8B-88F2-99EFA0ADB551
-
