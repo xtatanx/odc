@@ -37,6 +37,17 @@ body
     color #fff
     text-shadow none
     font-weight normal
+
+.ui-page-theme-a .back_btn
+  background none
+  border none
+  text-shadow none
+  box-shadow none
+  font-size 18px
+  color #fff
+  text-transform none
+  font-weight normal
+  line-height 2      
  
 // my styles
 [data-role="page"]
@@ -76,12 +87,14 @@ body
     
 
 #odc_info
-  background-color #fff
-  border none
-  top 1em
-  &:after
-    background-color #2ab3e7
-    background-color rgba(#2ab3e7, .8) 
+  top 1.1em
+  right .8em
+  padding .4em .6em
+  &:before
+    color #2ab3e7
+    color rgba(#2ab3e7, .8)
+    font-size 1.8em
+    font-weight normal 
 
 #panel_header
   background #2ab3e7
@@ -102,16 +115,8 @@ body
 .aditional_info
   margin 1em 0 
 
-.ui-page-theme-a .back_btn
-  background none
-  border none
-  text-shadow none
-  box-shadow none
-  font-size 18px
-  color #fff
-  text-transform none
-  font-weight normal
-  line-height 2  
+.bold
+  font-weight bold
 
 .drug_bg
   position absolute
@@ -170,7 +175,6 @@ body
   width 28%
   display inline-block
   vertical-align middle
-  padding-top 16px
   & + .footer_logo
     margin-left 4%
 
@@ -245,10 +249,11 @@ body
 
 .odc_logo
   display block
-  height 46px
+  height auto
   margin 0 auto
-  padding 9px 0
-  width 182px
+  padding 0
+  width 60%
+  max-width 364px
   & img
     width 100%
 

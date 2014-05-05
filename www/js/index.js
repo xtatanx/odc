@@ -39,7 +39,6 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        app.calcPageHeight();
         app.bindTheEvents();
     },
     // Update DOM on a Received Event
@@ -68,9 +67,12 @@ var app = {
         $( "[data-role='panel']" ).panel();
 
         // content fits 100% of the window height
-        $document.on('pageshow', '[data-role="page"]', function(){
+        $(document).on('pageshow pageinit', '[data-role="page"]', function(){
             app.calcPageHeight();
         });
+
+        // calculate height 
+        app.calcPageHeight();
 
         // create taps widget
         $.widget( "ui.tabs", $.ui.tabs, {
@@ -97,20 +99,27 @@ var app = {
         });
 
         // check for updates every time the app initialize
-        this.verificarFechas();
+        // this.verificarFechas();
 
     },
 
     calcPageHeight: function(){
-        var headerH =  $( "[data-role='header']").outerHeight();
-        var footerH =  $( "[data-role='footer']").outerHeight();
+        scroll(0,0);
+
+        var headerH =  $( "#header").outerHeight();
+        var footerH =  $( "#footer").outerHeight();
         var winH = $(window).height();
-        var pageH = winH - footerH - headerH;
+        var content = $('ui-content');
+        var contentMargins = content.outerHeight() - content.height();
+        var pageH = winH - headerH - footerH - contentMargins;
+        console.log(winH);
+        console.log(headerH);
+        console.log(footerH);
+        console.log(pageH);
 
         $("[data-role='page']").css({
-            'height': pageH,
-            'padding-top': headerH,
-            'padding-bottom': footerH
+            'min-height': pageH,
+            'height': pageH
         });
     }
 };

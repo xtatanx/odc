@@ -15,13 +15,13 @@
         <link rel="stylesheet" media="screen and (-webkit-min-device-pixel-ratio: 2)" href="css/media-queries.css"/>
 <!--         <link rel="stylesheet" media="screen and (-webkit-min-device-pixel-ratio: 2)" href="css/media-queries2x.css"> --> 
         <!-- no mover los scripts de aca -->
-        <script type="text/javascript" src="phonegap.js"></script>
+        <!--<script type="text/javascript" src="phonegap.js"></script>-->
         <script type="text/javascript" src="js/jquery.js"></script>
-        <script type="text/javascript" src="js/thirdparty/jquery.blockUI.js"></script>
+        <!-- <script type="text/javascript" src="js/thirdparty/jquery.blockUI.js"></script> -->
         <script type="text/javascript" src="jquery-mobile/jquery.mobile-1.4.2.min.js"></script>
         <script type="text/javascript" src="js/thirdparty/chart.js" ></script>
-         <script type="text/javascript" src="js/thirdparty/SocialSharing.js"></script>
-        <script type="text/javascript" src="js/graphs.js"></script>
+        <!--<script type="text/javascript" src="js/thirdparty/SocialSharing.js"></script>-->
+        <!--<script type="text/javascript" src="js/graphs.js"></script>-->
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
 
@@ -32,7 +32,7 @@
             <div class="odc_logo">
                 <img src="img/odc_logo.png" alt="">
             </div>
-            <a class="ui-btn-right ui-btn ui-corner-all ui-icon-info ui-btn-icon-notext" id="odc_info" href="#info_panel"></a>
+            <a class="ui-btn-right ui-btn ui-corner-all info-icon ui-btn-icon-notext" id="odc_info" href="#info_panel"></a>
         </div>
         <div data-role="panel" id="info_panel" data-position="right" data-theme="a" data-display="overlay">
             <div id="panel_header" data-role="header">
@@ -47,7 +47,7 @@
                 </li>
                 <li>
                   <p>Daniel Warner</p>
-                  <p class="bold"><span class="panel_twitterIcon"><img src="img/twitter-icon.png" alt="twitter icon"></span>@...</p>
+                  <p class="bold"><span class="panel_twitterIcon"><img src="img/twitter-icon.png" alt="twitter icon"></span>@danywarner</p>
                 </li>
                 <li>
                   <p>Jhonnatan Gonzalez</p>
@@ -207,7 +207,9 @@
         </div>  
         <!-- el app se inicializa unavez el DOM esta listo -->
         <script type="text/javascript">
-            app.initialize();
+            $(window).load(function(){
+                app.initialize();
+            });
         </script>           
     </body>
 </html>

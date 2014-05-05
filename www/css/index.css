@@ -5,6 +5,7 @@ body{-webkit-text-size-adjust:none;-webkit-touch-callout:none;-webkit-user-selec
 .ui-grid-b>.ui-block-a,.ui-grid-b>.ui-block-b,.ui-grid-b>.ui-block-c{text-align:center}
 .ui-page-theme-a .ui-bar-inherit{background:none;border-bottom:1px solid #fff;}
 .ui-page-theme-a .ui-bar-inherit h1{color:#fff;text-shadow:none;font-weight:normal}
+.ui-page-theme-a .back_btn{background:none;border:none;text-shadow:none;box-shadow:none;font-size:18px;color:#fff;text-transform:none;font-weight:normal;line-height:2}
 [data-role="page"]{background:#2ab3e7}
 #chartCanvas{margin:.5em auto;display:block}
 #drug{margin:1em 0;}
@@ -15,20 +16,20 @@ body{-webkit-text-size-adjust:none;-webkit-touch-callout:none;-webkit-user-selec
 #header,#footer{background:#fff;height:auto}
 #home{-moz-background-size:cover;background-size:cover}
 #info_panel{position:fixed}
-#odc_info{background-color:#fff;border:none;top:1em;}
-#odc_info:after{background-color:#2ab3e7;background-color:rgba(42,179,231,0.8)}
+#odc_info{top:1.1em;right:.8em;padding:.4em .6em;}
+#odc_info:before{color:#2ab3e7;color:rgba(42,179,231,0.8);font-size:1.8em;font-weight:normal}
 #panel_header{background:#2ab3e7;color:#fff}
 #panel_title{text-shadow:none;width:90%;margin:0 auto;font-size:1.2em;padding:.5em 0}
 #tabs{-webkit-box-sizing:border-box;box-sizing:border-box;height:100%}
 .aditional_info{margin:1em 0}
-.ui-page-theme-a .back_btn{background:none;border:none;text-shadow:none;box-shadow:none;font-size:18px;color:#fff;text-transform:none;font-weight:normal;line-height:2}
+.bold{font-weight:bold}
 .drug_bg{position:absolute;top:0;left:0;width:100%;height:100%;background-size:cover;-webkit-background-size:cover;background-position:center center;background-attachment:fixed}
 .drug_title{color:#fff;text-shadow:none;font-weight:normal;margin:.3em 0}
 .drug_label{color:#fff;text-transform:none;text-shadow:none;position:relative;white-space:nowrap}
 .drug_statistic{position:absolute;right:0;top:0;font-size:2em;float:right;border:2px solid #fff;padding:.4em;border-radius:50%;width:40px;height:40px;text-align:center;line-height:1.2}
 .drug_chart_title{color:#fff;text-shadow:1px 1px 0 rgba(0,0,0,0.2);font-size:1em;text-align:center;font-weight:normal}
 .ellipsis{text-overflow:ellipsis;overflow:hidden;white-space:nowrap;display:block;margin:.5em 0;color:#fff}
-.footer_logo{width:28%;display:inline-block;vertical-align:middle;padding-top:16px;}
+.footer_logo{width:28%;display:inline-block;vertical-align:middle;}
 .footer_logo + .footer_logo{margin-left:4%}
 .footer_logo img{width:100%}
 .hr{width:90%;margin:6px auto;height:3px;background:#28328a}
@@ -40,7 +41,7 @@ body{-webkit-text-size-adjust:none;-webkit-touch-callout:none;-webkit-user-selec
 .menu_btn{-moz-box-sizing:border-box;border:.2em solid #fff;border-radius:50%;box-sizing:border-box;display:inline-block;padding-top:90%;text-align:center;text-decoration:none;width:90%;margin:0 auto;position:relative;font-weight:normal;}
 .menu_btn:before{font-size:3em;position:absolute;top:50%;left:50%;margin-top:-24px;margin-left:-24.5px;color:#fff;text-shadow:none;font-weight:normal}
 .menu_btn_link{display:block;width:100%;height:100%;text-decoration:none}
-.odc_logo{display:block;height:46px;margin:0 auto;padding:9px 0;width:182px;}
+.odc_logo{display:block;height:auto;margin:0 auto;padding:0;width:60%;max-width:364px;}
 .odc_logo img{width:100%}
 .panel_content{background:#fcfcfc;padding:.5em;margin-top:1em}
 .panel_list{margin:0;padding:0;list-style:none;}
