@@ -113,18 +113,6 @@ var app = {
         var page = $("[data-role='page']");
         var contentMargins = content.outerHeight() - content.height();
         var pageH = winH - headerH - footerH - contentMargins;
-        var pageHeader = $("#pageHeader");
-        var tabs = $('#tabs');
-
-        // locate the title of drugs in pages as fixed
-        pageHeader.css({
-            'top': page.css('padding-top')
-        });
-
-        // give space to title
-        // tabs.css({
-        //     'margin-top': pageHeader.outerHeight()
-        // });
 
         page.css({
             'min-height': pageH,
