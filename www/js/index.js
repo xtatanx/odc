@@ -110,6 +110,7 @@ var app = {
         var footerH =  $( "#footer").outerHeight();
         var winH = $(window).height();
         var content = $('ui-content');
+        var page = $("[data-role='page']");
         var contentMargins = content.outerHeight() - content.height();
         var pageH = winH - headerH - footerH - contentMargins;
         var pageHeader = $("#pageHeader");
@@ -117,7 +118,7 @@ var app = {
 
         // locate the title of drugs in pages as fixed
         pageHeader.css({
-            'top': headerH
+            'top': page.css('padding-top')
         });
 
         // give space to title
@@ -125,7 +126,7 @@ var app = {
         //     'margin-top': pageHeader.outerHeight()
         // });
 
-        $("[data-role='page']").css({
+        page.css({
             'min-height': pageH,
             'height': pageH
         });
