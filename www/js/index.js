@@ -115,6 +115,7 @@ var app = {
         var contentMargins = content.outerHeight() - content.height();
         var pageH = winH - headerH - footerH - contentMargins;
 
+        // set height to the space betwen header and footer
         page.css({
             'min-height': pageH,
             'height': pageH
@@ -123,13 +124,18 @@ var app = {
     },
 
     manageBackBtn: function(){
+        // root path of the app
         var indexPath = $.mobile.path.getDocumentBase();
+        // path after navigate
         var currentPath = $.mobile.path.getLocation();
+        // reference to back btn
         var $backBtn = $('#back_btn');
 
         if(currentPath !== indexPath && !$backBtn.hasClass('block')){
+            //  if the path is different to index show the back btn
             $backBtn.addClass('block');
         }else{
+            // if not doesnt show
             $backBtn.removeClass('block');
         }
     }
