@@ -66,9 +66,10 @@ var app = {
         //create panels
         $( "[data-role='panel']" ).panel();
 
-        // content fits 100% of the window height
+        // bind functions that execute on every pageshow
         $(document).on('pageshow pageinit', '[data-role="page"]', function(){
             app.calcPageHeight();
+            app.manageBackBtn();
         });
 
         // calculate height 
@@ -119,5 +120,17 @@ var app = {
             'height': pageH
         });
 
+    },
+
+    manageBackBtn: function(){
+        var indexPath = $.mobile.path.getDocumentBase();
+        var currentPath = $.mobile.path.getLocation();
+        var $backBtn = $('#back_btn');
+
+        if(currentPath !== indexPath && !$backBtn.hasClass('block')){
+            $backBtn.addClass('block');
+        }else{
+            $backBtn.removeClass('block');
+        }
     }
 };

@@ -37,21 +37,34 @@ body
     color #fff
     text-shadow none
     font-weight normal
-
-.ui-page-theme-a .back_btn
-  background none
-  border none
-  text-shadow none
-  box-shadow none
-  font-size 18px
-  color #fff
-  text-transform none
-  font-weight normal
-  line-height 2      
+      
  
 // my styles
 [data-role="page"]
   background #2ab3e7
+
+#back_btn
+  border-radius .3125em
+  display none
+  text-shadow none
+  box-shadow none
+  font-size 18px
+  color #fff
+  width 40px
+  height 35px
+  top 50%
+  margin-top -17.5px
+  left .6em
+  &:after
+    color #2ab3e7
+    color rgba(#2ab3e7, .8)
+  &.ui-btn-active
+    background-color darken(#fefefe, 10%)
+    border-color darken(#fefefe, 20%)
+    color #fff
+    text-shadow none
+  &.block
+    display block             
 
 #chartCanvas
   margin .5em auto
@@ -97,6 +110,12 @@ body
     color rgba(#2ab3e7, .8)
     font-size 1.8em
     font-weight normal
+  &.ui-btn-active
+    background-color darken(#fefefe, 10%)
+    border-color darken(#fefefe, 20%)
+    color #fff
+    text-shadow none  
+    
 
 #pageHeader
   border-top none
@@ -126,10 +145,10 @@ body
   padding-right 0 
 
 .aditional_info
-  margin 1em 0 
+  margin 1em 0   
 
 .bold
-  font-weight bold
+  font-weight bold 
 
 .drug_bg
   position absolute
