@@ -106,7 +106,13 @@ var app = {
         });
 
         // check for updates every time the app initialize
-        this.verificarFechas();
+        document.addEventListener('online', this.verificarFechas, false);
+        if((navigator.network.connection.type).toUpperCase() != "NONE" && (navigator.network.connection.type).toUpperCase() != "UNKNOWN") {
+           this.verificarFechas();
+        }else{
+          alert('Esta aplicación funciona mejor conectada a internet. Porfavor revisa tu conexión.');
+        }      
+      
 
     },
 

@@ -24,6 +24,12 @@
                             "xml": "true",
                             "count": 1
                         }
+                    ],
+                    "SystemConfiguration.framework": [
+                        {
+                            "xml": "true",
+                            "count": 1
+                        }
                     ]
                 }
             },
@@ -41,6 +47,10 @@
                         {
                             "xml": "<feature name=\"StatusBar\"><param name=\"ios-package\" value=\"StatusBar\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"NetworkStatus\"><param name=\"ios-package\" value=\"CDVConnection\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -55,6 +65,9 @@
             "PACKAGE_NAME": "co.gov.odc.droog"
         },
         "org.apache.cordova.plugins.StatusBar": {
+            "PACKAGE_NAME": "co.gov.odc.droog"
+        },
+        "org.apache.cordova.network-information": {
             "PACKAGE_NAME": "co.gov.odc.droog"
         }
     },

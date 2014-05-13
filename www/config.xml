@@ -20,6 +20,12 @@
         Enable individual API permissions here.
         The "device" permission is required for the 'deviceready' event.
     -->
+    <feature name="NetworkStatus">
+        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+    </feature>
+    <feature name="NetworkStatus">
+        <param name="ios-package" value="CDVConnection" />
+    </feature>        
     <feature name="http://api.phonegap.com/1.0/device" />
     <feature name="Notification">
         <param name="ios-package" value="CDVNotification" />
@@ -27,22 +33,20 @@
     <preference name="SplashScreen" value="splash" />
     <preference name="SplashScreenDelay" value="2000" />
     
-<feature name="SocialSharing">
-  <param name="ios-package" value="SocialSharing" />
-</feature>
+    <feature name="SocialSharing">
+      <param name="ios-package" value="SocialSharing" />
+    </feature>
 
 
-<feature name="Notification">
-<param name="android-package" value="org.apache.cordova.dialogs.Notification" />
-</feature>
+    <feature name="Notification">
+    <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
+    </feature>
 
-<feature name="SocialSharing">
-  <param name="android-package" value="nl.xservices.plugins.SocialSharing" />
-</feature>
+    <feature name="SocialSharing">
+      <param name="android-package" value="nl.xservices.plugins.SocialSharing" />
+    </feature>
 
-<gap:plugin name="nl.x-services.plugins.socialsharing" version="4.0" />
-
-
+    <gap:plugin name="nl.x-services.plugins.socialsharing" version="4.0" /> 
 
     
     <!--
