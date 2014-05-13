@@ -22,7 +22,7 @@ body
   padding-top 0
   height 100%
   overflow-y scroll
-  -webkit-overflow-scrolling touch 
+  -webkit-overflow-scrolling touch
 
 .ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper
   background #2ab3e7
@@ -37,8 +37,22 @@ body
     color #fff
     text-shadow none
     font-weight normal
-      
- 
+
+.ui-panel.ui-panel-open
+  position fixed    
+
+.ui-panel-inner
+  box-sizing border-box
+  -moz-box-sizing border-box
+  position absolute
+  left 0
+  top 1px
+  right 0
+  bottom 0
+  height 100%
+  overflow-y scroll
+  -webkit-overflow-scrolling: touch;
+
 // my styles
 [data-role="page"]
   background #2ab3e7
@@ -209,7 +223,17 @@ body
   white-space nowrap
   display block
   margin .5em 0
-  color #fff  
+  color #fff 
+
+.entidades
+  img
+    background darken(#fff, 8%)
+    padding 5% 
+    display block
+    margin 0 auto
+    width 90%
+    & + img
+      margin-top .2em
 
 .footer_logo  
   width 28%
@@ -308,12 +332,15 @@ body
   list-style none
   li
     padding .1em .4em
-    background darken(#fff, 10%)
+    background darken(#fff, 8%)
     & + li
       margin-top .2em
     p
       color lighten(#000, 5%)
-      margin .3em 0 
+      margin .3em 0
+
+.panel-opened
+  overflow hidden       
 
 .panel_twitterIcon
   width 24px
