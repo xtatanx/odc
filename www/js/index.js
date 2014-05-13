@@ -43,6 +43,11 @@ var app = {
     },
     // Update DOM on a Received Event
     bindTheEvents: function() {
+      if(navigator.online){
+        alert('im online');
+      }else{
+        alert('not online');
+      }
         console.log('device is ready, binding custom events');
         // cache some variables
         var $menu_btn = $('.menu_btn');
@@ -69,8 +74,10 @@ var app = {
         // bind functions that execute on every pageshow
         $(document).on('pageshow pageinit', '[data-role="page"]', function(){
             app.calcPageHeight();
-            app.manageBackBtn();
         });
+
+        // mange the state of the back button
+        app.manageBackBtn();
 
         // calculate height 
         app.calcPageHeight();
@@ -126,17 +133,22 @@ var app = {
     manageBackBtn: function(){
         // root path of the app
         var indexPath = $.mobile.path.getDocumentBase();
-        // path after navigate
-        var currentPath = $.mobile.path.getLocation();
         // reference to back btn
         var $backBtn = $('#back_btn');
 
-        if(currentPath !== indexPath && !$backBtn.hasClass('block')){
+        $(window).on('pagebeforeshow', function(event,data){
+          // path after navigate
+          var currentPath = $.mobile.path.getLocation();
+          console.log(currentPath);
+          if(currentPath !== indexPath && !$backBtn.hasClass('block')){
             //  if the path is different to index show the back btn
             $backBtn.addClass('block');
-        }else{
+            console.log('removing');
+          }else{
             // if not doesnt show
             $backBtn.removeClass('block');
-        }
+            console.log('not removing');
+          }
+        });
     }
 };
