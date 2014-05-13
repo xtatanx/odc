@@ -43,12 +43,10 @@ var app = {
     },
     // Update DOM on a Received Event
     bindTheEvents: function() {
-      if(navigator.online){
-        alert('im online');
-      }else{
-        alert('not online');
-      }
         console.log('device is ready, binding custom events');
+        //initialize page once the DOM is fully loaded to avoid strange flick once the header and footer load
+        $.mobile.initializePage(); 
+        
         // cache some variables
         var $menu_btn = $('.menu_btn');
         var $drugPage = $('#drug_item');
@@ -62,6 +60,7 @@ var app = {
             statusbar = window.plugins.statusBar;
             statusbar.hide();
         }
+
         // create toolbars
         $( "[data-role='header'], [data-role='footer']" ).toolbar({
             theme: 'a',
@@ -69,7 +68,7 @@ var app = {
         });
 
         //create panels
-        $( "[data-role='panel']" ).panel();
+        $( "[data-role='panel']" ).panel();        
 
         // bind functions that execute on every pageshow
         $(document).on('pageshow pageinit', '[data-role="page"]', function(){
