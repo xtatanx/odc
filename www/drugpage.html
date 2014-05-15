@@ -48,9 +48,18 @@
     }
 
     </script>
+    <script>
+function load()
+{
+ var nombre = Request.QueryString("variable");
+    alert(nombre);
+
+}
+
+</script>
 
 </head>
-<body>
+<body onload="load()">
     <div data-role="page" id="drug_item">
         <div role="main" class="ui-content">
             <div data-role="header" id="pageHeader">
@@ -68,29 +77,34 @@
             <div id="drug" class="tab_body">
                 <img src="img/official_pictures/alcohol.jpg" alt="">
                 <div class="aditional_info">
+                  
                     <div class="drug_label drug_label__interna">Características:</div>
-                                   <ul>   Violencia y Lesiones: 
-<li>Incremento de la morbilidad asociada con violencia (ej. asaltos) y accidentes</li> 
-                 </ul>
- <ul> Respuestas Fisiológicas:
-<li>Bajo azúcar en la sangre (hipoglicemia)</li> 
-<li>Aumento de la presión sanguínea, irregular latido del corazón (arritmia)</li> 
-<li> Sueño perturbado</li>
-<li> Decremento en la agudeza de la visión, audición, y otros sentidos</li>
-<li>Decremento de la coordinación and pérdida del balance (ataxia)</li> 
-<li>Somnolencia, perdida de la consciencia</li> 
-<li> Enrojecimiento de la cara </li>
-<li>Hipotermia</li> 
-<li> Incremento en el índice de micción (diuresis), deshidratación</li>
-      </ul>
- <ul>Complicaciones Gastrointestinales:
-<li>Gastritis, vómito y acidez </li> 
-<li>Diarrea, nauseas</li> 
-<li>Ruptura de la mucosa esofágica, asociada con el vómito  después de ingerir alcohol (Mallory-Weiss tears)</li> 
-      </ul>
+                       <p>
+                Qué busca el que lo consume:<br>
+                * Relajación y tranquilidad<br>
+                * Desinhibición y euforia<br><br>
+               
+               
+
+                Qué puede salir mal?<br>
+                * Sentir -<br>
+                * Histeria<br>
+                * Comerse un "gurre"<br><br>
+               
+
+
+                Enfermedades:<br>
+                * Gastritis<br>
+                * Taquicardia<br>
+                * Cirrosis hepática<br><br>
+              
                 
+
+                Intoxicacion:<br>
+                * Ante el consumo de licor adulterado<br>
+                * Cuando se mezclan licores destilados (whisky) con licores fermentados (vino)
                 
-             
+               </p>
                 </div>
             </div>
             <div id="drug_info" class="tab_body">
