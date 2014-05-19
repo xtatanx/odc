@@ -107,13 +107,17 @@ var app = {
 
         // if device is offline and get back online
         document.addEventListener('online', this.verificarFechas, false);
-        // if device is connected to a network update data
-        if((navigator.network.connection.type).toUpperCase() != "NONE" && (navigator.network.connection.type).toUpperCase() != "UNKNOWN") {
-           // check for updates every time the app initialize
-           this.verificarFechas();
-        }else{
-          alert('Esta aplicación funciona mejor conectada a internet. Porfavor revisa tu conexión.');
-        }      
+
+        // trigger if is a mobile device
+        if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/)){
+          // if device is connected to a network update data
+          if((navigator.network.connection.type).toUpperCase() != "NONE" && (navigator.network.connection.type).toUpperCase() != "UNKNOWN") {
+             // check for updates every time the app initialize
+             this.verificarFechas();
+          }else{
+            alert('Esta aplicación funciona mejor conectada a internet. Porfavor revisa tu conexión.');
+          }  
+        }    
       
 
     },

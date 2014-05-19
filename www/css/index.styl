@@ -51,7 +51,14 @@ body
   bottom 0
   height 100%
   overflow-y scroll
-  -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling touch
+
+.ui-page-theme-a .tab
+  background none
+  color #fff
+  font-weight normal    
+  text-shadow none
+  border-color #fff  
 
 // my styles
 [data-role="page"]
@@ -376,13 +383,6 @@ body
   & h1
     text-align center    
 
-.ui-page-theme-a .tab
-  background none
-  color #fff
-  font-weight normal    
-  text-shadow none
-  border-color #fff
-
 .silueta
   width 100%
   max-width 320px
@@ -404,7 +404,17 @@ body
     &:before
       font-size 7em
       margin-left - 56.5px
-      margin-top - 56px    
+      margin-top - 56px
+
+
+@media screen and (min-width: 1110px)
+  .menu_btn
+    padding-top 70%
+    width 70%
+    &:before
+      font-size 10em
+      margin-left - 80px
+      margin-top - 80px          
 
 
 
