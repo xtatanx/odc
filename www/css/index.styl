@@ -67,18 +67,16 @@ body
 #back_btn
   border-radius .3125em
   display none
-  text-shadow none
   box-shadow none
-  font-size 18px
-  color #fff
-  width 40px
-  height 35px
+  padding .4em .46em
   top 50%
   margin-top -17.5px
-  left .6em
-  &:after
+  left .8em
+  position absolute
+  &:before
     color #2ab3e7
     color rgba(#2ab3e7, .8)
+    font-size 1.8em
   &.ui-btn-active
     background-color darken(#fefefe, 10%)
     border-color darken(#fefefe, 20%)
@@ -90,6 +88,20 @@ body
 #chartCanvas
   margin .5em auto
   display block
+
+#close_btn
+  background transparent
+  padding .2em
+  text-align center
+  border none
+  text-shadow none
+  color #fff
+  top 50%
+  margin-top -15px
+  &:before
+    font-size 2em 
+  &.ui-btn-active
+    color darken(#fff, 20%)   
 
 #drug
   margin 1em 0 
@@ -120,12 +132,11 @@ body
 #info_panel
   position fixed
     
-
 #odc_info
   top 50%
   margin-top -17.5px
   right .8em
-  padding .4em .6em
+  padding .4em 1em
   &:before
     color #2ab3e7
     color rgba(#2ab3e7, .8)
