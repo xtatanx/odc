@@ -6,7 +6,7 @@ app.verificarFechas = function()
      'Game Over',            // titulo (title)
          'Restart'          // botones (buttonLabels)
          );*/
-   	
+   	     var listaDrogas=[];
 		var storedDate = window.localStorage.getItem("firstDate");
 		if(!storedDate)//se ejecuta solo la primera vez que se abre la aplicacion
 		{
@@ -32,12 +32,113 @@ app.verificarFechas = function()
 			{
 				//alert('actualizar');
 				  $.blockUI({ message: 'Cargando datos...'});
-				$.get("http://yoreporto.herokuapp.com/twitter/tweets/", {"count": 20}, "json").
+                
+                $.get("http://servicedatosabiertoscolombia.cloudapp.net/v1/Ministerio_de_Justicia/drogadescr?&$format=json").
+			//	$.get("http://yoreporto.herokuapp.com/twitter/tweets/", {"count": 20}, "json").
 					done(function (data) {
 					 $.unblockUI();
-					//alert('downloaded');
+                        var nombres=[];
+                        var partesCuerpo=[];
+                        var enfermedades=[];
+                       
+                        var currentDrug=null;
+                        var currentPart=null;
+                      
+                        
+                        
+                        
+                        for (var y in data.d) 
+                        {   
+                            nombres.push(data.d[y].nombredeladroga);
+                        }
+                        var singleDrugs=count(nombres);
+                        //  alert(singleDrugs);
+                        for(var a in singleDrugs)
+                        {
+                            
+                             currentDrug=singleDrugs[a];
+                            var droga = new drug(currentDrug);
+                            
+                            
+                            //drug.partes=new Map();
+                           
+                            for (var x in data.d) 
+                            {
+                               if(currentDrug==data.d[x].nombredeladroga)
+                               {
+                                   //alert(currentDrug);
+                                   var parte=data.d[x].partedecuerpo;
+                                   var efecto=data.d[x].enfermedad;
+                                   //alert(parte);
+                                   //alert(efecto);
+                                   droga.insert(parte, efecto);
+                               }
+                            }
+                            //alert(droga.nombre);
+                            listaDrogas.push(droga);
+                        }
+                        var show=listaDrogas.pop();
+                        alert(show.nombre);
+                        alert(show.partes.get("boca"));
+                        
+                        var lista = document.getElementById("extasisList");
+                        var now=show.partes.current;
+                      for(var i=0;i<show.partes.size;i++)
+                      {
+                          
+                        
+                          //alert(i+now.key+" "+now.value);
+                          
+                          var efectos=now.value.split("/");
+                          //alert(efectos);
+                          for(var j=0;j<efectos.length-1;j++)
+                          {alert(j);
+                            var el = document.createElement("li");
+                            var pe = document.createElement("p");
+                            var e = efectos[j];alert(e);
+                              pe.innerHTML = e;alert("h1");
+                            el.appendChild(pe);alert("h2");
+                            lista.appendChild(el);alert("h3");
+                          }
+                          
+                          
+                          now=now.next;
+                      }
+                        
+                    
+                            var ecabeza=show.partes.get("cabeza");
+                         var eboca=show.partes.get("boca");
+                         var egarganta=show.partes.get("garganta");
+                         var ecorazon=show.partes.get("corazón");
+                         var eestomago=show.partes.get("estomago");
+                        alert("hey2");
+                       var cabezas=ecabeza.split("/"); alert("hey3");
+                        var bocas=eboca.split("/"); alert("hey4");
+                        var gargantas=egarganta.split("/"); alert("hey5");
+                        var corazones=ecorazon.split("/"); alert("hey6");
+                        var estomagos=eestomago.split("/"); alert("hey7");
+                        alert("hey!");
+                        alert(cabezas.pop);
+                  /*  for (x in data.tweets) {
+                        var trino = data.tweets[x].text;
+                        var image = data.tweets[x].profile_image_url;
+                        var el = document.createElement("il");
+                        var pe = document.createElement("p");
+                        pe.innerHTML = trino;
+                        var img = document.createElement("img");
+                        img.src = image;
+                        //el.textContent = trino;
+                        el.appendChild(img);
+                        el.appendChild(pe);
+                        //el.list-style-image = url(image);
+                        lista.appendChild(el);
+                    }*/
+                        
+                        
+                        
+                  	//alert('downloaded');
 					
-					var nombre="nombredroga";
+					/*var nombre="nombredroga";
 					var imageURL=window.localStorage.getItem(nombre+"URL");
 					if(imageURL!=json.imageURL)
 					{
@@ -57,21 +158,9 @@ app.verificarFechas = function()
 						{
 							console.log("Storage failed: " + e);
 						};
-					}
-				/*
-				var lista = document.getElementById("tweets");
-				for (x in data.tweets) {
-					var trino = data.tweets[x].text;
-					var image = data.tweets[x].profile_image_url;
-					var el = document.createElement("il");
-					var pe = document.createElement("p");
-					pe.innerHTML = trino;
-					var img = document.createElement("img");
-					img.src = image;
-					el.appendChild(img);
-					el.appendChild(pe);
-					lista.appendChild(el);
-				*/
+					}*/
+				
+				
 				nextUpdate.setMonth(today.getMonth() + 1);
 				window.localStorage.setItem("nextUpdate",nextUpdate);
 				 }).fail(function (data) 
@@ -87,7 +176,59 @@ app.verificarFechas = function()
 			}
 		}
 	
-	}
+	};
+
+function drug (nombre) {
+    this.nombre = nombre;
+    this.partes = new Map();
+    this.insert = insert;
+}
+ 
+// anti-pattern! keep reading...
+function insert(parte, efecto) 
+{
+     var efectos=this.partes.get(parte);
+      
+           if(efectos===undefined   )
+           {
+                efecto+="/";
+                this.partes.put(parte,efecto);
+           }
+           else
+           {
+                efectos+=efecto;
+                efectos+="/";
+                this.partes.remove(parte);
+                this.partes.put(parte,efectos);
+           }
+    
+}
+
+
+
+function count(arreglo) {
+  
+
+    arreglo.sort();
+    var nuevoArreglo=[];
+
+    var current = null;
+   
+    for (var i = 0; i < arreglo.length; i++) {
+        if (arreglo[i] != current) 
+        {
+            nuevoArreglo.push(arreglo[i]);
+        }
+            current = arreglo[i];
+           
+        }
+    return nuevoArreglo;
+    }
+    
+
+
+
+
 	//setea las URL de las imagenes de cada droga
 	function setImageURLS()
 	{
