@@ -117,7 +117,9 @@ var app = {
           }else{
             alert('Esta aplicación funciona mejor conectada a internet. Porfavor revisa tu conexión.');
           }  
-        }    
+        }
+
+        this.verificarFechas();    
       
 
     },

@@ -6,7 +6,7 @@ app.verificarFechas = function()
      'Game Over',            // titulo (title)
          'Restart'          // botones (buttonLabels)
          );*/
-   	     var listaDrogas=[];
+    var listaDrogas=[];
 		var storedDate = window.localStorage.getItem("firstDate");
 		if(!storedDate)//se ejecuta solo la primera vez que se abre la aplicacion
 		{
@@ -28,7 +28,7 @@ app.verificarFechas = function()
             
             //	alert('hoy '+today);
 			//alert('siguiente '+n);
-			if(today.valueOf()<nextUpdate.valueOf())
+			if(today.valueOf() < nextUpdate.valueOf())
 			{
 				//alert('actualizar');
 				  $.blockUI({ message: 'Cargando datos...'});
@@ -56,7 +56,7 @@ app.verificarFechas = function()
                         for(var a in singleDrugs)
                         {
                             
-                             currentDrug=singleDrugs[a];
+                            currentDrug = singleDrugs[a];
                             var droga = new drug(currentDrug);
                             
                             
@@ -106,7 +106,7 @@ app.verificarFechas = function()
                       }
                         
                     
-                            var ecabeza=show.partes.get("cabeza");
+                          var ecabeza=show.partes.get("cabeza");
                          var eboca=show.partes.get("boca");
                          var egarganta=show.partes.get("garganta");
                          var ecorazon=show.partes.get("corazón");
