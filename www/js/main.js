@@ -1,4 +1,4 @@
-app.verificarFechas = function()
+	app.verificarFechas = function()
 	{
    	 /*navigator.notification.alert(
      'Eres el ganador!',      // mensaje (message)
@@ -106,20 +106,20 @@ app.verificarFechas = function()
                       }
                         
                     
-                            var ecabeza=show.partes.get("cabeza");
+                         var ecabeza=show.partes.get("cabeza");
                          var eboca=show.partes.get("boca");
                          var egarganta=show.partes.get("garganta");
                          var ecorazon=show.partes.get("corazón");
                          var eestomago=show.partes.get("estomago");
                         alert("hey2");
-                       var cabezas=ecabeza.split("/"); alert("hey3");
+                       	var cabezas=ecabeza.split("/"); alert("hey3");
                         var bocas=eboca.split("/"); alert("hey4");
                         var gargantas=egarganta.split("/"); alert("hey5");
                         var corazones=ecorazon.split("/"); alert("hey6");
                         var estomagos=eestomago.split("/"); alert("hey7");
                         alert("hey!");
                         alert(cabezas.pop);
-                  /*  for (x in data.tweets) {
+                  		/*for (x in data.tweets) {
                         var trino = data.tweets[x].text;
                         var image = data.tweets[x].profile_image_url;
                         var el = document.createElement("il");
@@ -132,8 +132,7 @@ app.verificarFechas = function()
                         el.appendChild(pe);
                         //el.list-style-image = url(image);
                         lista.appendChild(el);
-                    }*/
-                        
+                    }*/                        
                         
                         
                   	//alert('downloaded');
@@ -187,8 +186,7 @@ function drug (nombre) {
 // anti-pattern! keep reading...
 function insert(parte, efecto) 
 {
-     var efectos=this.partes.get(parte);
-      
+     var efectos=this.partes.get(parte);      
            if(efectos===undefined   )
            {
                 efecto+="/";
@@ -200,18 +198,13 @@ function insert(parte, efecto)
                 efectos+="/";
                 this.partes.remove(parte);
                 this.partes.put(parte,efectos);
-           }
-    
+           }    
 }
 
-
-
-function count(arreglo) {
-  
+function count(arreglo) {  
 
     arreglo.sort();
     var nuevoArreglo=[];
-
     var current = null;
    
     for (var i = 0; i < arreglo.length; i++) {
@@ -219,14 +212,10 @@ function count(arreglo) {
         {
             nuevoArreglo.push(arreglo[i]);
         }
-            current = arreglo[i];
-           
+            current = arreglo[i];           
         }
     return nuevoArreglo;
     }
-    
-
-
 
 
 	//setea las URL de las imagenes de cada droga
@@ -247,4 +236,3 @@ function count(arreglo) {
 		window.localStorage.setItem("AnfetaminaURL","http://www.odc.gov.co/Portals/1/aplicacion-odc/imagenes/prevalencia-consumo-anfetaminas.jpg");
 		//alert('hey');
 	}
-	
