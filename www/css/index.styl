@@ -1,3 +1,5 @@
+@import "variables.styl"
+
 *
   -webkit-tap-highlight-color rgba(0,0,0,0)
   -webkit-user-select html
@@ -9,7 +11,7 @@ body
   -webkit-user-select none
   background-attachment fixed
   background-color #0085B8 !important
-  font-family 'quicksandlight', 'HelveticaNeue', Helvetica, Arial, sans-serif
+  font-family primary-font
   font-size 16px
   height 100%
   margin 0px
@@ -32,9 +34,9 @@ body
 
 .ui-page-theme-a .ui-bar-inherit 
   background none
-  border-bottom 1px solid #fff
+  border-bottom 1px solid light-color
   & h1
-    color #fff
+    color light-color
     text-shadow none
     font-weight normal
 
@@ -55,10 +57,11 @@ body
 
 .ui-page-theme-a .tab
   background none
-  color #fff
+  color light-color
   font-weight normal    
   text-shadow none
-  border-color #fff  
+  border-color light-color
+  font-family primary-font    
 
 // my styles
 [data-role="page"]
@@ -80,7 +83,7 @@ body
   &.ui-btn-active
     background-color darken(#fefefe, 10%)
     border-color darken(#fefefe, 20%)
-    color #fff
+    color light-color
     text-shadow none
   &.block
     display block             
@@ -95,33 +98,37 @@ body
   text-align center
   border none
   text-shadow none
-  color #fff
+  color light-color
   top 50%
   margin-top -15px
   &:before
     font-size 2em 
   &.ui-btn-active
-    color darken(#fff, 20%)   
+    color darken(light-color, 20%)   
 
 #drug
   margin 1em 0 
   img
-    width 100%
+    width 100%  
 
 #drug_chart
   img
     width 100%    
 
-#drug_item > .ui-content
-  box-sizing border-box
-  -webkit-box-sizing border-box
-  position relative
+#drug_item 
+  > .ui-content
+    box-sizing border-box
+    -webkit-box-sizing border-box
+    position relative
+
+#drug_info
+  text-shadow none    
 
 #footer
   text-align center
 
 #header, #footer
-  background #fff
+  background light-color
   height auto
   padding .5em 0
 
@@ -145,20 +152,20 @@ body
   &.ui-btn-active
     background-color darken(#fefefe, 10%)
     border-color darken(#fefefe, 20%)
-    color #fff
+    color light-color
     text-shadow none  
     
 
 #pageHeader
   border-top none
   h1
-    font-size 1em
+    font-size 1.2em
     text-transform uppercase
-    font-weight bold     
+    font-family headlines-font     
 
 #panel_header
   background #0085B8
-  color #fff 
+  color light-color 
   
 #panel_title
   text-shadow none
@@ -173,10 +180,28 @@ body
   height auto
   padding-top 10px
   padding-left 0
-  padding-right 0 
+  padding-right 0
+  .tab
+    font-size .9em
 
 .aditional_info
-  margin 1em 0   
+  margin 1em 0
+  text-shadow none
+  font-size 1em
+  color light-color
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6
+    font-weight normal 
+    font-family headlines-font
+
+  ul
+    padding 0
+    list-style none
 
 .bold
   font-weight bold 
@@ -193,13 +218,13 @@ body
   background-attachment fixed
 
 .drug_title
-  color #fff
+  color light-color
   text-shadow none
   font-weight normal
   margin .3em 0
 
 .drug_label
-  color #fff
+  color light-color
   text-transform none
   text-shadow none 
   position relative
@@ -213,7 +238,7 @@ body
   top 50%
   margin-top -16px
   right 0
-  border 2px solid #fff
+  border 2px solid light-color
   padding .3em
   border-radius 100%
   width 20px
@@ -229,7 +254,7 @@ body
     margin-left -.5em 
 
 .drug_chart_title
-  color #fff
+  color light-color
   text-shadow 1px 1px 0 rgba(0,0,0, .2)
   font-size 1em
   text-align center
@@ -241,11 +266,11 @@ body
   white-space nowrap
   display block
   margin .5em 0
-  color #fff 
+  color light-color 
 
 .entidades
   img
-    background darken(#fff, 8%)
+    background darken(light-color, 8%)
     padding 5% 
     display block
     margin 0 auto
@@ -271,14 +296,14 @@ body
 
 .home_title
   font-size 2em
-  color #fff
+  color light-color
   text-align center
   text-shadow none
   font-weight normal
   margin .67em 0
 
 .home_introduction
-  color #fff
+  color light-color
   text-shadow none
   font-size 1em
   text-transform none
@@ -301,7 +326,7 @@ body
 
 .menu_btn
   -moz-box-sizing border-box
-  border .2em solid #fff
+  border .2em solid light-color
   border-radius 50%
   box-sizing border-box
   display inline-block 
@@ -319,7 +344,7 @@ body
     left 50%
     margin-top -24px
     margin-left -24.5px
-    color #fff
+    color light-color
     text-shadow none
     font-weight normal
 
@@ -340,7 +365,7 @@ body
     width 100%
 
 .panel_content
-  background darken(#fff, 1%)
+  background darken(light-color, 1%)
   padding .5em
   margin-top 1em 
 
@@ -350,7 +375,7 @@ body
   list-style none
   li
     padding .1em .4em
-    background darken(#fff, 8%)
+    background darken(light-color, 8%)
     & + li
       margin-top .2em
     p
@@ -372,36 +397,74 @@ body
   font-size 1.2em         
 
 .red_point
-  background url(../img/red-point.png) 0 0 no-repeat
-  height 30px
-  width 30px
+  background silueta-btn
+  height 24px
+  width 24px
   position absolute
-  top 28%
-  left 56% 
+  top 30%
+  left 43%
+  border-radius 50%
+  box-shadow 0 0 12px 2px rgba(silueta-btn, .8)
+  animation blinkbtn 2s infinite
+  -webkit-animation blinkbtn 2s infinite
+  transition all .2s ease
 
-.red_point2
-  background url(../img/red-point.png) 0 0 no-repeat
-  height 30px
-  width 30px
-  position absolute
-  top 10%
-  left 46%     
-
+  &.cabeza
+    top -2%
+  &.boca
+    top 7%
+  &.garganta
+    top 10%
+  &.corazon
+    top 21%
+    left 57%
+  &.estomago
+    top 40%
+  &.higado
+    top 27%
+    left 57%
+  &.sistemarespiratorio
+    top 20%
+  &.sistemaarterial
+    top 10%
+    left 52%
+  &.ojos
+    top 4%
+    left 38%
+  &.torax
+    top 24%
+  &.pulmones
+    top 22%
+    left 29%
+  
 .tab_body
   box-sizing border-box
   -webkit-box-sizing border-box
-  position relative
-  & h1
-    text-align center    
+  position relative    
 
 .silueta
   width 100%
-  max-width 320px
+  max-width 160px
   margin 0 auto  
   display block
   position relative 
   img
-    width 100% 
+    width 100%
+
+@keyframes blinkbtn {
+  0%{
+    background silueta-btn
+    box-shadow 0 0 12px 2px rgba(silueta-btn, .8)
+  }
+  50%{
+    background darken(silueta-btn, 15%)
+    box-shadow 0 0 12px 2px rgba(silueta-btn, .5)
+  }
+  100%{
+    background silueta-btn
+    box-shadow 0 0 12px 2px rgba(silueta-btn, .8)
+  }
+}    
 
 @media screen and (min-width: 480px)
   .menu_btn
@@ -425,9 +488,7 @@ body
     &:before
       font-size 10em
       margin-left - 80px
-      margin-top - 80px          
-
-
+      margin-top - 80px
 
 
 
