@@ -30,11 +30,9 @@ app.verificarFechas = function()
 			//alert('siguiente '+n);
 			if(today.valueOf()<nextUpdate.valueOf())
 			{
-				//alert('actualizar');
 				  $.blockUI({ message: 'Cargando datos...'});
                 
                 $.get("http://servicedatosabiertoscolombia.cloudapp.net/v1/Ministerio_de_Justicia/drogadescr?&$format=json").
-			//	$.get("http://yoreporto.herokuapp.com/twitter/tweets/", {"count": 20}, "json").
 					done(function (data) {
 					 $.unblockUI();
                         var nombres=[];
@@ -44,106 +42,42 @@ app.verificarFechas = function()
                         var currentDrug=null;
                         var currentPart=null;
                       
-                        
-                        
-                        
                         for (var y in data.d) 
                         {   
                             nombres.push(data.d[y].nombredeladroga);
                         }
                         var singleDrugs=count(nombres);
-                        //  alert(singleDrugs);
                         for(var a in singleDrugs)
                         {
                              currentDrug=singleDrugs[a];
                             var droga = new drug(currentDrug);
-                            
-                            //drug.partes=new Map();
-                         
+                                                 
                             for (var x in data.d) 
                             {
                                if(currentDrug==data.d[x].nombredeladroga)
                                {
                                    var parte=data.d[x].partedecuerpo;
                                    var efecto=data.d[x].enfermedad;
-                                   //alert(parte);
-                                   //alert(efecto);
                                    droga.insert(parte, efecto);
                                }
                             }
-                            //alert(droga.nombre);
                             listaDrogas.push(droga);
                         }
-                        
-                        var copiaListaDrogas=listaDrogas;
-                        var show=listaDrogas.pop();
-                        //alert(show.nombre);
-                        //alert(show.partes.get("boca"));
-                        
-                        //var lista = document.getElementById("extasisList");
-                        alert(show.nombre);
-                        var now=show.partes.current;
-                      for(var i=0;i<show.partes.size;i++)
-                      {
-                          
-                        
-                          alert(i+now.key+" "+now.value);
-                          
-                          /*var efectos=now.value.split("/");
-                          //alert(efectos);
-                          for(var j=0;j<efectos.length-1;j++)
-                          {//alert(j);
-                            /*var el = document.createElement("li");
-                            var pe = document.createElement("p");
-                            var e = efectos[j];alert(e);
-                              pe.innerHTML = e;alert("h1");
-                            el.appendChild(pe);alert("h2");
-                            lista.appendChild(el);alert("h3");
-                          //}
-                          
-                          */
-                          now=now.next;
-                      }
-                        
-                    
-                 /*  var puntos = document.getElementById("puntosextasis");     
-                  
-                        var div = document.createElement("div");
-                        div.className="red_point.cabeza";
-                        var div2 = document.createElement("div");
-                        div2.className="red_point.sistemarespiratorio";
-                        puntos.appendChild(div);
-                        puntos.appendChild(div2);
-                        
-                    
-                        
-                        
-                        
-                  	//alert('downloaded');
-					
-					/*var nombre="nombredroga";
-					var imageURL=window.localStorage.getItem(nombre+"URL");
-					if(imageURL!=json.imageURL)
-					{
-						var newPhoto = document.getElementById("drugPhoto");
-						newPhoto.src=imageURL;
-						var imgCanvas = document.createElement("canvas");
-						var imgContext = imgCanvas.getContext("2d");
-						imgCanvas.width = newPhoto.width;
-						imgCanvas.height = newPhoto.height;
-						imgContext.drawImage(newPhoto, 0, 0, newPhoto.width, newPhoto.height );
-						var datauri = imgCanvas.toDataURL("image/jpeg", 0.5); //0.5 = optional quality
-						try 
-						{
-							window.localStorage.setItem(nombre+"URL", datauri);
-							newPhoto.src = "data:image/gif;base64," + datauri;
-						}catch (e) 
-						{
-							console.log("Storage failed: " + e);
-						};
-					}*/
-				
-				
+                                                
+                        for(var d in listaDrogas)
+                        {
+                            var show=listaDrogas[d];
+                            //alert(show.nombre);
+                            var now=show.partes.current;
+                              for(var i=0;i<show.partes.size;i++)
+                              {
+                                  //alert(i+now.key+" "+now.value);
+                                  window.localStorage.setItem(show.nombre+"-"+now.key,now.value);
+                                  
+                                  now=now.next;
+                              }
+                        }
+                
 				nextUpdate.setMonth(today.getMonth() + 1);
 				window.localStorage.setItem("nextUpdate",nextUpdate);
 				 }).fail(function (data) 
@@ -187,6 +121,16 @@ function insert(parte, efecto)
     
 }
 
+function normalizar(nombre)
+{
+    if(nombre=="sistema respiratorio")
+    {
+        alert("1");
+        return "sistemarespiratorio";
+    }
+    else return nombre;
+
+}
 
 
 function count(arreglo) {
@@ -208,10 +152,7 @@ function count(arreglo) {
     return nuevoArreglo;
     }
     
-function loadExtasis()
-	{
-        alert("holis");
-    }
+
 
 
 

@@ -175,7 +175,13 @@ var app = {
       $body.on("vclick", ".red_point", function(){
         var drug = $(this).data("drug"); // cojemos el valor de data-drug para saber que droga consultar
         var bodypart = $(this).data("position"); // data position nos indica la parte del cuerpo a consultar
-        alert(bodypart); 
+        var alertDataPart = window.localStorage.getItem(drug+ "-"+bodypart);
+          
+        if(bodypart.slice(-1)=="s")
+            navigator.notification.alert(alertDataPart,null,"Efectos en tus "+bodypart.toLowerCase()+":",'OK');
+        else 
+            navigator.notification.alert(alertDataPart,null,"Efectos en tu "+bodypart.toLowerCase()+":",'OK');
+
       });
 
     }
