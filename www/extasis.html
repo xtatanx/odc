@@ -32,6 +32,7 @@
     <script type="text/javascript" src="jquery-mobile/jquery.mobile-1.4.2.min.js"></script>
     <script type="text/javascript" src="js/thirdparty/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="phonegap.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
    
 
     
@@ -45,11 +46,20 @@
         'Restart'          // botones (buttonLabels)
         );
     }
+        function normalAlert()
+        {alert("heyhey123");}
 
+    </script>
+    
+    <script>
+    function loadExtasis()
+	{
+        alert("holis");
+    }
     </script>
 
 </head>
-<body>
+<body onload="loadExtasis();">
     <div data-role="page" id="drug_item">
         <div role="main" class="ui-content">
             <div data-role="header" id="pageHeader">
@@ -112,9 +122,11 @@ Personalidad / estado de ánimo (4-metiltioanfetamina [4-MTA])
             <div id="drug_info" class="tab_body">
                 <p> Presiona en los puntos para conocer los efectos que causa esta droga en tu cuerpo</p>
                 <div class="silueta">
+                    <div id="puntosextasis">
                     <img src="img/humano.png" alt="silueta">
-                    <div class="red_point" onclick="alert('Afectación aguda: xxxxxxxxxxxxxxxxxxxxxxxxxx\n Afectación crónica: xxxxxxxxxxxxxxxxxxxxxxxxxx')"></div>
-                    <div class="red_point2" onclick="alert('Afectación aguda: xxxxxxxxxxxxxxxxxxxxxxxxxx\n Afectación crónica: xxxxxxxxxxxxxxxxxxxxxxxxxx')"></div>
+                    <div class="red_point" onclick="normalAlert();"></div>
+                   
+                    </div>
                 </div>
               
                              <button class="share_btn" onclick="window.plugins.socialsharing.share('Lee y comparte nuestra app Droog', null, 'www/img/splash.png', null)">compartir</button>

@@ -55,15 +55,18 @@ app.verificarFechas = function()
                         //  alert(singleDrugs);
                         for(var a in singleDrugs)
                         {
+                            
                              currentDrug=singleDrugs[a];
                             var droga = new drug(currentDrug);
                             
+                            
                             //drug.partes=new Map();
-                         
+                           
                             for (var x in data.d) 
                             {
                                if(currentDrug==data.d[x].nombredeladroga)
                                {
+                                   //alert(currentDrug);
                                    var parte=data.d[x].partedecuerpo;
                                    var efecto=data.d[x].enfermedad;
                                    //alert(parte);
@@ -74,48 +77,63 @@ app.verificarFechas = function()
                             //alert(droga.nombre);
                             listaDrogas.push(droga);
                         }
-                        
                         var copiaListaDrogas=listaDrogas;
                         var show=listaDrogas.pop();
                         //alert(show.nombre);
                         //alert(show.partes.get("boca"));
                         
                         //var lista = document.getElementById("extasisList");
-                        alert(show.nombre);
                         var now=show.partes.current;
                       for(var i=0;i<show.partes.size;i++)
                       {
                           
                         
-                          alert(i+now.key+" "+now.value);
+                          //alert(i+now.key+" "+now.value);
                           
-                          /*var efectos=now.value.split("/");
+                          var efectos=now.value.split("/");
                           //alert(efectos);
                           for(var j=0;j<efectos.length-1;j++)
-                          {//alert(j);
-                            /*var el = document.createElement("li");
+                          {alert(j);
+                            var el = document.createElement("li");
                             var pe = document.createElement("p");
                             var e = efectos[j];alert(e);
                               pe.innerHTML = e;alert("h1");
                             el.appendChild(pe);alert("h2");
                             lista.appendChild(el);alert("h3");
-                          //}
+                          }
                           
-                          */
+                          
                           now=now.next;
                       }
                         
                     
-                 /*  var puntos = document.getElementById("puntosextasis");     
-                  
-                        var div = document.createElement("div");
-                        div.className="red_point.cabeza";
-                        var div2 = document.createElement("div");
-                        div2.className="red_point.sistemarespiratorio";
-                        puntos.appendChild(div);
-                        puntos.appendChild(div2);
-                        
-                    
+                        /*    var ecabeza=show.partes.get("cabeza");
+                         var eboca=show.partes.get("boca");
+                         var egarganta=show.partes.get("garganta");
+                         var ecorazon=show.partes.get("corazón");
+                         var eestomago=show.partes.get("estomago");
+                        alert("hey2");
+                       var cabezas=ecabeza.split("/"); alert("hey3");
+                        var bocas=eboca.split("/"); alert("hey4");
+                        var gargantas=egarganta.split("/"); alert("hey5");
+                        var corazones=ecorazon.split("/"); alert("hey6");
+                        var estomagos=eestomago.split("/"); alert("hey7");
+                        alert("hey!");
+                        alert(cabezas.pop);
+                  /*  for (x in data.tweets) {
+                        var trino = data.tweets[x].text;
+                        var image = data.tweets[x].profile_image_url;
+                        var el = document.createElement("il");
+                        var pe = document.createElement("p");
+                        pe.innerHTML = trino;
+                        var img = document.createElement("img");
+                        img.src = image;
+                        //el.textContent = trino;
+                        el.appendChild(img);
+                        el.appendChild(pe);
+                        //el.list-style-image = url(image);
+                        lista.appendChild(el);
+                    }*/
                         
                         
                         
@@ -172,15 +190,15 @@ function insert(parte, efecto)
 {
      var efectos=this.partes.get(parte);
       
-           if(efectos===undefined)
-           {   
-                efecto+="\n";
+           if(efectos===undefined   )
+           {
+                efecto+="/";
                 this.partes.put(parte,efecto);
            }
            else
            {
                 efectos+=efecto;
-                efectos+="\n";
+                efectos+="/";
                 this.partes.remove(parte);
                 this.partes.put(parte,efectos);
            }
@@ -208,10 +226,7 @@ function count(arreglo) {
     return nuevoArreglo;
     }
     
-function loadExtasis()
-	{
-        alert("holis");
-    }
+
 
 
 

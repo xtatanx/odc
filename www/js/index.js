@@ -109,7 +109,8 @@ var app = {
         document.addEventListener('online', this.verificarFechas, false);
 
         // trigger if is a mobile device
-        if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/)){
+        if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/))
+        {
           // if device is connected to a network update data
           if((navigator.network.connection.type).toUpperCase() != "NONE" && (navigator.network.connection.type).toUpperCase() != "UNKNOWN") {
              // check for updates every time the app initialize
@@ -119,7 +120,6 @@ var app = {
           }  
         }
 
-        this.verificarFechas();    
       
 
     },
