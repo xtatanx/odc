@@ -58,7 +58,8 @@ app.verificarFechas = function()
                                {
                                    var parte=data.d[x].partedecuerpo;
                                    var efecto=data.d[x].enfermedad;
-                                   droga.insert(parte, efecto);
+                                   var tipoEfecto=data.d[x].tipo_de_efecto;
+                                   droga.insert(parte, efecto,tipoEfecto);
                                }
                             }
                             listaDrogas.push(droga);
@@ -99,25 +100,66 @@ function drug (nombre) {
     this.nombre = nombre;
     this.partes = new Map();
     this.insert = insert;
+    this.efectosAgudos=undefined;
+    this.efectosCronicos=undefined;
 }
  
-// anti-pattern! keep reading...
-function insert(parte, efecto) 
+function insert(parte, efecto,tipoEfecto) 
 {
      var efectos=this.partes.get(parte);
-      
+    var efectosAgudos=this.efectosAgudos;
+    var efectosCronicos=this.efectosCronicos;
+   
+    if(tipoEfecto=="Agudo")
+    {
            if(efectos===undefined)
            {   
-                efecto+="\n";
+                efecto="Efectos Agudos:\n"+efecto+"\n";
                 this.partes.put(parte,efecto);
+                this.efectosAgudos="1";
            }
-           else
-           {
+            else if(efectosAgudos===undefined)
+            {
+                efecto="Efectos Agudos:\n"+efecto+"\n";
                 efectos+=efecto;
                 efectos+="\n";
                 this.partes.remove(parte);
                 this.partes.put(parte,efectos);
-           }
+                this.efectosAgudos="1";
+            }
+        else if(efectosAgudos!==undefined)
+        {      
+                efectos+=efecto;
+                efectos+="\n";
+                this.partes.remove(parte);
+                this.partes.put(parte,efectos);
+        }
+    }
+    else if(tipoEfecto==="Crónico" || tipoEfecto==="Crónicos")
+    {  
+        if(efectos===undefined)
+        {
+            efecto="Efectos Crónicos:\n"+efecto+"\n";
+            this.partes.put(parte,efecto);
+             this.efectosCronicos="1";
+        }
+        else if(efectosCronicos===undefined)
+        {           
+                efecto="Efectos Crónicos:\n"+efecto;
+                efectos+=efecto;
+                efectos+="\n";
+                this.partes.remove(parte);
+                this.partes.put(parte,efectos);
+                this.efectosCronicos="1";
+        }
+        else if(efectosCronicos!==undefined)
+        {      
+                efectos+=efecto;
+                efectos+="\n";
+                this.partes.remove(parte);
+                this.partes.put(parte,efectos);
+        }
+    }
     
 }
 
