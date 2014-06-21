@@ -75,11 +75,14 @@ var app = {
             app.calcPageHeight();
         });
 
+
+        app.alertBtns();
         // mange the state of the back button
         app.manageBackBtn();
 
         // calculate height 
         app.calcPageHeight();
+
 
         // create taps widget
         $.widget( "ui.tabs", $.ui.tabs, {
@@ -163,5 +166,17 @@ var app = {
             console.log('not removing');
           }
         });
+    },
+
+    alertBtns: function(){
+      // cache variables
+      var $body = $("body"); // el evento depende de body ya que el contenido se carga dinamicamente.
+
+      $body.on("vclick", ".red_point", function(){
+        var drug = $(this).data("drug"); // cojemos el valor de data-drug para saber que droga consultar
+        var bodypart = $(this).data("position"); // data position nos indica la parte del cuerpo a consultar
+        alert(bodypart); 
+      });
+
     }
 };
