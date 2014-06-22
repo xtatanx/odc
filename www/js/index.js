@@ -48,12 +48,13 @@ var app = {
         $.mobile.initializePage(); 
         
         // cache some variables
-        var $menu_btn = $('.menu_btn');
+        var $menu_btn = $('.menu_btn_link');
         var $drugPage = $('#drug_item');
         var $tabs = $('#tabs'); 
         var $document = $(document);
         var $window = $(window);
         var theHeight = $(window).height();
+        var drugName;  // name of the drug to search in localStorage
 
         // hide statusBAr
         if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/)){
@@ -71,8 +72,13 @@ var app = {
         $( "[data-role='panel']" ).panel();        
 
         // bind functions that execute on every pageshow
-        $(document).on('pageshow pageinit', '[data-role="page"]', function(){
+        $(document).on('pageshow pageinit', '[data-role="page"]', function(e){
             app.calcPageHeight();
+            
+            // only fill image with red points if the event is a pageshow
+            if(e.type === "pageshow"){
+              app.createPoints(drugName);
+            }
         });
 
 
@@ -83,6 +89,10 @@ var app = {
         // calculate height 
         app.calcPageHeight();
 
+        //  save reference to the drug to search in local storage
+        $menu_btn.on("tap", function(){
+          drugName = $(this).data("title");
+        });
 
         // create taps widget
         $.widget( "ui.tabs", $.ui.tabs, {
@@ -114,6 +124,7 @@ var app = {
         // trigger if is a mobile device
         if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/))
         {
+          console.log(navigator.network.connection.type);
           // if device is connected to a network update data
           if((navigator.network.connection.type).toUpperCase() != "NONE" && (navigator.network.connection.type).toUpperCase() != "UNKNOWN") {
              // check for updates every time the app initialize
@@ -172,17 +183,32 @@ var app = {
       // cache variables
       var $body = $("body"); // el evento depende de body ya que el contenido se carga dinamicamente.
 
-      $body.on("vclick", ".red_point", function(){
+      $body.on("tap", ".red_point", function(){
         var drug = $(this).data("drug"); // cojemos el valor de data-drug para saber que droga consultar
         var bodypart = $(this).data("position"); // data position nos indica la parte del cuerpo a consultar
         var alertDataPart = window.localStorage.getItem(drug+ "-"+bodypart);
-          
+        console.log(alertDataPart);
         if(bodypart.slice(-1)=="s")
             navigator.notification.alert(alertDataPart,null,"Efectos en tus "+bodypart.toLowerCase()+":",'OK');
         else 
             navigator.notification.alert(alertDataPart,null,"Efectos en tu "+bodypart.toLowerCase()+":",'OK');
-
       });
+
+    },
+
+    createPoints: function(drugName){
+      var drugRegex = new RegExp(drugName);
+      var $container = $("#puntos");
+      //  for every item in local storage match only drugName string
+      for(var drug in window.localStorage){
+        if(drug.match(drugRegex)){
+          var position = drug.split("-");
+          position = position[1];
+          console.log(position);
+          //  crate circle
+          $container.append('<div class="red_point ' + position.split(" ").join("").toLowerCase() + '"  data-position=' + position +' data-drug=' + drugName + '></div>');
+        }
+      }
 
     }
 };
