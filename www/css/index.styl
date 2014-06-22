@@ -173,6 +173,18 @@ body
   text-shadow none
   width 90%
 
+#share_btn
+  border-radius 10%
+  width 35px
+  height 35px
+  background-color #f6f6f6
+  border-color #ddd 
+  margin-top -(@width/2)
+  top 50%
+  padding 6px
+  img
+    width 100% 
+
 #tabs
   -webkit-box-sizing border-box
   box-sizing border-box 
@@ -462,13 +474,6 @@ body
   img
     width 100%
 
-.share_btn
-  border-radius 10%
-  width 50px
-  height 50px
-  font-size 0px
-  background-color #f6f6f6
-  border-color #ddd
 
 @keyframes blinkbtn {
   0%{
@@ -476,8 +481,8 @@ body
     box-shadow 0 0 12px 2px rgba(silueta-btn, .8)
   }
   50%{
-    background darken(silueta-btn, 15%)
-    box-shadow 0 0 12px 2px rgba(silueta-btn, .5)
+    background darken(silueta-btn, 30%)
+    box-shadow 0 0 12px 2px rgba(silueta-btn, .2)
   }
   100%{
     background silueta-btn
@@ -490,7 +495,57 @@ body
     &:before
       font-size 5em
       margin-left - 40.5px
-      margin-top - 40px    
+      margin-top - 40px
+
+  .silueta
+    max-width 200px 
+
+.red_point
+  left 44%
+  &.cabeza
+    top -2%
+  &.boca
+    top 7%
+  &.garganta
+    top 11%
+  &.corazón,
+  &.corazon
+    left 63%
+    top 23%
+  &.estómago,
+  &.estomago
+    top 36%
+  &.hígado,
+  &.higado
+    left 61%
+    top 28%
+  &.sistemarespiratorio
+    top 20%
+  &.sistemaarterial
+    left 56%
+    top 10%
+  &.ojos
+    left 38%
+    top 4%
+  &.torax
+    top 24%
+  &.pulmones
+    left 29%
+    top 23%
+  &.sistemaurinario
+    top 46%
+  &.sistemamusculatorio
+    left 90%
+    top 18%
+  &.sistemacardiovascular
+    left 44%
+    top 26%
+  &.otros
+    left 0
+    top 0
+  &.extremidades
+    left 0
+    top  48%             
 
 @media screen and (min-width: 768px)
   .menu_btn
@@ -498,6 +553,9 @@ body
       font-size 7em
       margin-left - 56.5px
       margin-top - 56px
+
+  .silueta
+    max-width 300px       
 
 
 @media screen and (min-width: 1110px)
@@ -508,3 +566,6 @@ body
       font-size 10em
       margin-left - 80px
       margin-top - 80px
+
+  .silueta
+    max-width 400px    
