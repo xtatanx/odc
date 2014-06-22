@@ -187,7 +187,7 @@ var app = {
         var drug = $(this).data("drug"); // cojemos el valor de data-drug para saber que droga consultar
         var bodypart = $(this).data("position"); // data position nos indica la parte del cuerpo a consultar
         var alertDataPart = window.localStorage.getItem(drug+ "-"+bodypart);
-        console.log(alertDataPart);
+        console.log(drug+ "-"+bodypart);
         if(bodypart.slice(-1)=="s")
             navigator.notification.alert(alertDataPart,null,"Efectos en tus "+bodypart.toLowerCase()+":",'OK');
         else 
@@ -204,9 +204,8 @@ var app = {
         if(drug.match(drugRegex)){
           var position = drug.split("-");
           position = position[1];
-          console.log(position);
           //  crate circle
-          $container.append('<div class="red_point ' + position.split(" ").join("").toLowerCase() + '"  data-position=' + position +' data-drug=' + drugName + '></div>');
+          $container.append('<div class="red_point ' + position.split(" ").join("").toLowerCase() + '"  data-position="' + position + '" data-drug=' + drugName + '></div>');
         }
       }
 
