@@ -3,16 +3,15 @@
 }
 
 .legend .title {
-    display: block;
-    margin: 0.5em;
     border-style: solid;
     border-width: 0 0 0 1em;
+    display: block;
+    margin: 0.5em;
     padding: 0 0.3em;
 }
 #drug_info p {
-	color: #FFF;
-	text-align: center;
-	
+    color: #FFF;
+    text-align: center;	
 }
 
 p {color:white;}
