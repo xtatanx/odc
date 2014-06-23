@@ -91,7 +91,7 @@ var app = {
         this.calcPageHeight();
 
         //  save reference to the drug to search in local storage
-        $menu_btn.on("vclick", function(){
+        $menu_btn.on("tap", function(){
           drugName = $(this).data("title");
         });
 
@@ -186,7 +186,7 @@ var app = {
       // cache variables
       var $body = $("body"); // el evento depende de body ya que el contenido se carga dinamicamente.
 
-      $body.on("vclick", ".red_point", function(){
+      $body.on("tap", ".red_point", function(){
         var drug = $(this).data("drug"); // cojemos el valor de data-drug para saber que droga consultar
         var bodypart = $(this).data("position"); // data position nos indica la parte del cuerpo a consultar
         var alertDataPart = window.localStorage.getItem(drug+ "-"+bodypart);
