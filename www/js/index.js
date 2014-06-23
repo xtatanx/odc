@@ -78,16 +78,17 @@ var app = {
             // only fill image with red points if the event is a pageshow
             if(e.type === "pageshow"){
               app.createPoints(drugName);
+              app.fillDescription(drugName);
             }
         });
 
 
-        app.alertBtns();
+        this.alertBtns();
         // mange the state of the back button
-        app.manageBackBtn();
+        this.manageBackBtn();
 
         // calculate height 
-        app.calcPageHeight();
+        this.calcPageHeight();
 
         //  save reference to the drug to search in local storage
         $menu_btn.on("vclick", function(){
@@ -132,6 +133,8 @@ var app = {
           }else{
             alert('Esta aplicación funciona mejor conectada a internet. Porfavor revisa tu conexión.');
           }  
+        }else{
+          this.verificarFechas();
         }
 
       
@@ -197,17 +200,29 @@ var app = {
     },
 
     createPoints: function(drugName){
-      var drugRegex = new RegExp(drugName);
+      var drugRegex = new RegExp( drugName + "-" );
       var $container = $("#puntos");
       //  for every item in local storage match only drugName string
       for(var drug in window.localStorage){
-        if(drug.match(drugRegex)){
+        if(drug.match(drugRegex)){ // if drug matches example: 'Extasis-'
           var position = drug.split("-");
           position = position[1];
           //  crate circle
           $container.append('<div class="red_point ' + position.split(" ").join("").toLowerCase() + '"  data-position="' + position + '" data-drug=' + drugName + '></div>');
         }
       }
+
+    },
+
+    fillDescription: function(drugName){
+      // create a p tag with the description inside
+      var description = $("<p>").text(window.localStorage.getItem("descripcion-" + drugName));
+      var $descriptionW = $("#description"); //description wrapper
+      var $additionalInfo = $("#aditional_info");
+      // add description to the wrapper
+      $descriptionW.html(description);
+      $additionalInfo.fadeIn();
+
 
     }
 };
