@@ -38,7 +38,11 @@ var app = {
         var $window = $(window);
         var theHeight = $(window).height();
         var drugName;  // name of the drug to search in localStorage
-
+        if(navigator.userAgent.match(/Android 2.3.3/)){
+          console.log("true");
+        }else{
+          console.log("false;")
+        }
         // hide statusBAr
         if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/)){
             statusbar = window.plugins.statusBar;
@@ -78,6 +82,7 @@ var app = {
         $menu_btn.on("tap", function(){
           drugName = $(this).data("title");
         });
+
         // initialize tabs 
         $.widget( "ui.tabs", $.ui.tabs, {
 
@@ -92,7 +97,7 @@ var app = {
 
                     if ( page.length > 0 && !page.hasClass( "ui-page-active" ) ) {
                         delayedCreate = this._super;
-                        page.one( "pagebeforeshow", function() {
+                        page.one( "pageshow", function() {
                             delayedCreate.call( that, options, element );
                         });
                     }
@@ -100,7 +105,7 @@ var app = {
                     return this._super();
                 }
             }
-        });
+        });         
 
         // trigger if is a mobile device
         if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/))
