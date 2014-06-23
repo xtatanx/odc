@@ -34,7 +34,7 @@ app.verificarFechas = function()
                 
                 $.get("http://servicedatosabiertoscolombia.cloudapp.net/v1/Ministerio_de_Justicia/drogadescr?&$format=json").
 					done(function (data) {
-					 $.unblockUI();
+					 
                         var nombres=[];
                         var partesCuerpo=[];
                         var enfermedades=[];
@@ -78,14 +78,48 @@ app.verificarFechas = function()
                                   now=now.next;
                               }
                         }
+                        
+                        
+                        
+                        
+                        
                 
 				nextUpdate.setMonth(today.getMonth() + 1);
 				window.localStorage.setItem("nextUpdate",nextUpdate);
 				 }).fail(function (data) 
 				 {
-					alert('Fail :( => '+data);
+				navigator.notification.alert("Error en la descarga de datos, vuelve a intentar más tarde",null,"Droog",'OK');
+
 					  $.unblockUI();
 			});
+                
+                  $.get("http://servicedatosabiertoscolombia.cloudapp.net/v1/Ministerio_de_Justicia/drogasinfo?&$format=json").
+					done(function (data) {
+                        $.unblockUI();
+                        
+                         for (var z in data.d) 
+                        {   
+                            var nombre=data.d[z].nombredeladroga;
+                            var definicion=data.d[z].definicion;
+                            window.localStorage.setItem("descripcion-"+nombre,definicion);
+                            alert(nombre+" :\n"+window.localStorage.getItem("descripcion-"+nombre));
+                            
+                        }
+                        
+                        
+                        
+                        }).fail(function (data) 
+				 {
+					//alert("Error en la descarga de datos, vuelve a intentar más tarde");
+                   //   navigator.notification.alert("Error en la descarga de datos, vuelve a intentar más tarde",null,"Droog",'OK');
+					  $.unblockUI();
+			});
+                
+                
+                
+                
+                
+                
 				
 			}
 			else
