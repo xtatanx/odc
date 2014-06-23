@@ -1,35 +1,8 @@
 app.verificarFechas = function()
 	{
-   	 /*navigator.notification.alert(
-     'Eres el ganador!',      // mensaje (message)
-     null,      // función 'callback' a llamar con el índice del botón pulsado (confirmCallback)
-     'Game Over',            // titulo (title)
-         'Restart'          // botones (buttonLabels)
-         );*/
+   
    	     var listaDrogas=[];
-		var storedDate = window.localStorage.getItem("firstDate");
-		if(!storedDate)//se ejecuta solo la primera vez que se abre la aplicacion
-		{
-			var today = new Date();
-			window.localStorage.setItem("firstDate",today);
-			var nextUpdate = new Date();
-			nextUpdate.setMonth(today.getMonth() + 1);
-			window.localStorage.setItem("nextUpdate",nextUpdate);
-		//	alert('guardado '+today);
-			//alert('siguiente '+nextUpdate);
-			setImageURLS();
-		}
-		else
-		{
-			var today= new Date();
-             
-			var nextUpdate = new Date(window.localStorage.getItem("nextUpdate"));
-      var n = new Date(nextUpdate.getFullYear(), nextUpdate.getMonth(), nextUpdate.getDate());
-            
-            //	alert('hoy '+today);
-			//alert('siguiente '+n);
-			if(today.valueOf()<nextUpdate.valueOf())
-			{
+		
 				  $.blockUI({ message: 'Cargando datos...'});
                 
                 $.get("http://servicedatosabiertoscolombia.cloudapp.net/v1/Ministerio_de_Justicia/drogadescr?&$format=json").
@@ -116,17 +89,7 @@ app.verificarFechas = function()
 			});
                 
                 
-                
-                
-                
-                
-				
-			}
-			else
-			{
-				alert('no actualizar');
-			}
-		}
+            
 	
 	};
 
