@@ -102,7 +102,7 @@ app.verificarFechas = function()
                             var nombre=data.d[z].nombredeladroga;
                             var definicion=data.d[z].definicion;
                             window.localStorage.setItem("descripcion-"+nombre,definicion);
-                            alert(nombre+" :\n"+window.localStorage.getItem("descripcion-"+nombre));
+                            //alert(nombre+" :\n"+window.localStorage.getItem("descripcion-"+nombre));
                             
                         }
                         

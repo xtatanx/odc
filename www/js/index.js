@@ -191,7 +191,9 @@ var app = {
         var bodypart = $(this).data("position"); // data position nos indica la parte del cuerpo a consultar
         var alertDataPart = window.localStorage.getItem(drug+ "-"+bodypart);
         console.log(drug+ "-"+bodypart);
-        if(bodypart.slice(-1)=="s")
+        if(bodypart==="Otros"||bodypart==="otros")
+            navigator.notification.alert(alertDataPart,null,"Otros efectos:",'OK');
+         else if(bodypart.slice(-1)=="s")
             navigator.notification.alert(alertDataPart,null,"Efectos en tus "+bodypart.toLowerCase()+":",'OK');
         else 
             navigator.notification.alert(alertDataPart,null,"Efectos en tu "+bodypart.toLowerCase()+":",'OK');
