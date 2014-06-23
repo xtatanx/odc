@@ -1,71 +1,42 @@
-<!DOCTYPE html>
+<div data-role="page" id="drug_item">
+  <div role="main" class="ui-content">
+    <div data-role="header" id="pageHeader">
+      <h1>Marihuana</h1>
+      <button class="ui-btn-right" id="share_btn" onclick="window.plugins.socialsharing.share('Lee y comparte nuestra app Droog', null, 'www/img/stats/prevalencia-consumo-marihuana.jpg', null)">
+        <img src="img/share.svg" data-fallback="img/share.png" />
+      </button>                
+    </div>            
+    <div data-role="tabs" id="tabs">
+      <div data-role="navbar" class="tabs_navbar">
+        <ul>
+          <li><a class="tab ui-btn-active" href="#drug" data-ajax="false">Detalle</a></li>
+          <li><a class="tab" href="#drug_info" data-ajax="false">Información</a></li>
+          <li><a class="tab" href="#drug_chart" data-ajax="false" data-chart="true">Estadísticas</a></li>
+        </ul>
+      </div>
+      <div id="drug" class="tab_body">
+        <img src="img/official_pictures/marihuana.jpg" alt="">
+        <div class="aditional_info" id="aditional_info">
+          <div class="drug_label">Descripción:</div>
+          <div id="description">
+            <p> Efectos Físicos:
 
-<html>
-<head>
-    <meta charset="utf-8" />
-   
-   
-    <link rel="stylesheet" href="jquery-mobile/jquery.mobile-1.4.2.min.css">
-    <link rel="stylesheet" type="text/css" href="css/icons.css" />
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript" src="jquery-mobile/jquery.mobile-1.4.2.min.js"></script>
-    <script type="text/javascript" src="js/thirdparty/jquery-1.9.1.min.js"></script>
-    <script type="text/javascript" src="phonegap.js"></script>
-   
-
-    
-    <title>ODC</title>
-  
-
-</head>
-<body>
-    <div data-role="page" id="drug_item">
-        <div role="main" class="ui-content">
-            <div data-role="header" id="pageHeader">
-                <h1>Marihuana</h1>
-                <button class="ui-btn-right" id="share_btn" onclick="window.plugins.socialsharing.share('Lee y comparte nuestra app Droog', null, 'www/img/stats/prevalencia-consumo-marihuana.jpg', null)">
-                  <img src="img/share.svg" data-fallback="img/share.png" />
-                </button>                
-            </div>            
-            <div data-role="tabs" id="tabs">
-              <div data-role="navbar" class="tabs_navbar">
-                <ul>
-                  <li><a class="tab ui-btn-active" href="#drug" data-ajax="false">Detalle</a></li>
-                  <li><a class="tab" href="#drug_info" data-ajax="false">Información</a></li>
-                  <li><a class="tab" href="#drug_chart" data-ajax="false" data-chart="true">Estadísticas</a></li>
-              </ul>
-            </div>
-            <div id="drug" class="tab_body">
-                <img src="img/official_pictures/marihuana.jpg" alt="">
-                <div class="aditional_info" id="aditional_info">
-                    <div class="drug_label">Descripción:</div>
-                    <div id="description">
-                      <p> Efectos Físicos:
-                       
-                      </p>                      
-                    </div>
-                </div>
-            </div>
-            <div id="drug_info" class="tab_body">
-                <p> Presiona en los puntos para conocer los efectos que causa esta droga en tu cuerpo</p>
-                <div class="silueta">
-                  <div id="puntos">
-                    <img src="img/humano.svg" data-fallback="img/humano.png" alt="silueta">
-                  </div>
-                </div>
-            </div>
-            <div id="drug_chart" class="tab_body">
-                <h2 class="drug_chart_title">Prevalencia de consumo / región</h2>
-                <img src="img/stats/prevalencia-consumo-marihuana.jpg" alt="">    
-            </div>
-                  <div id="about" class="tab_body">
-            </div>
-        </div>    
-    </div>                           
+            </p>                      
+          </div>
+        </div>
+      </div>
+      <div id="drug_info" class="tab_body">
+        <p> Presiona en los puntos para conocer los efectos que causa esta droga en tu cuerpo</p>
+        <div class="silueta">
+          <div id="puntos">
+            <img src="img/humano.svg" data-fallback="img/humano.png" alt="silueta">
+          </div>
+        </div>
+      </div>
+      <div id="drug_chart" class="tab_body">
+        <h2 class="drug_chart_title">Prevalencia de consumo / región</h2>
+        <img src="img/stats/prevalencia-consumo-marihuana.jpg" alt="">    
+      </div>
+    </div>    
+  </div>                           
 </div>
-
-</body>
-</html>

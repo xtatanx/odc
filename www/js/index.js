@@ -78,8 +78,7 @@ var app = {
         $menu_btn.on("tap", function(){
           drugName = $(this).data("title");
         });
-
-        // create taps widget
+        // initialize tabs 
         $.widget( "ui.tabs", $.ui.tabs, {
 
             _createWidget: function( options, element ) {
