@@ -21,7 +21,7 @@
         The "device" permission is required for the 'deviceready' event.
     -->
     <feature name="NetworkStatus">
-        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager"/>
     </feature>
     <feature name="NetworkStatus">
         <param name="ios-package" value="CDVConnection" />

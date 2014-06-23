@@ -79,6 +79,7 @@ var app = {
             if(e.type === "pageshow"){
               app.createPoints(drugName);
               app.fillDescription(drugName);
+              app.replaceSvg();
             }
         });
 
@@ -122,9 +123,9 @@ var app = {
         // trigger if is a mobile device
         if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/))
         {
-          console.log(navigator.network.connection.type);
+          console.log(navigator.connection.type);
           // if device is connected to a network update data
-          if((navigator.network.connection.type).toUpperCase() != "NONE" && (navigator.network.connection.type).toUpperCase() != "UNKNOWN") {
+          if((navigator.connection.type).toUpperCase() != "NONE" && (navigator.connection.type).toUpperCase() != "UNKNOWN") {
             // check for updates every time the app initialize
             this.verificarFechas();
             // if device is offline and get back online
@@ -221,7 +222,18 @@ var app = {
       // add description to the wrapper
       $descriptionW.html(description);
       $additionalInfo.fadeIn();
+    },
 
+    replaceSvg: function(){
+      Modernizr.svg = false;
+      if (!Modernizr.svg) {
+        var $images = $("img[src$='.svg']");
 
+        $images.each(function(){
+          var fallback = $(this).data("fallback");
+          $(this).attr("src", fallback);
+        });
+      }    
     }
+
 };
