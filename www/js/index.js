@@ -38,10 +38,14 @@ var app = {
         var $window = $(window);
         var theHeight = $(window).height();
         var drugName;  // name of the drug to search in localStorage
+        var oldAndroid; // var to check if is olb browser
+
         if(navigator.userAgent.match(/Android 2.3.3/)){
-          console.log("true");
+          $.mobile.defaultPageTransition = 'none';
+          $.mobile.defaultDialogTransition = 'none';
+          oldAndroid = true; // is android 2.3
         }else{
-          console.log("false;")
+          console.log("false");
         }
         // hide statusBAr
         if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/)){
@@ -59,7 +63,7 @@ var app = {
         $( "[data-role='panel']" ).panel();        
 
         // bind functions that execute on every pageshow
-        $(document).on('pageshow pageinit', '[data-role="page"]', function(e){
+        $(document).on('pageshow pageinit pagebeforeshow', '[data-role="page"]', function(e){
             app.calcPageHeight();
             
             // only fill image with red points if the event is a pageshow
@@ -67,9 +71,21 @@ var app = {
               app.createPoints(drugName);
               app.fillDescription(drugName);
               app.replaceSvg();
+
+              if(oldAndroid){
+                app.manageScroll();               
+              }              
+            }
+
+            if(e.type === "pagebeforeshow"){
+              app.manageTabs();
             }
         });
 
+        // if is android 2.3
+        if(oldAndroid){
+          app.manageScroll();               
+        } 
 
         this.alertBtns();
         // mange the state of the back button
@@ -82,30 +98,7 @@ var app = {
         $menu_btn.on("tap", function(){
           drugName = $(this).data("title");
         });
-
-        // initialize tabs 
-        $.widget( "ui.tabs", $.ui.tabs, {
-
-            _createWidget: function( options, element ) {
-                var page, delayedCreate,
-                    that = this;
-
-                if ( $.mobile.page ) {
-                    page = $( element )
-                        .parents( ":jqmData(role='page'),:mobile-page" )
-                        .first();
-
-                    if ( page.length > 0 && !page.hasClass( "ui-page-active" ) ) {
-                        delayedCreate = this._super;
-                        page.one( "pageshow", function() {
-                            delayedCreate.call( that, options, element );
-                        });
-                    }
-                } else {
-                    return this._super();
-                }
-            }
-        });         
+        
 
         // trigger if is a mobile device
         if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/))
@@ -208,7 +201,7 @@ var app = {
       var $additionalInfo = $("#aditional_info");
       // add description to the wrapper
       $descriptionW.html(description);
-      $additionalInfo.fadeIn();
+      $additionalInfo.fadeIn();      
     },
 
     replaceSvg: function(){
@@ -221,6 +214,27 @@ var app = {
           $(this).attr("src", fallback);
         });
       }    
+    },
+
+    manageTabs: function(){
+      var $body = $("body");
+      var $tabsContent = $(".tab_body");
+
+      $tabsContent.hide().eq(0).show().trigger("updatelayer");
+      $body.on("tap", ".tab" , function(e){
+        e.preventDefault();
+
+        $target = $(this).attr("href");
+        $tabsContent.hide();
+        $("[data-tab='" + $target +"']").show().trigger("updatelayer");
+        $(".theiscroll").iscrollview("refresh");
+      });
+    },
+
+    manageScroll: function(){
+      $(".ui-content").children().attr("data-iscroll", "");
+      $(".ui-content").children().iscrollview();
+      $(".theiscroll").iscrollview("refresh"); 
     }
 
 };
