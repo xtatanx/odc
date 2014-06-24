@@ -78,7 +78,7 @@ var app = {
             }
 
             if(e.type === "pagebeforeshow"){
-              app.manageTabs();
+              app.manageTabs(oldAndroid);
             }
         });
 
@@ -216,7 +216,7 @@ var app = {
       }    
     },
 
-    manageTabs: function(){
+    manageTabs: function(oldAndroid){
       var $body = $("body");
       var $tabsContent = $(".tab_body");
 
@@ -227,7 +227,9 @@ var app = {
         $target = $(this).attr("href");
         $tabsContent.hide();
         $("[data-tab='" + $target +"']").show().trigger("updatelayer");
-        $(".theiscroll").iscrollview("refresh");
+        if(oldAndroid){
+          $(".theiscroll").iscrollview("refresh");    
+        }
       });
     },
 
