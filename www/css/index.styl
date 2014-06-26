@@ -122,7 +122,10 @@ body
     position relative
 
 #drug_info
-  text-shadow none    
+  text-shadow none
+  p
+    font-size 1em
+    margin-bottom 2em    
 
 #footer
   text-align center
@@ -141,13 +144,13 @@ body
     
 #odc_info
   margin-top -17.5px
-  padding .4em 1em
+  padding .58em 1.1em
   right .8em
   top 50%
   &:before
     color #0085B8
     color rgba(#0085B8, .8)
-    font-size 1.8em
+    font-size 1.4em
     font-weight normal
   &.ui-btn-active
     background-color darken(#fefefe, 10%)
@@ -429,42 +432,46 @@ body
   border-radius 9999px // android 2.3
   border-radius 50%
   box-shadow 0 0 12px 2px rgba(silueta-btn, .8)
-  height 24px
-  left 43%
+  height 30px
+  left 45%
   position absolute
   top 30%
   transition all .2s ease
-  width 24px
+  width 30px
 
   &.cabeza
     top -2%
   &.boca
     top 7%
   &.garganta
-    top 10%
-  &.corazón
-    left 57%
-    top 21%
-  &.estómago
-    top 36%
-  &.hígado
-    left 57%
-    top 27%
+    top 12%
+  &.corazón,
+  &.corazon
+    left 64%
+    top 23%
+  &.estómago,
+  &.estomago
+    top 34%
+    left 47%
+  &.hígado,
+  &.higado
+    left 32%
+    top 30%
   &.sistemarespiratorio
     top 20%
   &.sistemaarterial
-    left 52%
-    top 10%
+    left 57%
+    top 11%
   &.ojos
     left 38%
     top 4%
   &.torax
     top 24%
   &.pulmones
-    left 29%
+    left 25%
     top 22%
   &.sistemaurinario
-    top 43%
+    top 47%
   &.sistemamusculatorio
     left 90%
     top 18%
@@ -476,7 +483,11 @@ body
     top 0
   &.extremidades
     left 0
-    top  43%
+    top  49%
+
+  // to fix
+  &.sistemasarterial
+    display none
 .tab_body
   -webkit-box-sizing border-box
   box-sizing border-box
@@ -485,7 +496,7 @@ body
 .silueta
   display block
   margin 0 auto  
-  max-width 160px
+  max-width 280px
   position relative 
   width 100%
   img
@@ -515,54 +526,40 @@ body
       margin-top - 40px
 
   .silueta
-    max-width 200px 
+    max-width 360px 
 
-.red_point
-  left 44%
-  &.cabeza
-    top -2%
-  &.boca
-    top 7%
-  &.garganta
-    top 11%
-  &.corazón,
-  &.corazon
-    left 63%
-    top 23%
-  &.estómago,
-  &.estomago
-    top 36%
-  &.hígado,
-  &.higado
-    left 61%
-    top 28%
-  &.sistemarespiratorio
-    top 20%
-  &.sistemaarterial
-    left 56%
-    top 10%
-  &.ojos
-    left 38%
-    top 4%
-  &.torax
-    top 24%
-  &.pulmones
-    left 29%
-    top 23%
-  &.sistemaurinario
-    top 46%
-  &.sistemamusculatorio
-    left 90%
-    top 18%
-  &.sistemacardiovascular
-    left 44%
-    top 26%
-  &.otros
-    left 0
-    top 0
-  &.extremidades
-    left 0
-    top  48%             
+  .red_point
+    left 46.5%
+    &.cabeza
+      top -1.5%
+    &.boca
+      top 7%
+    &.estómago,
+    &.estomago
+      left 48%
+    &.hígado,
+    &.higado
+      top 28%
+    &.sistemarespiratorio
+      top 20%
+    &.ojos
+      left 38%
+      top 4%
+    &.torax
+      top 24%
+    &.sistemaurinario
+      top 46%
+    &.sistemamusculatorio
+      left 90%
+      top 18%
+    &.sistemacardiovascular
+      left 46.5%
+    &.otros
+      left 0
+      top 0
+    &.extremidades
+      left 0
+      top  48%             
 
 @media screen and (min-width: 768px)
   .menu_btn
@@ -572,7 +569,7 @@ body
       margin-top - 56px
 
   .silueta
-    max-width 300px       
+    max-width 400px       
 
 
 @media screen and (min-width: 1110px)
@@ -583,6 +580,4 @@ body
       font-size 10em
       margin-left - 80px
       margin-top - 80px
-
-  .silueta
-    max-width 400px    
+    
